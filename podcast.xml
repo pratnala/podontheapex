@@ -18,5 +18,19 @@
         <itunes:image href="https://www.podontheapex.com/logo.png"/>
         <itunes:category text="Sports"/>
         <itunes:explicit>false</itunes:explicit>
+        <item>
+            <itunes:episodeType>full</itunes:episodeType>
+            <itunes:season>1</itunes:season>
+            <itunes:episode>1</itunes:episode>
+            <title>Welcome to Pod on the Apex!</title>
+            <description>
+                Are you an F1 fan? Does the sound of the engine revving excite you behind your wildest dreams? Well, you have come to the right place! Introducing #PodOnTheApex! Pratyush and Aniket bring the F1 circus with all its action on and off the track right to your screen! Get ready for an insightful and entertaining discussion of what to look forward in the 2025 season and how these 2 gearheads started their obsession with this adrenaline-filled sport!
+            </description>
+            <enclosure url="https://media.githubusercontent.com/media/pratnala/podontheapex/refs/heads/main/episodes/2025-02-13.mp3" type="audio/mpeg" length="72394442"/>
+            <guid>88A7D53C-BD0A-44A9-AC65-C1F853F2780D</guid>
+            <pubDate>Thu, 14 Feb 2025 22:00:00 +0530</pubDate>
+            <itunes:duration>2262</itunes:duration>
+            <itunes:explicit>false</itunes:explicit>
+        </item>
     </channel>
 </rss>
