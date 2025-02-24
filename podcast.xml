@@ -32,5 +32,19 @@
             <itunes:duration>2262</itunes:duration>
             <itunes:explicit>false</itunes:explicit>
         </item>
+        <item>
+            <itunes:episodeType>full</itunes:episodeType>
+            <itunes:season>1</itunes:season>
+            <itunes:episode>2</itunes:episode>
+            <title>Ranking the 2025 F1 Liveries!</title>
+            <description>
+                This week on #PodOnTheApex, we discuss the F1 75 extravaganza and then rank all the TEN 2025 F1 liveries! Join us, Pratyush and Aniket, for a whirlwind and fun discussion and watch us rank our favorites! Do you agree with our rankings? Let us know!
+            </description>
+            <enclosure url="https://media.githubusercontent.com/media/pratnala/podontheapex/refs/heads/main/episodes/2025-02-24.mp3" type="audio/mpeg" length="118328006"/>
+            <guid>5B918816-CF44-4002-9303-E27D27DF4EC0</guid>
+            <pubDate>Mon, 24 Feb 2025 22:00:00 +0530</pubDate>
+            <itunes:duration>2957</itunes:duration>
+            <itunes:explicit>false</itunes:explicit>
+        </item>
     </channel>
 </rss>
