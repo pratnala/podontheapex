@@ -46,5 +46,19 @@
             <itunes:duration>2957</itunes:duration>
             <itunes:explicit>false</itunes:explicit>
         </item>
+        <item>
+            <itunes:episodeType>full</itunes:episodeType>
+            <itunes:season>1</itunes:season>
+            <itunes:episode>3</itunes:episode>
+            <title>2025 Formula 1 Season Predictions - Part 1!</title>
+            <description>
+                In this special episode of #PodOnTheApex, Pratyush and Aniket serve up some pre-season predictions! We play fortune teller with the bottom 5 constructors from the 2024 championship and throw up some hot takes along the way! Do you agree with our rankings? Let us know and don&apos;t forget to stay tuned for part 2!
+            </description>
+            <enclosure url="https://media.githubusercontent.com/media/pratnala/podontheapex/refs/heads/main/episodes/2025-02-28.mp3" type="audio/mpeg" length="92549123"/>
+            <guid>F132D97B-57A8-468D-B8FC-337357980A6A</guid>
+            <pubDate>Fri, 28 Feb 2025 23:00:00 +0530</pubDate>
+            <itunes:duration>2313</itunes:duration>
+            <itunes:explicit>false</itunes:explicit>
+        </item>
     </channel>
 </rss>
