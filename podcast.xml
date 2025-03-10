@@ -74,5 +74,19 @@
             <itunes:duration>2739</itunes:duration>
             <itunes:explicit>false</itunes:explicit>
         </item>
+        <item>
+            <itunes:episodeType>full</itunes:episodeType>
+            <itunes:season>1</itunes:season>
+            <itunes:episode>5</itunes:episode>
+            <title>Testing Retrospective and Awaiting Australia!</title>
+            <description>
+                This week on #PodOnTheApex: Did pre-season testing in Bahrain reveal the 2025 pecking order? We dive into the details! Plus, are you excited for the 2026 grid turning it up to 11? And what about the V10 comeback rumors? Join Pratyush and Aniket for the complete lowdown!
+            </description>
+            <enclosure url="https://media.githubusercontent.com/media/pratnala/podontheapex/refs/heads/main/episodes/2025-03-07.mp3" type="audio/mpeg" length="99699202"/>
+            <guid>9666210F-0654-49BE-9B20-7BC169F22778</guid>
+            <pubDate>Fri, 07 Mar 2025 23:30:00 +0530</pubDate>
+            <itunes:duration>2492</itunes:duration>
+            <itunes:explicit>false</itunes:explicit>
+        </item>
     </channel>
 </rss>
