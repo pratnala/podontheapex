@@ -102,5 +102,19 @@
             <itunes:duration>1942</itunes:duration>
             <itunes:explicit>false</itunes:explicit>
         </item>
+        <item>
+            <itunes:episodeType>full</itunes:episodeType>
+            <itunes:season>1</itunes:season>
+            <itunes:episode>7</itunes:episode>
+            <title>It is a papaya world at Melbourne!</title>
+            <description>
+                This week on #PodOnTheApex, Pratyush and Aniket review the Australian GP, preview the Chinese GP, and toss up some spicy predictions!
+            </description>
+            <enclosure url="https://media.githubusercontent.com/media/pratnala/podontheapex/refs/heads/main/episodes/2025-03-19.mp3" type="audio/mpeg" length="104102917"/>
+            <guid>B3C976DC-0857-469A-B456-FCA5FFF987CE</guid>
+            <pubDate>Wed, 19 Mar 2025 22:30:00 +0530</pubDate>
+            <itunes:duration>2602</itunes:duration>
+            <itunes:explicit>false</itunes:explicit>
+        </item>
     </channel>
 </rss>
