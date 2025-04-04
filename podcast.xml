@@ -130,5 +130,19 @@
             <itunes:duration>3094</itunes:duration>
             <itunes:explicit>false</itunes:explicit>
         </item>
+        <item>
+            <itunes:episodeType>full</itunes:episodeType>
+            <itunes:season>1</itunes:season>
+            <itunes:episode>9</itunes:episode>
+            <title>Time to dance through the Suzuka Esses!</title>
+            <description>
+                This week on #PodOnTheApex, Pratyush and Aniket preview the Japanese GP, break down the paddock reactions of the Lawson-Tsunoda swap, and are thrilled about a possible V10 return!
+            </description>
+            <enclosure url="https://media.githubusercontent.com/media/pratnala/podontheapex/refs/heads/main/episodes/2025-04-03.mp3" type="audio/mpeg" length="85017107"/>
+            <guid>ECF3B912-BD86-4DD7-974F-3E7E3DF3E12B</guid>
+            <pubDate>Thu, 03 Apr 2025 23:00:00 +0530</pubDate>
+            <itunes:duration>2125</itunes:duration>
+            <itunes:explicit>false</itunes:explicit>
+        </item>
     </channel>
 </rss>
