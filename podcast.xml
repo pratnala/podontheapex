@@ -158,5 +158,19 @@
             <itunes:duration>2717</itunes:duration>
             <itunes:explicit>false</itunes:explicit>
         </item>
+        <item>
+            <itunes:episodeType>full</itunes:episodeType>
+            <itunes:season>1</itunes:season>
+            <itunes:episode>11</itunes:episode>
+            <title>Looking ahead to Jeddah after a wild weekend at Sakhir!</title>
+            <description>
+                This week on #PodOnTheApex, Pratyush and Aniket dive into the chaotic Bahrain GP, debate the many surprising technical failures on Sunday, and call out the subpar race direction before ending with predictions for the Saudi Arabian GP!
+            </description>
+            <enclosure url="https://media.githubusercontent.com/media/pratnala/podontheapex/refs/heads/main/episodes/2025-04-15.mp3" type="audio/mpeg" length="132312352"/>
+            <guid>D1943AD3-E309-4FBF-AC6F-C0E8E714079C</guid>
+            <pubDate>Tue, 15 Apr 2025 22:00:00 +0530</pubDate>
+            <itunes:duration>3307</itunes:duration>
+            <itunes:explicit>false</itunes:explicit>
+        </item>
     </channel>
 </rss>
