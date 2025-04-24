@@ -172,5 +172,19 @@
             <itunes:duration>3307</itunes:duration>
             <itunes:explicit>false</itunes:explicit>
         </item>
+        <item>
+            <itunes:episodeType>full</itunes:episodeType>
+            <itunes:season>1</itunes:season>
+            <itunes:episode>12</itunes:episode>
+            <title>Piastri rules supreme at Jeddah but where is Lando?</title>
+            <description>
+                This week on #PodOnTheApex, Pratyush and Aniket unpack all the drama from the Saudi Arabian GP (including _that_ Verstappen-Piastri incident), scrutinize Lewis Hamilton's perplexing struggles, and yearn for even more inter-papaya racing action (come on Lando!) on track! Also addressed is the frustrating resurgence of dirty air and its subsequent impact on overtakes in 2025!
+            </description>
+            <enclosure url="https://media.githubusercontent.com/media/pratnala/podontheapex/refs/heads/main/episodes/2025-04-23.mp3" type="audio/mpeg" length="81440033"/>
+            <guid>54AE7E71-F43C-4BF4-8709-0CC118CA3DFB</guid>
+            <pubDate>Wed, 23 Apr 2025 22:00:00 +0530</pubDate>
+            <itunes:duration>2035</itunes:duration>
+            <itunes:explicit>false</itunes:explicit>
+        </item>
     </channel>
 </rss>
