@@ -186,5 +186,19 @@
             <itunes:duration>2035</itunes:duration>
             <itunes:explicit>false</itunes:explicit>
         </item>
+        <item>
+            <itunes:episodeType>full</itunes:episodeType>
+            <itunes:season>1</itunes:season>
+            <itunes:episode>13</itunes:episode>
+            <title>More Papaya Domination at Miami?</title>
+            <description>
+                This week on #PodOnTheApex, Pratyush and Aniket bring you spicy Miami GP predictions, explore the special liveries and uniforms for this weekend, look forward to Sergio Pérez's potential return in 2026, commemorate Ayrton Senna's tragic accident 31 years ago, and give a sneak peek at the new Madring unveiled this week!
+            </description>
+            <enclosure url="https://media.githubusercontent.com/media/pratnala/podontheapex/refs/heads/main/episodes/2025-05-01.mp3" type="audio/mpeg" length="160842986"/>
+            <guid>D5E1581E-EF52-4A6A-A80A-674685C86D26</guid>
+            <pubDate>Thu, 01 May 2025 23:00:00 +0530</pubDate>
+            <itunes:duration>4020</itunes:duration>
+            <itunes:explicit>false</itunes:explicit>
+        </item>
     </channel>
 </rss>
