@@ -284,5 +284,19 @@
             <itunes:duration>1985</itunes:duration>
             <itunes:explicit>false</itunes:explicit>
         </item>
+        <item>
+            <itunes:episodeType>full</itunes:episodeType>
+            <itunes:season>1</itunes:season>
+            <itunes:episode>20</itunes:episode>
+            <title>Getting Ready for Sir Lewis's Homecoming!</title>
+            <description>
+                In this episode of #PodOnTheApex, Pratyush and Aniket are gearing up for the British GP, unveiling their predictions with plenty of excitement around Lewis Hamilton, discussing a potential blockbuster move for the 2026 driver market, breaking down some fresh Alpine drama, and showcasing the special liveries for this weekend!
+            </description>
+            <enclosure url="https://media.githubusercontent.com/media/pratnala/podontheapex/refs/heads/main/episodes/2025-07-04.mp3" type="audio/mpeg" length="107574270"/>
+            <guid>43393FFB-4F3B-4040-9C72-B654DFCA8AAC</guid>
+            <pubDate>Fri, 04 Jul 2025 23:00:00 +0530</pubDate>
+            <itunes:duration>2689</itunes:duration>
+            <itunes:explicit>false</itunes:explicit>
+        </item>
     </channel>
 </rss>
