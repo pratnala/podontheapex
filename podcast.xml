@@ -298,5 +298,19 @@
             <itunes:duration>2689</itunes:duration>
             <itunes:explicit>false</itunes:explicit>
         </item>
+        <item>
+            <itunes:episodeType>full</itunes:episodeType>
+            <itunes:season>1</itunes:season>
+            <itunes:episode>21</itunes:episode>
+            <title>Celebrating A Long-Awaited Hulkenpodium at Silverstone!</title>
+            <description>
+                In this episode of #PodOnTheApex, Pratyush and Aniket celebrate Nico Hulkenberg's historic first-ever F1 podium! They also dissect the controversial Piastri penalty and all the drama and kerfuffle caused by the wild ever-changing Silverstone weather!
+            </description>
+            <enclosure url="https://media.githubusercontent.com/media/pratnala/podontheapex/refs/heads/main/episodes/2025-07-08.mp3" type="audio/mpeg" length="93531971"/>
+            <guid>57F71543-33C9-4DF5-8532-FF3C4C39AF70</guid>
+            <pubDate>Tue, 08 Jul 2025 22:30:00 +0530</pubDate>
+            <itunes:duration>2337</itunes:duration>
+            <itunes:explicit>false</itunes:explicit>
+        </item>
     </channel>
 </rss>
