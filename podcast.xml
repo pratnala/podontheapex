@@ -326,5 +326,19 @@
             <itunes:duration>1626</itunes:duration>
             <itunes:explicit>false</itunes:explicit>
         </item>
+        <item>
+            <itunes:episodeType>full</itunes:episodeType>
+            <itunes:season>1</itunes:season>
+            <itunes:episode>23</itunes:episode>
+            <title>Reviewing the F1 Movie!</title>
+            <description>
+                In this episode of #PodOnTheApex, Pratyush and Aniket review the much-hyped F1 movie sharing their unfiltered takes on where it hits and where it misses, ponder what it means for the future of the sport, and offer up some suggestions to revolutionize how we watch the sport!
+            </description>
+            <enclosure url="https://media.githubusercontent.com/media/pratnala/podontheapex/refs/heads/main/episodes/2025-07-17.mp3" type="audio/mpeg" length="72833412"/>
+            <guid>6CD4939C-D355-45BB-996E-CB5EC30F1E13</guid>
+            <pubDate>Thu, 17 Jul 2025 23:00:00 +0530</pubDate>
+            <itunes:duration>1820</itunes:duration>
+            <itunes:explicit>false</itunes:explicit>
+        </item>
     </channel>
 </rss>
