@@ -340,5 +340,19 @@
             <itunes:duration>1820</itunes:duration>
             <itunes:explicit>false</itunes:explicit>
         </item>
+        <item>
+            <itunes:episodeType>full</itunes:episodeType>
+            <itunes:season>1</itunes:season>
+            <itunes:episode>24</itunes:episode>
+            <title>Will Spa Deliver Another Classic?</title>
+            <description>
+                In this episode of #PodOnTheApex, Pratyush and Aniket preview everyone's favorite race on the calendar, the Belgian GP, introducing a new format for their predictions, discussing Ferrari's upgrades for the weekend, and exploring what to expect for Red Bull following Christian Horner's departure!
+            </description>
+            <enclosure url="https://media.githubusercontent.com/media/pratnala/podontheapex/refs/heads/main/episodes/2025-07-25.mp3" type="audio/mpeg" length="126866048"/>
+            <guid>2E3AE891-DDCF-4306-865A-C37A0EE15E9A</guid>
+            <pubDate>Fri, 25 Jul 2025 22:00:00 +0530</pubDate>
+            <itunes:duration>3171</itunes:duration>
+            <itunes:explicit>false</itunes:explicit>
+        </item>
     </channel>
 </rss>
