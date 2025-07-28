@@ -354,5 +354,19 @@
             <itunes:duration>3171</itunes:duration>
             <itunes:explicit>false</itunes:explicit>
         </item>
+        <item>
+            <itunes:episodeType>full</itunes:episodeType>
+            <itunes:season>1</itunes:season>
+            <itunes:episode>25</itunes:episode>
+            <title>The FIA Robbed Us of a Spectacle at Spa!</title>
+            <description>
+                In this episode of #PodOnTheApex, Pratyush and Aniket lament the FIA's botched handling of the Belgian GP, openly wonder if Lando Norris has the fortitude for a title challenge, praise Lewis Hamilton's sterling recovery drive, and score the pre-race predictions!
+            </description>
+            <enclosure url="https://media.githubusercontent.com/media/pratnala/podontheapex/refs/heads/main/episodes/2025-07-28.mp3" type="audio/mpeg" length="91043648"/>
+            <guid>3F3D455D-5787-4080-B67B-8857F38D3A4C</guid>
+            <pubDate>Mon, 28 Jul 2025 22:30:00 +0530</pubDate>
+            <itunes:duration>2275</itunes:duration>
+            <itunes:explicit>false</itunes:explicit>
+        </item>
     </channel>
 </rss>
