@@ -368,5 +368,19 @@
             <itunes:duration>2275</itunes:duration>
             <itunes:explicit>false</itunes:explicit>
         </item>
+        <item>
+            <itunes:episodeType>full</itunes:episodeType>
+            <itunes:season>1</itunes:season>
+            <itunes:episode>26</itunes:episode>
+            <title>Questioning Our Ferrari Fandom!</title>
+            <description>
+                In this episode of #PodOnTheApex, Pratyush and Aniket congratulate McLaren on yet another 1-2 and rue the Ferrari curse as they question their fandom for the Scuderia after a dismal underperformance at Budapest by snatching defeat from the jaws of victory.
+            </description>
+            <enclosure url="https://media.githubusercontent.com/media/pratnala/podontheapex/refs/heads/main/episodes/2025-08-04.mp3" type="audio/mpeg" length="87175877"/>
+            <guid>02C41BB7-6077-47D6-974B-544BB16F9F2B</guid>
+            <pubDate>Mon, 04 Aug 2025 23:00:00 +0530</pubDate>
+            <itunes:duration>2179</itunes:duration>
+            <itunes:explicit>false</itunes:explicit>
+        </item>
     </channel>
 </rss>
