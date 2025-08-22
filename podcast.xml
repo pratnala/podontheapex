@@ -382,5 +382,19 @@
             <itunes:duration>2179</itunes:duration>
             <itunes:explicit>false</itunes:explicit>
         </item>
+        <item>
+            <itunes:episodeType>full</itunes:episodeType>
+            <itunes:season>1</itunes:season>
+            <itunes:episode>27</itunes:episode>
+            <title>Are We UNFAIR on Lando Norris?</title>
+            <description>
+                In this episode of #PodOnTheApex, Pratyush and Aniket question if Lando Norris is getting a raw deal from the media, while Oscar Piastri is getting a free pass!
+            </description>
+            <enclosure url="https://media.githubusercontent.com/media/pratnala/podontheapex/refs/heads/main/episodes/2025-08-20.mp3" type="audio/mpeg" length="39628732"/>
+            <guid>C41A72F7-0A14-4B0C-8EAE-CE1FD249CBC1</guid>
+            <pubDate>Wed, 20 Aug 2025 22:30:00 +0530</pubDate>
+            <itunes:duration>990</itunes:duration>
+            <itunes:explicit>false</itunes:explicit>
+        </item>
     </channel>
 </rss>
