@@ -396,5 +396,19 @@
             <itunes:duration>990</itunes:duration>
             <itunes:explicit>false</itunes:explicit>
         </item>
+        <item>
+            <itunes:episodeType>full</itunes:episodeType>
+            <itunes:season>1</itunes:season>
+            <itunes:episode>28</itunes:episode>
+            <title>Cadillac is READY!</title>
+            <description>
+                Cadillac announced their F1 driver lineup for 2026 today! With Sergio Perez and Valtteri Bottas leading the grid's newest team, we couldn't be more excited!
+            </description>
+            <enclosure url="https://dts.podtrac.com/redirect.mp3/media.githubusercontent.com/media/pratnala/podontheapex/refs/heads/main/episodes/2025-08-26.mp3" type="audio/mpeg" length="43105088"/>
+            <guid>1CA5E58B-F652-4CB8-8D79-96D1C7E570F1</guid>
+            <pubDate>Tue, 26 Aug 2025 22:00:00 +0530</pubDate>
+            <itunes:duration>1077</itunes:duration>
+            <itunes:explicit>false</itunes:explicit>
+        </item>
     </channel>
 </rss>
