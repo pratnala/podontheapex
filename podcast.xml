@@ -410,5 +410,19 @@
             <itunes:duration>1077</itunes:duration>
             <itunes:explicit>false</itunes:explicit>
         </item>
+        <item>
+            <itunes:episodeType>full</itunes:episodeType>
+            <itunes:season>1</itunes:season>
+            <itunes:episode>29</itunes:episode>
+            <title>Will Max Return to Winning Ways at Zandvoort?</title>
+            <description>
+                The summer break is over and it is time to gaze at the crystal ball and make some predictions for the Dutch GP at Zandvoort! Can Max Verstappen return to winning ways? Will Ferrari finally get their act together? Can McLaren continue their winning streak? Join Pratyush and Aniket as they preview the weekend with their predictions!
+            </description>
+            <enclosure url="https://dts.podtrac.com/redirect.mp3/media.githubusercontent.com/media/pratnala/podontheapex/refs/heads/main/episodes/2025-08-29.mp3" type="audio/mpeg" length="33534076"/>
+            <guid>B4717247-5FFF-409B-8B69-6C79CC319167</guid>
+            <pubDate>Fri, 29 Aug 2025 23:00:00 +0530</pubDate>
+            <itunes:duration>838</itunes:duration>
+            <itunes:explicit>false</itunes:explicit>
+        </item>
     </channel>
 </rss>
