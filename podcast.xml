@@ -424,5 +424,19 @@
             <itunes:duration>838</itunes:duration>
             <itunes:explicit>false</itunes:explicit>
         </item>
+        <item>
+            <itunes:episodeType>full</itunes:episodeType>
+            <itunes:season>1</itunes:season>
+            <itunes:episode>30</itunes:episode>
+            <title>Celebrating Isack Hadjar and Commiserating Lando Norris!</title>
+            <description>
+                On this episode of #PodOnTheApex, we pop the champagne for Isack Hadjar's incredible maiden F1 podium at Zandvoort! We also analyze what went wrong for Lando Norris's disastrous weekend, question if Lewis Hamilton can truly come back in the new regulations era of 2026, and round it out with our spicy Monza predictions and a must-hear Ferrari conspiracy theory for the Italian Grand Prix!
+            </description>
+            <enclosure url="https://dts.podtrac.com/redirect.mp3/media.githubusercontent.com/media/pratnala/podontheapex/refs/heads/main/episodes/2025-09-03.mp3" type="audio/mpeg" length="128005568"/>
+            <guid>9066918D-8BCE-4208-8980-8B08B977BE57</guid>
+            <pubDate>Wed, 03 Sep 2025 22:00:00 +0530</pubDate>
+            <itunes:duration>3199</itunes:duration>
+            <itunes:explicit>false</itunes:explicit>
+        </item>
     </channel>
 </rss>
