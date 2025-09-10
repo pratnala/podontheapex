@@ -438,5 +438,19 @@
             <itunes:duration>3199</itunes:duration>
             <itunes:explicit>false</itunes:explicit>
         </item>
+        <item>
+            <itunes:episodeType>full</itunes:episodeType>
+            <itunes:season>1</itunes:season>
+            <itunes:episode>31</itunes:episode>
+            <title>The Papaya Drama at Monza!</title>
+            <description>
+                What was McLaren thinking at Monza? Does Max Verstappen have a chance to win a 5th consecutive title? Will Lewis Hamilton see the podium this season? All this and more with Pratyush and Aniket on this episode of #PodOnTheApex!
+            </description>
+            <enclosure url="https://dts.podtrac.com/redirect.mp3/media.githubusercontent.com/media/pratnala/podontheapex/refs/heads/main/episodes/2025-09-10.mp3" type="audio/mpeg" length="74417412"/>
+            <guid>1CBDE946-5E92-4809-8E5D-78536BBB15EE</guid>
+            <pubDate>Wed, 10 Sep 2025 22:30:00 +0530</pubDate>
+            <itunes:duration>1860</itunes:duration>
+            <itunes:explicit>false</itunes:explicit>
+        </item>
     </channel>
 </rss>
