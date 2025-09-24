@@ -452,5 +452,19 @@
             <itunes:duration>1860</itunes:duration>
             <itunes:explicit>false</itunes:explicit>
         </item>
+        <item>
+            <itunes:episodeType>full</itunes:episodeType>
+            <itunes:season>1</itunes:season>
+            <itunes:episode>32</itunes:episode>
+            <title>Papaya Lunch for the Bulls at Baku!</title>
+            <description>
+                Is McLaren's Baku misfortune a one-off or are we witnessing a generational title charge from the four-time world champion? Has Carlos Sainz finally conquered his Williams demons? And what was that radio message from Charles Leclerc? Pratyush and Aniket tackle all these questions and more on this episode of #PodOnTheApex!
+            </description>
+            <enclosure url="https://dts.podtrac.com/redirect.mp3/media.githubusercontent.com/media/pratnala/podontheapex/refs/heads/main/episodes/2025-09-24.mp3" type="audio/mpeg" length="99362047"/>
+            <guid>9D548885-990A-47FF-97FE-89A428613917</guid>
+            <pubDate>Wed, 24 Sep 2025 22:45:00 +0530</pubDate>
+            <itunes:duration>2483</itunes:duration>
+            <itunes:explicit>false</itunes:explicit>
+        </item>
     </channel>
 </rss>
