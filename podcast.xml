@@ -466,5 +466,19 @@
             <itunes:duration>2483</itunes:duration>
             <itunes:explicit>false</itunes:explicit>
         </item>
+        <item>
+            <itunes:episodeType>full</itunes:episodeType>
+            <itunes:season>1</itunes:season>
+            <itunes:episode>33</itunes:episode>
+            <title>Will Max Continue His Hot Streak at Singapore?</title>
+            <description>
+                It is time for the F1 Night Race and Pratyush and Aniket are back with some Predictions on the Apex for the Singapore GP! Can Max Verstappen continue his winning streak? Or will McLaren bounce back to form? And how many side quests will Max Verstappen aim to finish? All this and more on this episode of #PodOnTheApex!
+            </description>
+            <enclosure url="https://dts.podtrac.com/redirect.mp3/media.githubusercontent.com/media/pratnala/podontheapex/refs/heads/main/episodes/2025-09-30.mp3" type="audio/mpeg" length="83899299"/>
+            <guid>0BDCCCDB-5627-4A04-8B74-681BF31014B0</guid>
+            <pubDate>Tue, 30 Sep 2025 22:30:00 +0530</pubDate>
+            <itunes:duration>2097</itunes:duration>
+            <itunes:explicit>false</itunes:explicit>
+        </item>
     </channel>
 </rss>
