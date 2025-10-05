@@ -480,5 +480,19 @@
             <itunes:duration>2097</itunes:duration>
             <itunes:explicit>false</itunes:explicit>
         </item>
+        <item>
+            <itunes:episodeType>full</itunes:episodeType>
+            <itunes:season>1</itunes:season>
+            <itunes:episode>34</itunes:episode>
+            <title>It is a George Russell World at Singapore!</title>
+            <description>
+                George Russell defied the odds to take home a famous victory at the Singapore GP while McLaren sealed the World Constructor's Championship in the Lion City! Watch Pratyush and Aniket break down all the action and wonder if Oscar Piastri is now feeling the heat from Lando Norris and maybe even Max Verstappen in the latest episode of #PodOnTheApex!
+            </description>
+            <enclosure url="https://dts.podtrac.com/redirect.mp3/media.githubusercontent.com/media/pratnala/podontheapex/refs/heads/main/episodes/2025-10-05.mp3" type="audio/mpeg" length="68646817"/>
+            <guid>B57462F3-51A0-4714-94C5-39C8D66DE33E</guid>
+            <pubDate>Sun, 05 Oct 2025 21:15:00 +0530</pubDate>
+            <itunes:duration>1715</itunes:duration>
+            <itunes:explicit>false</itunes:explicit>
+        </item>
     </channel>
 </rss>
