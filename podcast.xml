@@ -494,5 +494,19 @@
             <itunes:duration>1715</itunes:duration>
             <itunes:explicit>false</itunes:explicit>
         </item>
+        <item>
+            <itunes:episodeType>full</itunes:episodeType>
+            <itunes:season>1</itunes:season>
+            <itunes:episode>35</itunes:episode>
+            <title>Who Will Say Yeehaw at Austin?</title>
+            <description>
+                The F1 circus heads to the Lone Star State for the United States GP at Austin! Who will come out on top? Will Max Verstappen continue to shrink the gap to the papaya boys? Or will Oscar Piastri return to form and secure a dominant win? Or maybe we see the two McLaren drivers crash each other out? Watch Pratyush and Aniket deliver the Austin predictions on this episode of #PodOnTheApex and make sure to leave a comment below on who you think is winning it all this weekend!
+            </description>
+            <enclosure url="https://dts.podtrac.com/redirect.mp3/media.githubusercontent.com/media/pratnala/podontheapex/refs/heads/main/episodes/2025-10-14.mp3" type="audio/mpeg" length="86674656"/>
+            <guid>A710FD46-FCE5-4124-8AC3-BF132527FE46</guid>
+            <pubDate>Tue, 14 Oct 2025 22:30:00 +0530</pubDate>
+            <itunes:duration>2166</itunes:duration>
+            <itunes:explicit>false</itunes:explicit>
+        </item>
     </channel>
 </rss>
