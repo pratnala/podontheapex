@@ -508,5 +508,19 @@
             <itunes:duration>2166</itunes:duration>
             <itunes:explicit>false</itunes:explicit>
         </item>
+        <item>
+            <itunes:episodeType>full</itunes:episodeType>
+            <itunes:season>1</itunes:season>
+            <itunes:episode>36</itunes:episode>
+            <title>Are We Witnessing a Generational Comeback?</title>
+            <description>
+                Max Verstappen announced his arrival to the 2025 F1 WDC fight, and how! Will he actually do it? Are we witnessing a generational comeback? Pratyush and Aniket break down all the action from Austin and recap their pre-race predictions on this exciting episode of #PodOnTheApex!
+            </description>
+            <enclosure url="https://dts.podtrac.com/redirect.mp3/media.githubusercontent.com/media/pratnala/podontheapex/refs/heads/main/episodes/2025-10-21.mp3" type="audio/mpeg" length="98469802"/>
+            <guid>D4202DBF-7DC5-41A3-BFCC-64A664276D19</guid>
+            <pubDate>Tue, 21 Oct 2025 23:00:00 +0530</pubDate>
+            <itunes:duration>2461</itunes:duration>
+            <itunes:explicit>false</itunes:explicit>
+        </item>
     </channel>
 </rss>
