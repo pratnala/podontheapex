@@ -522,5 +522,19 @@
             <itunes:duration>2461</itunes:duration>
             <itunes:explicit>false</itunes:explicit>
         </item>
+        <item>
+            <itunes:episodeType>full</itunes:episodeType>
+            <itunes:season>1</itunes:season>
+            <itunes:episode>37</itunes:episode>
+            <title>Are We Going to Vamos Verstappen in Mexico City?</title>
+            <description>
+                It is time for round 20 of the 2025 F1 World Championship in Mexico City! Can Max Verstappen continue his winning ways and keep the title fight alive? Or will Oscar Piastri take charge and look to put the title fight to bed? Pratyush and Aniket preview the Mexican GP with their predictions and more on this episode of #PodOnTheApex!
+            </description>
+            <enclosure url="https://dts.podtrac.com/redirect.mp3/media.githubusercontent.com/media/pratnala/podontheapex/refs/heads/main/episodes/2025-10-24.mp3" type="audio/mpeg" length="63288097"/>
+            <guid>FCFC1161-2ECA-407B-8D1B-A04B89A91F29</guid>
+            <pubDate>Fri, 24 Oct 2025 11:15:00 +0530</pubDate>
+            <itunes:duration>1581</itunes:duration>
+            <itunes:explicit>false</itunes:explicit>
+        </item>
     </channel>
 </rss>
