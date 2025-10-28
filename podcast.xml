@@ -536,5 +536,19 @@
             <itunes:duration>1581</itunes:duration>
             <itunes:explicit>false</itunes:explicit>
         </item>
+        <item>
+            <itunes:episodeType>full</itunes:episodeType>
+            <itunes:season>1</itunes:season>
+            <itunes:episode>38</itunes:episode>
+            <title>Lando Norris Stakes His Claim in Mexico City!</title>
+            <description>
+                Despite drama up and down the field in CDMX, Lando Norris stole the show with a dominant drive to P1 and the WDC lead! Pratyush and Aniket break down all the action from Mexico City, asking if this is finally Norris's year, and debating whether we will ever see better stewarding in the world's fastest sport on this episode of #PodOnTheApex!
+            </description>
+            <enclosure url="https://dts.podtrac.com/redirect.mp3/media.githubusercontent.com/media/pratnala/podontheapex/refs/heads/main/episodes/2025-10-28.mp3" type="audio/mpeg" length="83711139"/>
+            <guid>10E132D6-FAB6-4B92-B2EE-27258EA497F5</guid>
+            <pubDate>Tue, 28 Oct 2025 21:00:00 +0530</pubDate>
+            <itunes:duration>2092</itunes:duration>
+            <itunes:explicit>false</itunes:explicit>
+        </item>
     </channel>
 </rss>
