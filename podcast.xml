@@ -550,5 +550,19 @@
             <itunes:duration>2092</itunes:duration>
             <itunes:explicit>false</itunes:explicit>
         </item>
+        <item>
+            <itunes:episodeType>full</itunes:episodeType>
+            <itunes:season>1</itunes:season>
+            <itunes:episode>39</itunes:episode>
+            <title>Who Will Samba in São Paulo?</title>
+            <description>
+                Round 21 of the 2025 F1 Championship beckons with a sprint weekend in São Paulo! With the title fight ever closer between Lando, Oscar, and Max, who will Interlagos crown as its king? Get ready to preview the São Paulo GP with Pratyush and Aniket as they bring you their predictions and more on this episode of #PodOnTheApex!
+            </description>
+            <enclosure url="https://dts.podtrac.com/redirect.mp3/media.githubusercontent.com/media/pratnala/podontheapex/refs/heads/main/episodes/2025-11-06.mp3" type="audio/mpeg" length="95255136"/>
+            <guid>A909C155-965E-4AD2-A5B9-112E06381628</guid>
+            <pubDate>Thu, 06 Nov 2025 22:00:00 +0530</pubDate>
+            <itunes:duration>2381</itunes:duration>
+            <itunes:explicit>false</itunes:explicit>
+        </item>
     </channel>
 </rss>
