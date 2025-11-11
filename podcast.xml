@@ -564,5 +564,19 @@
             <itunes:duration>2381</itunes:duration>
             <itunes:explicit>false</itunes:explicit>
         </item>
+        <item>
+            <itunes:episodeType>full</itunes:episodeType>
+            <itunes:season>1</itunes:season>
+            <itunes:episode>40</itunes:episode>
+            <title>Lando Inches Closer to the Promised Land in São Paulo!</title>
+            <description>
+                In a weekend full of drama, Lando Norris oozed calmness at the front as he took a crucial win in São Paulo to inch closer to his first F1 World Drivers' Championship! Pratyush and Aniket break down all the action from Interlagos, expressing their awe at Max Verstappen's sterling recovery drive and Kimi Antonelli's mega weekend, and dissecting John Elkann's baffling comments on Ferrari's drivers on this episode of #PodOnTheApex!
+            </description>
+            <enclosure url="https://dts.podtrac.com/redirect.mp3/media.githubusercontent.com/media/pratnala/podontheapex/refs/heads/main/episodes/2025-11-10.mp3" type="audio/mpeg" length="135886179"/>
+            <guid>7C875258-CD72-406B-9EB4-A931EF89870B</guid>
+            <pubDate>Mon, 10 Nov 2025 22:00:00 +0530</pubDate>
+            <itunes:duration>3396</itunes:duration>
+            <itunes:explicit>false</itunes:explicit>
+        </item>
     </channel>
 </rss>
