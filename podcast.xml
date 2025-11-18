@@ -578,5 +578,19 @@
             <itunes:duration>3396</itunes:duration>
             <itunes:explicit>false</itunes:explicit>
         </item>
+        <item>
+            <itunes:episodeType>full</itunes:episodeType>
+            <itunes:season>1</itunes:season>
+            <itunes:episode>41</itunes:episode>
+            <title>All Bets Are Off in the Sin City Title Showdown!</title>
+            <description>
+                It is the first race of the final triple-header of the 2025 F1 World Championship, and with Lando Norris leading Oscar Piastri by 24 points and Max Verstappen by 49, all bets are off in the neon lights of Sin City! Pratyush and Aniket preview the Las Vegas GP, asking the crucial question: Will Lando finally seal the deal, or can Oscar or Max pull off a miracle win to keep their title hopes alive? Plus, they debate the controversial confirmation of Franco Colapinto at Alpine for 2026 - did he truly deserve the seat over Jack Doohan? Tune in for predictions and more on this episode of #PodOnTheApex!
+            </description>
+            <enclosure url="https://dts.podtrac.com/redirect.mp3/media.githubusercontent.com/media/pratnala/podontheapex/refs/heads/main/episodes/2025-11-18.mp3" type="audio/mpeg" length="78859297"/>
+            <guid>7D8461CE-7710-457D-8D3B-E5F00D76B9AD</guid>
+            <pubDate>Tue, 18 Nov 2025 23:00:00 +0530</pubDate>
+            <itunes:duration>1971</itunes:duration>
+            <itunes:explicit>false</itunes:explicit>
+        </item>
     </channel>
 </rss>
