@@ -592,5 +592,19 @@
             <itunes:duration>1971</itunes:duration>
             <itunes:explicit>false</itunes:explicit>
         </item>
+        <item>
+            <itunes:episodeType>full</itunes:episodeType>
+            <itunes:season>1</itunes:season>
+            <itunes:episode>42</itunes:episode>
+            <title>DOUBLE DSQ! RECKLESS McLaren SAVES Verstappen in Vegas!</title>
+            <description>
+                McLaren's double disqualification in Las Vegas just handed Max Verstappen a championship lifeline. The gap? 24 points. 2 races and 1 sprint to go. The championship fight is back on and Max Verstappen smells blood! Also on the pod today - Kimi Antonelli's mega drive to catapult from P17 to P3, Gabriel Bortoleto's colossal turn 1 mistake, Ferrari's continuing disaster of a season, and scoring our pre-race predictions! Enjoyed this episode? Leave us a 5-star review and help more F1 fans find #PodOnTheApex!
+            </description>
+            <enclosure url="https://dts.podtrac.com/redirect.mp3/media.githubusercontent.com/media/pratnala/podontheapex/refs/heads/main/episodes/2025-11-23.mp3" type="audio/mpeg" length="89150735"/>
+            <guid>A0369F6B-F615-4E5E-8AA6-C6627BC098C7</guid>
+            <pubDate>Sun, 23 Nov 2025 15:45:00 +0530</pubDate>
+            <itunes:duration>2228</itunes:duration>
+            <itunes:explicit>false</itunes:explicit>
+        </item>
     </channel>
 </rss>
