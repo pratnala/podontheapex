@@ -606,5 +606,19 @@
             <itunes:duration>2228</itunes:duration>
             <itunes:explicit>false</itunes:explicit>
         </item>
+        <item>
+            <itunes:episodeType>full</itunes:episodeType>
+            <itunes:season>1</itunes:season>
+            <itunes:episode>43</itunes:episode>
+            <title>Newey Promoted to Aston Martin BOSS! Will Max Join Him?</title>
+            <description>
+                Adrian Newey is the new BOSS of Aston Martin! 🟢 In a shock announcement on the eve of the Qatar GP, the legendary designer has been promoted to Team Principal starting in 2026. Is the spotlight the right place for the media-shy Newey? And the big question: Will Max Verstappen follow him there? 🤔 Coming up in Qatar: 🇶🇦 How will McLaren bounce back from their Vegas DSQ disaster? 📉 Was the plank wear a temporary setback, or is it a sign that the car is fundamentally broken over the bumps? With the title fight wide open, Max Verstappen smells blood in the water. All this + our Predictions on the Apex (Double dose for the Sprint Weekend!) make this a must-watch episode! Enjoyed this episode? Leave us a 5-star review and help more F1 fans find #PodOnTheApex!
+            </description>
+            <enclosure url="https://dts.podtrac.com/redirect.mp3/media.githubusercontent.com/media/pratnala/podontheapex/refs/heads/main/episodes/2025-11-27.mp3" type="audio/mpeg" length="120149135"/>
+            <guid>93CCFF08-E2CF-4391-8EFC-BEDCFDEECB1A</guid>
+            <pubDate>Thu, 27 Nov 2025 22:15:00 +0530</pubDate>
+            <itunes:duration>3003</itunes:duration>
+            <itunes:explicit>false</itunes:explicit>
+        </item>
     </channel>
 </rss>
