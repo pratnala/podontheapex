@@ -620,5 +620,19 @@
             <itunes:duration>3003</itunes:duration>
             <itunes:explicit>false</itunes:explicit>
         </item>
+        <item>
+            <itunes:episodeType>full</itunes:episodeType>
+            <itunes:season>1</itunes:season>
+            <itunes:episode>44</itunes:episode>
+            <title>CHOKED! How 'Papaya Rules' Just Gave Max a Lifeline in Qatar!</title>
+            <description>
+                McLaren CHOKED in Qatar! 📉 Their timidity in strategy and blind adherence to 'Papaya Rules' during the Lap 7 Safety Car just gave Max Verstappen the biggest gift he could have wished for. With the gap closing, is the title fight now Max's to lose in Abu Dhabi? Also on the pod: The Collusion Conspiracy: Helmut Marko accuses Kimi Antonelli of helping Lando Norris—we defend the rookie against the "British Mafia" claims; Sainz Shines: Carlos Sainz drags the Williams to the podium in a stunning turnaround; Red Bull 2026: BREAKING news on Isack Hadjar replacing Yuki Tsunoda! 🚨; The Scoreboard: Scoring our pre-race predictions (Did anyone predict the McLaren disaster?)! Enjoyed this episode? Leave us a 5-star review and help more F1 fans find #PodOnTheApex!
+            </description>
+            <enclosure url="https://dts.podtrac.com/redirect.mp3/media.githubusercontent.com/media/pratnala/podontheapex/refs/heads/main/episodes/2025-12-02.mp3" type="audio/mpeg" length="92534735"/>
+            <guid>09C01A44-049B-45BF-92D1-45DC7B16A9E0</guid>
+            <pubDate>Tue, 02 Dec 2025 22:00:00 +0530</pubDate>
+            <itunes:duration>2313</itunes:duration>
+            <itunes:explicit>false</itunes:explicit>
+        </item>
     </channel>
 </rss>
