@@ -634,5 +634,19 @@
             <itunes:duration>2313</itunes:duration>
             <itunes:explicit>false</itunes:explicit>
         </item>
+        <item>
+            <itunes:episodeType>full</itunes:episodeType>
+            <itunes:season>1</itunes:season>
+            <itunes:episode>45</itunes:episode>
+            <title>3 DRIVERS. 16 POINTS. The Abu Dhabi Showdown!</title>
+            <description>
+                The 2025 Season Finale is here! 🏁 It all comes down to this. 16 points and an epic battle in the desert! ⚔️ It is time for the 2025 Abu Dhabi Grand Prix and it is time to crown a new world champion! We explore all the scenarios, all the drama, all the possibilities! Including the tantalizing possibility of a papaya civil war! And we wrap it up with one last edition of Predictions on the Apex for 2025! A must-watch episode for every #F1 fan! Enjoyed this episode? Leave us a 5-star review and help more F1 fans find #PodOnTheApex!
+            </description>
+            <enclosure url="https://dts.podtrac.com/redirect.mp3/media.githubusercontent.com/media/pratnala/podontheapex/refs/heads/main/episodes/2025-12-05.mp3" type="audio/mpeg" length="131259163"/>
+            <guid>37D1B9F9-9888-4ADA-8FCC-E07AD28B9A32</guid>
+            <pubDate>Fri, 05 Dec 2025 22:30:00 +0530</pubDate>
+            <itunes:duration>3281</itunes:duration>
+            <itunes:explicit>false</itunes:explicit>
+        </item>
     </channel>
 </rss>
