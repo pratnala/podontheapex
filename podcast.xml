@@ -648,5 +648,19 @@
             <itunes:duration>3281</itunes:duration>
             <itunes:explicit>false</itunes:explicit>
         </item>
+        <item>
+            <itunes:episodeType>full</itunes:episodeType>
+            <itunes:season>1</itunes:season>
+            <itunes:episode>46</itunes:episode>
+            <title>Lando Norris is the WORLD CHAMPION!</title>
+            <description>
+                Lando Norris is the 2025 Formula 1 World Champion! 🏆 But it couldn't have been closer... After a heart-stopping finale in Abu Dhabi, Lando survived the pressure to beat Max Verstappen by just TWO POINTS. 🤯 A childhood dream fulfilled, but Max made him fight for every point. Today on Pod on the Apex: How Lando held on despite Max winning the race; The "3-Way" War: Oscar Piastri had a great first half, Max had a legendary second half, but Lando's consistency won the war; Could Red Bull have taken more strategic risks in Abu Dhabi to bridge that 2-point gap?; We finally crown the winner of our season-long Predictions on the Apex battle! 🔮 Enjoyed this episode? Leave us a 5-star review and help more F1 fans find #PodOnTheApex!
+            </description>
+            <enclosure url="https://dts.podtrac.com/redirect.mp3/media.githubusercontent.com/media/pratnala/podontheapex/refs/heads/main/episodes/2025-12-07.mp3" type="audio/mpeg" length="69437691"/>
+            <guid>0DDF97FF-DFC1-4384-8521-293DDE2304F6</guid>
+            <pubDate>Sun, 07 Dec 2025 22:30:00 +0530</pubDate>
+            <itunes:duration>1735</itunes:duration>
+            <itunes:explicit>false</itunes:explicit>
+        </item>
     </channel>
 </rss>
