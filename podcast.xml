@@ -676,5 +676,19 @@
             <itunes:duration>4429</itunes:duration>
             <itunes:explicit>false</itunes:explicit>
         </item>
+        <item>
+            <itunes:episodeType>full</itunes:episodeType>
+            <itunes:season>1</itunes:season>
+            <itunes:episode>48</itunes:episode>
+            <title>Papaya Rules and Ferrari's FAILURE! 2025 Post-Mortem ft. Raghuram from DaPod and Suraj!</title>
+            <description>
+                You saw our official season review in the previous episode! Now, it is time for the community edition! 🗣️ We are joined by fellow podcaster, Raghuram from DaPod and die-hard #F1 fan, Suraj! Expect hot takes, fast jokes, and an unfiltered verdict on the 2025 season! On today's episode! 👇 * Papaya Rules! 🤜🤛 * Max's legendary comeback from 100+ points down! 💪 * The Ferrari disappointment! 😭 * Rookie of the season? 🎓 * Most impressive midfield performances! ✨ Don't forget to check out Raghuram's podcast, DaPod - https://www.youtube.com/@dapod.9! 🔮 Enjoyed this episode? Leave us a 5-star review and help more F1 fans find #PodOnTheApex!
+            </description>
+            <enclosure url="https://dts.podtrac.com/redirect.mp3/media.githubusercontent.com/media/pratnala/podontheapex/refs/heads/main/episodes/2026-01-02.mp3" type="audio/mpeg" length="171289473"/>
+            <guid>EA7EBED9-87DB-44E9-872B-7673E27931BC</guid>
+            <pubDate>Fri, 02 Jan 2026 22:00:00 +0530</pubDate>
+            <itunes:duration>4281</itunes:duration>
+            <itunes:explicit>false</itunes:explicit>
+        </item>
     </channel>
 </rss>
