@@ -690,5 +690,17 @@
             <itunes:duration>4281</itunes:duration>
             <itunes:explicit>false</itunes:explicit>
         </item>
+        <item>
+            <itunes:episodeType>full</itunes:episodeType>
+            <itunes:season>2</itunes:season>
+            <itunes:episode>1</itunes:episode>
+            <title>What's NEW in 2026 F1? Active Aero, 30 kg lighter, more overtaking!</title>
+            <description><![CDATA[The 2026 #F1 season is almost here! In this special longform #LearnOnTheApex special, we break down all the massive regulation changes! It is the end of the ground effect era!<br /><br />🪽 Active aero - movable wings!<br />🤔 Cornering mode, straight line mode, overtaking mode!<br />🙅 End of ground effect era!<br />🔒 Shorter, lighter, narrower, SAFER cars!<br />⚡ All new engines with MORE electric power!<br />✨ NEW tracks! NEW teams! NEW engine suppliers! -- Hello Cadillac, Audi, RBPT Ford, Madrid! Welcome back Honda!<br /><br />Are you EXCITED for the new season? What will you miss from the ground effect era? Let us know by tagging us on our socials - <a href="https://www.instagram.com/podontheapex/">Instagram</a>, <a href="https://www.tiktok.com/@podontheapex">TikTok</a>, <a href="https://x.com/podontheapex">X (Twitter)</a>, <a href="https://www.threads.com/@podontheapex">Threads</a>, and <a href="https://www.facebook.com/podontheapex">Facebook</a>.<br /><br />Don't forget to leave us a 5-star review and help more F1 fans find #PodOnTheApex!]]></description>
+            <enclosure url="https://dts.podtrac.com/redirect.mp3/media.githubusercontent.com/media/pratnala/podontheapex/refs/heads/main/episodes/2026-01-19.mp3" type="audio/mpeg" length="78665619"/>
+            <guid>80B74213-5715-4C45-A62A-09899291B923</guid>
+            <pubDate>Mon, 19 Jan 2026 23:30:00 +0530</pubDate>
+            <itunes:duration>1966</itunes:duration>
+            <itunes:explicit>false</itunes:explicit>
+        </item>
     </channel>
 </rss>
