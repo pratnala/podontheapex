@@ -702,5 +702,17 @@
             <itunes:duration>1966</itunes:duration>
             <itunes:explicit>false</itunes:explicit>
         </item>
+        <item>
+            <itunes:episodeType>full</itunes:episodeType>
+            <itunes:season>2</itunes:season>
+            <itunes:episode>2</itunes:episode>
+            <title>2026 F1 Predictions Battle - Our WILDEST Takes!</title>
+            <description><![CDATA[With 1 month to go for the start of the 2026 #F1 season, it is time for the first ever pre-season edition of #PredictionsOnTheApex!<br /><br />With the same rules that you know and love - we  both cannot pick the same outcome - this PROMISES to be a banger! Sit back and enjoy our HOT takes on drivers' champion, constructors' champion, big surprise, big flop, and if we will see a new race winner! 🔥<br /><br />Whose takes do you agree with? And who are your picks?<br /><br />Let us know by tagging us on our socials - <a href="https://www.instagram.com/podontheapex/">Instagram</a>,<a href="https://www.tiktok.com/@podontheapex">TikTok</a>,<a href="https://x.com/podontheapex">X (Twitter)</a>,<a href="https://www.threads.com/@podontheapex">Threads</a>, and <a href="https://www.facebook.com/podontheapex">Facebook</a>.<br /><br />Don't forget to leave us a 5-star review and help more F1 fans find #PodOnTheApex!]]></description>
+            <enclosure url="https://dts.podtrac.com/redirect.mp3/media.githubusercontent.com/media/pratnala/podontheapex/refs/heads/main/episodes/2026-02-02.mp3" type="audio/mpeg" length="80866896"/>
+            <guid>1C0C8BB3-5A6C-48DB-8394-B469D18296A9</guid>
+            <pubDate>Mon, 02 Feb 2026 20:45:00 +0530</pubDate>
+            <itunes:duration>2021</itunes:duration>
+            <itunes:explicit>false</itunes:explicit>
+        </item>
     </channel>
 </rss>
