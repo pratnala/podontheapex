@@ -714,5 +714,17 @@
             <itunes:duration>2021</itunes:duration>
             <itunes:explicit>false</itunes:explicit>
         </item>
+        <item>
+            <itunes:episodeType>full</itunes:episodeType>
+            <itunes:season>2</itunes:season>
+            <itunes:episode>3</itunes:episode>
+            <title>2026 F1 Pecking Order: Ferrari is FAST, Aston is DOOMED!</title>
+            <description><![CDATA[The 2026 #F1 season is 1 week away and testing has thrown up its fair share of surprises! And a LOT of QUESTIONS!<br /><br />✨ Is it finally Ferrari's year? Is Lewis Hamilton getting #8? Or Leclerc his first?<br />💪 Is Mercedes the team to beat? Will George Russell fulfil his promise?<br />🍾 Will an energy drinks company that makes engines now beat all of them to the championship? Can Max Verstappen challenge for the title once again?<br />🥴 Will Aston Martin manage to even start at Melbourne? Has Honda screwed up Alonso once again?<br />👀 And how good are Haas and Alpine? Is becoming a Mercedes customer a Briatore masterstroke?<br /><br />Who are your favorites? <br /><br />Let us know by tagging us on our socials - <a href="https://www.instagram.com/podontheapex/">Instagram</a>,<a href="https://www.tiktok.com/@podontheapex">TikTok</a>,<a href="https://x.com/podontheapex">X (Twitter)</a>,<a href="https://www.threads.com/@podontheapex">Threads</a>, and <a href="https://www.facebook.com/podontheapex">Facebook</a>.<br /><br />Don't forget to leave us a 5-star review and help more F1 fans find #PodOnTheApex!]]></description>
+            <enclosure url="https://dts.podtrac.com/redirect.mp3/media.githubusercontent.com/media/pratnala/podontheapex/refs/heads/main/episodes/2026-02-25.mp3" type="audio/mpeg" length="113722895"/>
+            <guid>6F3D98AC-8E50-41BF-B9C1-BCC8E23F5F88</guid>
+            <pubDate>Wed, 25 Feb 2026 22:30:00 +0530</pubDate>
+            <itunes:duration>2842</itunes:duration>
+            <itunes:explicit>false</itunes:explicit>
+        </item>
     </channel>
 </rss>
