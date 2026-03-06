@@ -726,5 +726,17 @@
             <itunes:duration>2842</itunes:duration>
             <itunes:explicit>false</itunes:explicit>
         </item>
+        <item>
+            <itunes:episodeType>full</itunes:episodeType>
+            <itunes:season>2</itunes:season>
+            <itunes:episode>4</itunes:episode>
+            <title>Aston Martin OUT?! 2026 Australian GP Predictions!</title>
+            <description><![CDATA[The 2026 #F1 season is OFFICIALLY underway, and we are locking in our predictions for the Australian Grand Prix! 🇦🇺🏁<br /><br />Will the new regulations deliver a classic at Albert Park? Who will take the first Pole Position of the new era? And more importantly... will Fernando Alonso and Aston Martin even make it to the starting grid?! 🥴<br /><br />In this episode of Pod on the Apex, we debate our wildest takes for Melbourne:<br />🥇 The Podium: Locking in our picks for 1st, 2nd, and 3rd!<br />⏱️ Pole Position: Who has the ultimate one-lap pace?<br />📉 The Bust: Which top team is going to drop the ball this weekend?<br />😲 Big Surprise: The midfield underdog ready to shock the grid.<br />🚨 Aston Martin Crisis: Are they genuinely at risk of a DNS?<br /><br />Who are your top 3 for the Australian GP? Let us know by tagging us on our socials - <a href="https://www.instagram.com/podontheapex/">Instagram</a>,<a href="https://www.tiktok.com/@podontheapex">TikTok</a>,<a href="https://x.com/podontheapex">X (Twitter)</a>,<a href="https://www.threads.com/@podontheapex">Threads</a>, and <a href="https://www.facebook.com/podontheapex">Facebook</a>.<br /><br />Don't forget to leave us a 5-star review and help more F1 fans find #PodOnTheApex!]]></description>
+            <enclosure url="https://dts.podtrac.com/redirect.mp3/media.githubusercontent.com/media/pratnala/podontheapex/refs/heads/main/episodes/2026-03-05.mp3" type="audio/mpeg" length="66571536"/>
+            <guid>79203AD1-F43A-4BA1-AFC3-6E84E85C70E0</guid>
+            <pubDate>Thu, 05 Mar 2026 23:15:00 +0530</pubDate>
+            <itunes:duration>1663</itunes:duration>
+            <itunes:explicit>false</itunes:explicit>
+        </item>
     </channel>
 </rss>
