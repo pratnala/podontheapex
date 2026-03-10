@@ -738,5 +738,17 @@
             <itunes:duration>1663</itunes:duration>
             <itunes:explicit>false</itunes:explicit>
         </item>
+        <item>
+            <itunes:episodeType>full</itunes:episodeType>
+            <itunes:season>2</itunes:season>
+            <itunes:episode>5</itunes:episode>
+            <title>Mercedes 1-2 at Australia! Is the 2026 F1 Championship ALREADY OVER?</title>
+            <description><![CDATA[1 race down, 23 to go, and Mercedes have started the season in Australia in DOMINANT fashion! 2014 flashbacks, anyone? 👀<br /><br />In this episode, we drill down:<br />👑 Is Mercedes now the overwhelming favorite to win both championships?<br />🐴 Can Ferrari still challenge them on more favorable tracks?<br />⏳ Is Ferrari's strategy letting them down AGAIN?<br />🗑️ Are the 2026 cars just GARBAGE? Will the rumored engine updates help?<br />🐨 The Australian curse continues for Piastri? And disappointment for Hadjar!<br />💪 Great results around the grid for Verstappen, Haas, Audi, Alpine<br />💫 Who won the predictions battle for Australia?<br /><br />What do you think about this new era in #F1 and is Mercedes winning it all? Let us know by tagging us on our socials - <a href="https://www.instagram.com/podontheapex/">Instagram</a>,<a href="https://www.tiktok.com/@podontheapex">TikTok</a>,<a href="https://x.com/podontheapex">X (Twitter)</a>,<a href="https://www.threads.com/@podontheapex">Threads</a>, and <a href="https://www.facebook.com/podontheapex">Facebook</a>.<br /><br />Don't forget to leave us a 5-star review and help more F1 fans find #PodOnTheApex!]]></description>
+            <enclosure url="https://dts.podtrac.com/redirect.mp3/media.githubusercontent.com/media/pratnala/podontheapex/refs/heads/main/episodes/2026-03-09.mp3" type="audio/mpeg" length="74020174"/>
+            <guid>A70DBE45-F089-4183-A530-720BA3210C2A</guid>
+            <pubDate>Mon, 09 Mar 2026 23:00:00 +0530</pubDate>
+            <itunes:duration>1850</itunes:duration>
+            <itunes:explicit>false</itunes:explicit>
+        </item>
     </channel>
 </rss>
