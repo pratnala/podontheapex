@@ -750,5 +750,17 @@
             <itunes:duration>1850</itunes:duration>
             <itunes:explicit>false</itunes:explicit>
         </item>
+        <item>
+            <itunes:episodeType>full</itunes:episodeType>
+            <itunes:season>2</itunes:season>
+            <itunes:episode>6</itunes:episode>
+            <title>Can the MACARENA WING Propel Ferrari to Victory? 2026 Chinese GP Predictions!</title>
+            <description><![CDATA[It is time for round 2 of the 2026 #F1 World Championship! And we head to Shanghai for the Chinese GP! 🇨🇳🏁<br /><br />A sprint weekend means you get double the predictions! Will Ferrari unveil the Macarena Wing in China? Will this track suit Ferrari more? And who are we predicting to win it all?<br /><br />Do you agree with our picks? Let us know by tagging us on our socials - <a href="https://www.instagram.com/podontheapex/">Instagram</a>,<a href="https://www.tiktok.com/@podontheapex">TikTok</a>,<a href="https://x.com/podontheapex">X (Twitter)</a>,<a href="https://www.threads.com/@podontheapex">Threads</a>, and <a href="https://www.facebook.com/podontheapex">Facebook</a>.<br /><br />Don't forget to leave us a 5-star review and help more F1 fans find #PodOnTheApex!]]></description>
+            <enclosure url="https://dts.podtrac.com/redirect.mp3/media.githubusercontent.com/media/pratnala/podontheapex/refs/heads/main/episodes/2026-03-11.mp3" type="audio/mpeg" length="87750095"/>
+            <guid>007FA27D-4FF9-4CFB-84B6-48B8D037C5AB</guid>
+            <pubDate>Wed, 11 Mar 2026 22:30:00 +0530</pubDate>
+            <itunes:duration>2193</itunes:duration>
+            <itunes:explicit>false</itunes:explicit>
+        </item>
     </channel>
 </rss>
