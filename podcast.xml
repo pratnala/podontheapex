@@ -762,5 +762,17 @@
             <itunes:duration>2193</itunes:duration>
             <itunes:explicit>false</itunes:explicit>
         </item>
+        <item>
+            <itunes:episodeType>full</itunes:episodeType>
+            <itunes:season>2</itunes:season>
+            <itunes:episode>7</itunes:episode>
+            <title>Antonelli Makes History at the Chinese GP! Can Ferrari Catch Up in 2026?</title>
+            <description><![CDATA[2 consecutive 1-2 finishes for Mercedes! A new race winner in Kimi Antonelli! This season is looking more and more like 2014! <br /><br />In this episode, we ponder:<br />💨 Are these new regulations a winner?<br />🏆 The dominance of Mercedes<br />🎉 Lewis Hamilton's first podium after 450+ days!<br />🤔 Can Ferrari catch up?<br />🥲 The struggles of Aston Martin and McLaren<br />💪 Great weekend for Haas and Alpine<br />💫 Who won the predictions battle for China?<br /><br />What do you think about this new era in #F1 and is Mercedes winning it all? Let us know by tagging us on our socials - <a href="https://www.instagram.com/podontheapex/">Instagram</a>,<a href="https://www.tiktok.com/@podontheapex">TikTok</a>,<a href="https://x.com/podontheapex">X (Twitter)</a>,<a href="https://www.threads.com/@podontheapex">Threads</a>, and <a href="https://www.facebook.com/podontheapex">Facebook</a>.<br /><br />Don't forget to leave us a 5-star review and help more F1 fans find #PodOnTheApex!]]></description>
+            <enclosure url="https://dts.podtrac.com/redirect.mp3/media.githubusercontent.com/media/pratnala/podontheapex/refs/heads/main/episodes/2026-03-17.mp3" type="audio/mpeg" length="91775313"/>
+            <guid>6B4E865E-8466-43C5-A012-48979508A733</guid>
+            <pubDate>Tue, 17 Mar 2026 22:15:00 +0530</pubDate>
+            <itunes:duration>2294</itunes:duration>
+            <itunes:explicit>false</itunes:explicit>
+        </item>
     </channel>
 </rss>
