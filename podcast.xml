@@ -774,5 +774,17 @@
             <itunes:duration>2294</itunes:duration>
             <itunes:explicit>false</itunes:explicit>
         </item>
+        <item>
+            <itunes:episodeType>full</itunes:episodeType>
+            <itunes:season>2</itunes:season>
+            <itunes:episode>8</itunes:episode>
+            <title>3 Wins in a Row! Is Kimi Antonelli the 2026 WDC Favorite?</title>
+            <description><![CDATA[Kimi Antonelli has made it 3 in a row! Is George Russell facing a challenge from unexpected quarters?<br /><br />Pod on the Apex is back after a monthlong hiatus! The Miami GP has left us buzzing with plenty of action this weekend! Hear us debate:<br /><br />* Is Kimi Antonelli the new favorite?<br />* Is McLaren the dark horse with their winning upgrades?<br />* Great strides for Red Bull - will Max Verstappen contend for the title once again?<br />* Ferrari continues with the depression...<br />* Alpine - an easy best of the rest with their winning switch to Mercedes engines!<br />* Can Williams continue their upward trajectory? Do you think Kimi Antonelli will become the youngest ever WDC? Let us know by tagging us on our socials - <a href="https://www.instagram.com/podontheapex/">Instagram</a>,<a href="https://www.tiktok.com/@podontheapex">TikTok</a>,<a href="https://x.com/podontheapex">X (Twitter)</a>,<a href="https://www.threads.com/@podontheapex">Threads</a>, and <a href="https://www.facebook.com/podontheapex">Facebook</a>.<br /><br />Don't forget to leave us a 5-star review and help more F1 fans find #PodOnTheApex!]]></description>
+            <enclosure url="https://dts.podtrac.com/redirect.mp3/media.githubusercontent.com/media/pratnala/podontheapex/refs/heads/main/episodes/2026-05-04.mp3" type="audio/mpeg" length="84333824"/>
+            <guid>D6E6D540-6BF4-4731-81EE-AED4F1CBD5CB</guid>
+            <pubDate>Mon, 04 May 2026 22:15:00 +0530</pubDate>
+            <itunes:duration>2107</itunes:duration>
+            <itunes:explicit>false</itunes:explicit>
+        </item>
     </channel>
 </rss>
