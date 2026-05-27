@@ -1,18 +1,49 @@
 document.addEventListener("DOMContentLoaded", () => {
-    // Select all the column divs holding your videos
-    const items = document.querySelectorAll('.album .col-12');
+    const allItems = document.querySelectorAll('.album .video-item');
     const paginationControls = document.getElementById('pagination-controls');
+    const seasonTabs = document.querySelectorAll('#season-tabs .nav-link');
 
     const itemsPerPage = 6;
     let currentPage = 1;
+    let currentSeason = '2026';
+    let filteredItems = [];
+
+    function updateSeason(season) {
+        currentSeason = season;
+        currentPage = 1; // Reset to page 1 whenever the season changes
+
+        // 1. Hide EVERYTHING and unload all iframes first
+        allItems.forEach(item => {
+            item.classList.add('d-none');
+            const iframe = item.querySelector('iframe');
+            if (iframe && iframe.hasAttribute('src')) {
+                iframe.removeAttribute('src');
+            }
+        });
+
+        // 2. Filter down to only items matching the selected season
+        filteredItems = Array.from(allItems).filter(item => item.getAttribute('data-season') === currentSeason);
+
+        // 3. Update the visual state of the Tabs
+        seasonTabs.forEach(tab => {
+            if (tab.getAttribute('data-target-season') === currentSeason) {
+                tab.classList.add('active');
+            } else {
+                tab.classList.remove('active');
+            }
+        });
+
+        // 4. Render the first page of the newly selected season
+        renderPage(1);
+    }
 
     function renderPage(page) {
         currentPage = page;
         const start = (page - 1) * itemsPerPage;
         const end = start + itemsPerPage;
 
-        // Loop through all items and hide/show based on the current page
-        items.forEach((item, index) => {
+        // Loop through filtered items and hide/show based on the current page
+        filteredItems.forEach((item, index) => {
             // Find the iframe inside this specific column
             const iframe = item.querySelector('iframe');
 
@@ -37,8 +68,12 @@ document.addEventListener("DOMContentLoaded", () => {
     }
 
     function renderPaginationControls() {
-        const totalPages = Math.ceil(items.length / itemsPerPage);
+        const totalPages = Math.ceil(filteredItems.length / itemsPerPage);
         paginationControls.innerHTML = ''; // Clear existing links
+
+        if (totalPages <= 1) {
+            return;
+        }
 
         // Generate "Previous" button
         const prevLi = document.createElement('li');
@@ -103,8 +138,16 @@ document.addEventListener("DOMContentLoaded", () => {
         paginationControls.appendChild(nextLi);
     }
 
+    seasonTabs.forEach(tab => {
+        tab.addEventListener('click', (e) => {
+            e.preventDefault();
+            const targetSeason = tab.getAttribute('data-target-season');
+            updateSeason(targetSeason);
+        });
+    });
+
     // Initialize the first page on load
-    if (items.length > 0) {
-        renderPage(1);
+    if (allItems.length > 0) {
+        updateSeason(currentSeason);
     }
 });
