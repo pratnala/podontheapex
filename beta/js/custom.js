@@ -78,7 +78,7 @@ document.addEventListener("DOMContentLoaded", () => {
         // Generate "Previous" button
         const prevLi = document.createElement('li');
         // Add Bootstrap's 'disabled' class if we are on the first page
-        prevLi.className = `page-item ${currentPage === 1 ? 'disabled' : ''}`;
+        prevLi.className = `page-item ${currentPage === 1 ? 'd-none' : ''}`;
 
         const prevA = document.createElement('a');
         prevA.className = 'page-link';
@@ -119,7 +119,7 @@ document.addEventListener("DOMContentLoaded", () => {
         // Generate "Next" button
         const nextLi = document.createElement('li');
         // Add Bootstrap's 'disabled' class if we are on the last page
-        nextLi.className = `page-item ${currentPage === totalPages ? 'disabled' : ''}`;
+        nextLi.className = `page-item ${currentPage === totalPages ? 'd-none' : ''}`;
 
         const nextA = document.createElement('a');
         nextA.className = 'page-link';
