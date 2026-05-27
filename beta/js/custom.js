@@ -13,17 +13,23 @@ document.addEventListener("DOMContentLoaded", () => {
 
         // Loop through all items and hide/show based on the current page
         items.forEach((item, index) => {
+            // Find the iframe inside this specific column
+            const iframe = item.querySelector('iframe');
+
             if (index >= start && index < end) {
                 item.classList.remove('d-none'); // Show
-                // Find the iframe inside this specific column
-                const iframe = item.querySelector('iframe');
                 // If it has a data-src but no src, it hasn't been loaded yet
                 if (iframe && iframe.getAttribute('data-src') && !iframe.getAttribute('src')) {
                     // Inject the URL to trigger the load
                     iframe.setAttribute('src', iframe.getAttribute('data-src'));
                 }
             } else {
-                item.classList.add('d-none');    // Hide
+                item.classList.add('d-none'); // Hide
+
+                // Unload the iframe to stop the video when it's not visible
+                if (iframe && iframe.hasAttribute('src')) {
+                    iframe.removeAttribute('src');
+                }
             }
         });
 
