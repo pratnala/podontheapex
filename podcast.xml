@@ -798,5 +798,17 @@
             <itunes:duration>1552</itunes:duration>
             <itunes:explicit>false</itunes:explicit>
         </item>
+        <item>
+            <itunes:episodeType>full</itunes:episodeType>
+            <itunes:season>2</itunes:season>
+            <itunes:episode>10</itunes:episode>
+            <title>A LEGEND is Born! Kimi's Historic 4 IN A ROW at Canadian GP!</title>
+            <description><![CDATA[WHAT A RACE! Kimi Antonelli has now made it 4 in a row in historic fashion at the Canadian GP! With a commanding 43 point lead after just 5 races, is it time for George Russell to panic?<br /><br />In this episode, we discuss whether Kimi is the undisputed WDC favorite and if George can bounce back next weekend in Monaco. We also dive into the McLaren disaster after a strong sprint, Lewis Hamilton's best-ever weekend at Ferrari, and Red Bull taking massive steps forward as a potential dark horse! Plus, we discuss how the new 2026 regulations are actually holding up on track and ask if Esteban Ocon's Haas seat is under threat!<br /><br />Let us know by tagging us on our socials if you think Kimi Antonelli will run away with the 2026 title, or if George Russell can fight back! - <a href="https://www.instagram.com/podontheapex/">Instagram</a>,<a href="https://www.tiktok.com/@podontheapex">TikTok</a>,<a href="https://x.com/podontheapex">X (Twitter)</a>,<a href="https://www.threads.com/@podontheapex">Threads</a>, and <a href="https://www.facebook.com/podontheapex">Facebook</a>.<br /><br />Don't forget to leave us a 5-star review and help more F1 fans find #PodOnTheApex!]]></description>
+            <enclosure url="https://dts.podtrac.com/redirect.mp3/media.githubusercontent.com/media/pratnala/podontheapex/refs/heads/main/episodes/2026-05-25.mp3" type="audio/mpeg" length="83134419"/>
+            <guid>F156085F-E2C1-40E2-9C8C-54A921E18F53</guid>
+            <pubDate>Mon, 25 May 2026 19:30:00 +0530</pubDate>
+            <itunes:duration>2078</itunes:duration>
+            <itunes:explicit>false</itunes:explicit>
+        </item>
     </channel>
 </rss>
