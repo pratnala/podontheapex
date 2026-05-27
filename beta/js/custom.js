@@ -3,7 +3,6 @@ document.addEventListener("DOMContentLoaded", () => {
     const items = document.querySelectorAll('.album .col-4');
     const paginationControls = document.getElementById('pagination-controls');
 
-    // Set how many videos you want per page (6 is exactly two rows)
     const itemsPerPage = 6;
     let currentPage = 1;
 
@@ -35,6 +34,27 @@ document.addEventListener("DOMContentLoaded", () => {
         const totalPages = Math.ceil(items.length / itemsPerPage);
         paginationControls.innerHTML = ''; // Clear existing links
 
+        // Generate "Previous" button
+        const prevLi = document.createElement('li');
+        // Add Bootstrap's 'disabled' class if we are on the first page
+        prevLi.className = `page-item ${currentPage === 1 ? 'disabled' : ''}`;
+
+        const prevA = document.createElement('a');
+        prevA.className = 'page-link';
+        prevA.href = '#';
+        prevA.textContent = 'Previous';
+
+        prevA.addEventListener('click', (e) => {
+            e.preventDefault();
+            // Only go back if we aren't on page 1
+            if (currentPage > 1) {
+                renderPage(currentPage - 1);
+            }
+        });
+
+        prevLi.appendChild(prevA);
+        paginationControls.appendChild(prevLi);
+
         // Generate the page buttons dynamically
         for (let i = 1; i <= totalPages; i++) {
             const li = document.createElement('li');
@@ -54,6 +74,27 @@ document.addEventListener("DOMContentLoaded", () => {
             li.appendChild(a);
             paginationControls.appendChild(li);
         }
+
+        // Generate "Next" button
+        const nextLi = document.createElement('li');
+        // Add Bootstrap's 'disabled' class if we are on the last page
+        nextLi.className = `page-item ${currentPage === totalPages ? 'disabled' : ''}`;
+
+        const nextA = document.createElement('a');
+        nextA.className = 'page-link';
+        nextA.href = '#';
+        nextA.textContent = 'Next';
+
+        nextA.addEventListener('click', (e) => {
+            e.preventDefault();
+            // Only go forward if we haven't hit the total pages limit
+            if (currentPage < totalPages) {
+                renderPage(currentPage + 1);
+            }
+        });
+
+        nextLi.appendChild(nextA);
+        paginationControls.appendChild(nextLi);
     }
 
     // Initialize the first page on load
