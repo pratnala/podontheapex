@@ -1,6 +1,6 @@
 document.addEventListener("DOMContentLoaded", () => {
     // Select all the column divs holding your videos
-    const items = document.querySelectorAll('.album .col-4');
+    const items = document.querySelectorAll('.album .col-12');
     const paginationControls = document.getElementById('pagination-controls');
 
     const itemsPerPage = 6;
