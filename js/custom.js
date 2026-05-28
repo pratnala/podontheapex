@@ -187,6 +187,11 @@ document.addEventListener("DOMContentLoaded", () => {
 
     // Initialize the first page on load
     if (allItems.length > 0) {
-        updateSeason(currentSeason);
+        if (seasonTabs.length > 0) {
+            updateSeason(currentSeason);
+        } else {
+            filteredItems = Array.from(allItems);
+            renderPage(1);
+        }
     }
 });
