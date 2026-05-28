@@ -1,7 +1,7 @@
 document.addEventListener("DOMContentLoaded", () => {
     const allItems = document.querySelectorAll('.album .video-item');
-    const paginationControls = document.getElementById('pagination-controls');
-    const seasonTabs = document.querySelectorAll('#season-tabs .nav-link');
+    const paginationContainers = document.querySelectorAll('.pagination-container');
+    const seasonTabs = document.querySelectorAll('.season-tabs-container .nav-link');
 
     const itemsPerPage = 6;
     let currentPage = 1;
@@ -69,73 +69,62 @@ document.addEventListener("DOMContentLoaded", () => {
 
     function renderPaginationControls() {
         const totalPages = Math.ceil(filteredItems.length / itemsPerPage);
-        paginationControls.innerHTML = ''; // Clear existing links
+        paginationContainers.forEach(container => {
+            container.innerHTML = '';
 
-        if (totalPages <= 1) {
-            return;
-        }
-
-        // Generate "Previous" button
-        const prevLi = document.createElement('li');
-        // Add Bootstrap's 'disabled' class if we are on the first page
-        prevLi.className = `page-item ${currentPage === 1 ? 'd-none' : ''}`;
-
-        const prevA = document.createElement('a');
-        prevA.className = 'page-link';
-        prevA.href = '#';
-        prevA.textContent = 'Previous';
-
-        prevA.addEventListener('click', (e) => {
-            e.preventDefault();
-            // Only go back if we aren't on page 1
-            if (currentPage > 1) {
-                renderPage(currentPage - 1);
+            if (totalPages <= 1) {
+                return;
             }
-        });
 
-        prevLi.appendChild(prevA);
-        paginationControls.appendChild(prevLi);
-
-        // Generate the page buttons dynamically
-        for (let i = 1; i <= totalPages; i++) {
-            const li = document.createElement('li');
-            li.className = `page-item ${i === currentPage ? 'active' : ''}`;
-
-            const a = document.createElement('a');
-            a.className = 'page-link';
-            a.href = '#';
-            a.textContent = i;
-
-            // Listen for clicks to change pages
-            a.addEventListener('click', (e) => {
-                e.preventDefault(); // Prevents the browser from jumping to the top of the page
-                renderPage(i);
+            // Generate "Previous" button
+            const prevLi = document.createElement('li');
+            prevLi.className = `page-item ${currentPage === 1 ? 'd-none' : ''}`;
+            const prevA = document.createElement('a');
+            prevA.className = 'page-link';
+            prevA.href = '#';
+            prevA.textContent = 'Previous';
+            prevA.addEventListener('click', (e) => {
+                e.preventDefault();
+                if (currentPage > 1) {
+                    renderPage(currentPage - 1);
+                }
             });
+            prevLi.appendChild(prevA);
+            container.appendChild(prevLi);
 
-            li.appendChild(a);
-            paginationControls.appendChild(li);
-        }
-
-        // Generate "Next" button
-        const nextLi = document.createElement('li');
-        // Add Bootstrap's 'disabled' class if we are on the last page
-        nextLi.className = `page-item ${currentPage === totalPages ? 'd-none' : ''}`;
-
-        const nextA = document.createElement('a');
-        nextA.className = 'page-link';
-        nextA.href = '#';
-        nextA.textContent = 'Next';
-
-        nextA.addEventListener('click', (e) => {
-            e.preventDefault();
-            // Only go forward if we haven't hit the total pages limit
-            if (currentPage < totalPages) {
-                renderPage(currentPage + 1);
+            // Generate the page buttons dynamically
+            for (let i = 1; i <= totalPages; i++) {
+                const li = document.createElement('li');
+                li.className = `page-item ${i === currentPage ? 'active' : ''}`;
+                const a = document.createElement('a');
+                a.className = 'page-link';
+                a.href = '#';
+                a.textContent = i;
+                a.addEventListener('click', (e) => {
+                    e.preventDefault(); // Prevents the browser from jumping to the top of the page
+                    renderPage(i);
+                });
+                li.appendChild(a);
+                container.appendChild(li);
             }
-        });
 
-        nextLi.appendChild(nextA);
-        paginationControls.appendChild(nextLi);
+            // Generate "Next" button
+            const nextLi = document.createElement('li');
+            nextLi.className = `page-item ${currentPage === totalPages ? 'd-none' : ''}`;
+            const nextA = document.createElement('a');
+            nextA.className = 'page-link';
+            nextA.href = '#';
+            nextA.textContent = 'Next';
+            nextA.addEventListener('click', (e) => {
+                e.preventDefault();
+                // Only go forward if we haven't hit the total pages limit
+                if (currentPage < totalPages) {
+                    renderPage(currentPage + 1);
+                }
+            });
+            nextLi.appendChild(nextA);
+            container.appendChild(nextLi);
+        });
     }
 
     seasonTabs.forEach(tab => {
