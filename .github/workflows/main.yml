@@ -1,4 +1,4 @@
-name: Minify CSS
+name: Minify CSS and JS
 on:
   push:
     branches:
