@@ -1,0 +1,378 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE-Edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <meta name="author" content="Pratyush Nalam, Aniket Mohan">
+        <meta name="description" content="Pratyush and Aniket bring the F1 circus to your screen">
+        <link rel="shortcut icon" type="image/png" href="logo.png">
+        <!-- Homescreen icon -->
+        <link rel="apple-touch-icon" href="logo.png">
+        <!-- Bootstrap v5.3.8 -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+        <!-- Custom CSS -->
+        <link rel="stylesheet" type="text/css" href="css/styles.min.css">
+        <!-- Font Awesome Kit -->
+        <script src="https://kit.fontawesome.com/438bcc3513.js" crossorigin="anonymous"></script>
+        <!-- Bootstrap v5.3.8 -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+        <!-- Fathom Analytics -->
+        <script src="https://cdn.usefathom.com/script.js" data-site="XDKRJELP" defer></script>
+        <!-- Custom JS -->
+        <script src="js/custom.min.js"></script>
+        <title>Predictions | Pod on the Apex</title>
+    </head>
+    <body>
+        <main>
+            <header class="py-4 mb-4 hero-jumbotron text-center">
+                <nav class="navbar navbar-expand-lg navbar-dark bg-transparent">
+                    <div class="container">
+                        <button class="navbar-toggler ms-auto" type="button" data-bs-toggle="collapse" data-bs-target="#mainNavbar" aria-controls="mainNavbar" aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div class="collapse navbar-collapse" id="mainNavbar">
+                            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                                <li class="nav-item">
+                                    <a class="nav-link" href="/">Home</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="shorts.html">Shorts</a>
+                                </li>
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link dropdown-toggle" href="#" id="playlistsDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                        Playlists
+                                    </a>
+                                    <ul class="dropdown-menu dropdown-menu-end dropdown-menu-dark shadow" aria-labelledby="playlistsDropdown">
+                                        <li><a class="dropdown-item active" href="predictions.html">Predictions</a></li>
+                                        <!-- <li><a class="dropdown-item" href="#">Learn</a></li> -->
+                                        <li><a class="dropdown-item" href="history.html">History</a></li>
+                                        <li><a class="dropdown-item" href="instant-reactions.html">Instant Reactions</a></li>
+                                        <li><a class="dropdown-item" href="clips.html">Clips</a></li>
+                                    </ul>
+                                </li>
+                                <li class="nav-item d-flex justify-content-center align-items-center ms-lg-3 mt-3 mt-lg-0">
+                                    <a class="nav-link" href="#" id="darkModeToggle" aria-label="Toggle Theme">
+                                        <i id="darkModeIcon"></i>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </nav>
+                <div class="container py-5">
+                    <h1 class="display-3 fw-bold text-white mt-4 d-flex justify-content-center align-items-center">
+                        <img src="logo.png" alt="Logo" width="80" height="80" class="me-4 rounded-circle shadow">
+                        Predictions | Pod on the Apex
+                    </h1>
+                    <p class="lead mb-4 fs-4">Pratyush and Aniket bring the F1 circus to your screen!</p>
+                    <div class="d-flex justify-content-center gap-3 mt-4 flex-wrap">
+                        <a href="https://music.youtube.com/playlist?list=PLT70Wn9q0VdbVtaQ-ZQioK-w6big5L9Cl" target="_blank" class="btn btn-youtube btn-lg px-4 rounded-pill shadow-sm">
+                            <i class="fak fa-youtube-music me-2"></i>YouTube
+                        </a>
+                        <a href="https://open.spotify.com/show/0jpcfqzb7Eymvde0PR1cI3" target="_blank" class="btn btn-spotify btn-lg px-4 rounded-pill shadow-sm">
+                            <i class="fab fa-spotify me-2"></i>Spotify
+                        </a>
+                        <a href="https://podcasts.apple.com/us/podcast/pod-on-the-apex/id1795324786" target="_blank" class="btn btn-apple btn-lg px-4 rounded-pill shadow-sm">
+                            <i class="fas fa-podcast me-2"></i>Apple
+                        </a>
+                        <a href="https://pca.st/tc9nckz7" target="_blank" class="btn btn-pocketcasts btn-lg px-4 rounded-pill shadow-sm">
+                            <i class="fak fa-pocket-casts me-2"></i>Pocket Casts
+                        </a>
+                    </div>
+                </div>
+            </header>
+            <div class="album" data-items-per-page="6">
+                <nav aria-label="Video pagination top" class="mt-5 mb-5">
+                    <ul class="pagination justify-content-center pagination-container"></ul>
+                </nav>
+                <div class="container">
+                    <div class="row g-4">
+                        <div class="col-12 col-md-6 col-lg-4 video-item">
+                            <div class="card border-0 shadow-none text-center">
+                                <iframe data-src="https://www.youtube.com/embed/wOH1wVmbPgQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                                <div class="card-body">
+                                    <p class="card-text">Red Bull built a rocket WITHOUT Adrian Newey! 🤯🚀 #F1 #RedBullRacing #CanadianGP</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-6 col-lg-4 video-item">
+                            <div class="card border-0 shadow-none text-center">
+                                <iframe data-src="https://www.youtube.com/embed/NRwidMWhDyE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                                <div class="card-body">
+                                    <p class="card-text">Every #F1 fan knows exactly what #Crofty will say... 😂 #CanadianGP #WallOfChampions #F1Memes</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-6 col-lg-4 video-item">
+                            <div class="card border-0 shadow-none text-center">
+                                <iframe data-src="https://www.youtube.com/embed/cUXKGtFynTM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                                <div class="card-body">
+                                    <p class="card-text">Will Kimi Antonelli make it FOUR IN A ROW? 2026 Canadian GP Predictions!</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-6 col-lg-4 video-item">
+                            <div class="card border-0 shadow-none text-center">
+                                <iframe data-src="https://www.youtube.com/embed/rMPTExvmTX4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                                <div class="card-body">
+                                    <p class="card-text">Can the MACARENA WING Propel Ferrari to Victory? 2026 Chinese GP Predictions!</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-6 col-lg-4 video-item">
+                            <div class="card border-0 shadow-none text-center">
+                                <iframe data-src="https://www.youtube.com/embed/E_whksBJ6vY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                                <div class="card-body">
+                                    <p class="card-text">Aston Martin OUT?! 2026 Australian GP Predictions!</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-6 col-lg-4 video-item">
+                            <div class="card border-0 shadow-none text-center">
+                                <iframe data-src="https://www.youtube.com/embed/l2VOORvaoFw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                                <div class="card-body">
+                                    <p class="card-text">Who will be the 2026 #F1 World Champion? (special tribute to Matt of @P1 with Matt & Tommy!)</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-6 col-lg-4 video-item">
+                            <div class="card border-0 shadow-none text-center">
+                                <iframe data-src="https://www.youtube.com/embed/VNaLIbjuRdk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                                <div class="card-body">
+                                    <p class="card-text">Abu Dhabi 2025 Predictions!</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-6 col-lg-4 video-item">
+                            <div class="card border-0 shadow-none text-center">
+                                <iframe data-src="https://www.youtube.com/embed/M5UZRSytV2Y" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                                <div class="card-body">
+                                    <p class="card-text">If this happens, we have GUARANTEED DRAMA at #QatarGP! #F1 #Pirelli</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-6 col-lg-4 video-item">
+                            <div class="card border-0 shadow-none text-center">
+                                <iframe data-src="https://www.youtube.com/embed/EwbOGl6FpQI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                                <div class="card-body">
+                                    <p class="card-text">Special Liveries at Miami 2025!</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-6 col-lg-4 video-item">
+                            <div class="card border-0 shadow-none text-center">
+                                <iframe data-src="https://www.youtube.com/embed/JdPnl7f4f3g" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                                <div class="card-body">
+                                    <p class="card-text">Las Vegas 2025 Predictions!</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-6 col-lg-4 video-item">
+                            <div class="card border-0 shadow-none text-center">
+                                <iframe data-src="https://www.youtube.com/embed/gdz-RXcP7SE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                                <div class="card-body">
+                                    <p class="card-text">São Paulo 2025 Predictions!</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-6 col-lg-4 video-item">
+                            <div class="card border-0 shadow-none text-center">
+                                <iframe data-src="https://www.youtube.com/embed/JJtQAuouoSQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                                <div class="card-body">
+                                    <p class="card-text">São Paulo Sprint 2025 Predictions!</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-6 col-lg-4 video-item">
+                            <div class="card border-0 shadow-none text-center">
+                                <iframe data-src="https://www.youtube.com/embed/3tDOVmNnKJ8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                                <div class="card-body">
+                                    <p class="card-text">Singapore 2025 Predictions!</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-6 col-lg-4 video-item">
+                            <div class="card border-0 shadow-none text-center">
+                                <iframe data-src="https://www.youtube.com/embed/xIPJHvHVpxQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                                <div class="card-body">
+                                    <p class="card-text">The ONLY way @Ferrari gets a Monza 1-2! 🌶️🏁🏎️🐎 #F1 #ScuderiaFerrari #Ferrari</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-6 col-lg-4 video-item">
+                            <div class="card border-0 shadow-none text-center">
+                                <iframe data-src="https://www.youtube.com/embed/rK_amMcZpfQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                                <div class="card-body">
+                                    <p class="card-text">Monza 2025 Predictions!</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-6 col-lg-4 video-item">
+                            <div class="card border-0 shadow-none text-center">
+                                <iframe data-src="https://www.youtube.com/embed/T73Eero5RzU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                                <div class="card-body">
+                                    <p class="card-text">Will Max Return to Winning Ways at Zandvoort?</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-6 col-lg-4 video-item">
+                            <div class="card border-0 shadow-none text-center">
+                                <iframe data-src="https://www.youtube.com/embed/2QmaIynXGYk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                                <div class="card-body">
+                                    <p class="card-text">Spa 2025 Predictions!</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-6 col-lg-4 video-item">
+                            <div class="card border-0 shadow-none text-center">
+                                <iframe data-src="https://www.youtube.com/embed/Ax5Via3VE4A" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                                <div class="card-body">
+                                    <p class="card-text">Silverstone 2025 Predictions!</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-6 col-lg-4 video-item">
+                            <div class="card border-0 shadow-none text-center">
+                                <iframe data-src="https://www.youtube.com/embed/2XV2jcz-ptg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                                <div class="card-body">
+                                    <p class="card-text">Monte Carlo 2025 Predictions!</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-6 col-lg-4 video-item">
+                            <div class="card border-0 shadow-none text-center">
+                                <iframe data-src="https://www.youtube.com/embed/RD2v4wXPiU4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                                <div class="card-body">
+                                    <p class="card-text">Imola 2025 Predictions!</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-6 col-lg-4 video-item">
+                            <div class="card border-0 shadow-none text-center">
+                                <iframe data-src="https://www.youtube.com/embed/6wzmhOyn-eE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                                <div class="card-body">
+                                    <p class="card-text">Miami 2025 Predictions!</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-6 col-lg-4 video-item">
+                            <div class="card border-0 shadow-none text-center">
+                                <iframe data-src="https://www.youtube.com/embed/ZKl3_I5gw8E" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                                <div class="card-body">
+                                    <p class="card-text">Jeddah 2025 Predictions!</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-6 col-lg-4 video-item">
+                            <div class="card border-0 shadow-none text-center">
+                                <iframe data-src="https://www.youtube.com/embed/7aD1HAL5KUI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                                <div class="card-body">
+                                    <p class="card-text">Sakhir 2025 Predictions!</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-6 col-lg-4 video-item">
+                            <div class="card border-0 shadow-none text-center">
+                                <iframe data-src="https://www.youtube.com/embed/ZbDoi13QnzA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                                <div class="card-body">
+                                    <p class="card-text">Suzuka 2025 Predictions!</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-6 col-lg-4 video-item">
+                            <div class="card border-0 shadow-none text-center">
+                                <iframe data-src="https://www.youtube.com/embed/kdmELL3EQmo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                                <div class="card-body">
+                                    <p class="card-text">Who's winning the 2025 #f1 Driver's title? #podontheapex #lewishamilton #charlesleclerc #ferrari</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-6 col-lg-4 video-item">
+                            <div class="card border-0 shadow-none text-center">
+                                <iframe data-src="https://www.youtube.com/embed/ekjUH3c0AWY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                                <div class="card-body">
+                                    <p class="card-text">Predicting who wins and who loses in #f1 2025! #podontheapex #lewishamilton #charlesleclerc #ferrari</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-6 col-lg-4 video-item">
+                            <div class="card border-0 shadow-none text-center">
+                                <iframe data-src="https://www.youtube.com/embed/rbgdg4ibvZg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                                <div class="card-body">
+                                    <p class="card-text">2025 Formula 1 Season Predictions - Part 2!</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-6 col-lg-4 video-item">
+                            <div class="card border-0 shadow-none text-center">
+                                <iframe data-src="https://www.youtube.com/embed/15oo6gUuaC4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                                <div class="card-body">
+                                    <p class="card-text">2025 Formula 1 Season Predictions - Part 1!</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <nav aria-label="Video pagination bottom" class="mt-5 mb-5">
+                    <ul class="pagination justify-content-center pagination-container"></ul>
+                </nav>
+            </div>
+            <footer class="bg-dark text-center text-white py-5 mt-5">
+                <div class="container">
+                    <h5 class="mb-4 fw-bold">Listen & Follow</h5>
+                    <div class="d-flex flex-column flex-lg-row justify-content-center align-items-center gap-4 fs-2">
+                        <div class="d-flex gap-4">
+                            <a href="https://music.youtube.com/playlist?list=PLT70Wn9q0VdbVtaQ-ZQioK-w6big5L9Cl" target="_blank" aria-label="YouTube">
+                                <i class="fak fa-youtube-music" style="color: #ff0033;"></i>
+                            </a>
+                            <a href="https://open.spotify.com/show/0jpcfqzb7Eymvde0PR1cI3" target="_blank" aria-label="Spotify">
+                                <i class="fab fa-spotify" style="color: #1db954;"></i>
+                            </a>
+                            <a href="https://podcasts.apple.com/us/podcast/pod-on-the-apex/id1795324786" target="_blank" aria-label="Apple Podcasts">
+                                <i class="fas fa-podcast" style="color: #872ec4;"></i>
+                            </a>
+                            <a href="https://pca.st/tc9nckz7" target="_blank" aria-label="Pocket Casts">
+                                <i class="fak fa-pocket-casts" style="color: #f43e37;"></i>
+                            </a>
+                        </div>
+                        <span class="text-secondary fs-4 d-none d-md-inline">|</span>
+                        <div class="d-flex gap-4">
+                            <a href="https://www.youtube.com/@PodOnTheApex" target="_blank" aria-label="YouTube">
+                                <i class="fab fa-youtube" style="color: #ff0033;"></i>
+                            </a>
+                            <a href="https://www.twitch.tv/podontheapex" target="_blank" aria-label="Twitch">
+                                <i class="fab fa-twitch" style="color: #9146ff;"></i>
+                            </a>
+                            <a href="https://www.instagram.com/podontheapex/" target="_blank" aria-label="Instagram">
+                                <i class="fab fa-instagram" style="color: #ff0069;"></i>
+                            </a>
+                            <a href="https://www.tiktok.com/@podontheapex" target="_blank" aria-label="TikTok">
+                                <i class="fab fa-tiktok" style="color: white;"></i>
+                            </a>
+                        </div>
+                        <span class="text-secondary fs-4 d-none d-md-inline">|</span>
+                        <div class="d-flex gap-4">
+                            <a href="https://x.com/podontheapex" target="_blank" aria-label="X (Twitter)">
+                                <i class="fab fa-x-twitter" style="color: white;"></i>
+                            </a>
+                            <a href="https://www.threads.com/@podontheapex" target="_blank" aria-label="Threads">
+                                <i class="fab fa-threads" style="color: white;"></i>
+                            </a>
+                            <a href="https://www.facebook.com/podontheapex" target="_blank" aria-label="Facebook">
+                                <i class="fab fa-facebook" style="color: #1877f2;"></i>
+                            </a>
+                            <a href="https://www.linkedin.com/company/podontheapex" target="_blank" aria-label="LinkedIn">
+                                <i class="fab fa-linkedin" style="color: #0a66c2;"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <p class="mt-4 mb-0 text-secondary small">
+                        &copy; 2025 &mdash;
+                        <script type="text/javascript">document.write(new Date().getFullYear());</script> Pod on the Apex. All rights reserved.
+                    </p>
+                </div>
+            </footer>
+        </main>
+    </body>
+</html>
