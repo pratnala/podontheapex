@@ -54,6 +54,10 @@ iframe {
     border-radius: 4px;
 }
 
+iframe.short-video {
+    aspect-ratio: 9 / 16;
+}
+
 .btn-apple {
     background-color: white;
     color: black;

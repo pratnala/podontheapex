@@ -53,7 +53,8 @@ document.addEventListener("DOMContentLoaded", () => {
     const paginationContainers = document.querySelectorAll('.pagination-container');
     const seasonTabs = document.querySelectorAll('.season-tabs-container .nav-link');
 
-    const itemsPerPage = 6;
+    const albumWrapper = document.querySelector('.album');
+    const itemsPerPage = albumWrapper && albumWrapper.hasAttribute('data-items-per-page') ? parseInt(albumWrapper.getAttribute('data-items-per-page')) : 6;
     let currentPage = 1;
     let currentSeason = '2026';
     let filteredItems = [];
