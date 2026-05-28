@@ -1,4 +1,54 @@
+const htmlElement = document.documentElement;
+
+// Function to set the theme and update the icon
+function setTheme(theme) {
+    htmlElement.setAttribute('data-bs-theme', theme);
+    localStorage.setItem('theme', theme);
+
+    // Update the icon once the DOM is loaded
+    const darkModeIcon = document.getElementById('darkModeIcon');
+    if (darkModeIcon) {
+        if (theme === 'dark') {
+            darkModeIcon.className = 'fas fa-sun text-warning'; // Yellow sun for dark mode
+        } else {
+            darkModeIcon.className = 'fas fa-moon text-light'; // Moon for light mode
+        }
+    }
+}
+
+// 1. Check local storage, otherwise check system preferences
+function getPreferredTheme() {
+    const storedTheme = localStorage.getItem('theme');
+    if (storedTheme) {
+        return storedTheme;
+    }
+    return window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+}
+
+// Apply the theme immediately to prevent a white flash on load
+setTheme(getPreferredTheme());
+
 document.addEventListener("DOMContentLoaded", () => {
+    // Re-run setTheme to ensure the correct icon loads on the button
+    setTheme(htmlElement.getAttribute('data-bs-theme'));
+
+    const darkModeToggle = document.getElementById('darkModeToggle');
+    if (darkModeToggle) {
+        darkModeToggle.addEventListener('click', (e) => {
+            e.preventDefault();
+            const currentTheme = htmlElement.getAttribute('data-bs-theme');
+            setTheme(currentTheme === 'dark' ? 'light' : 'dark');
+        });
+    }
+
+    // 3. Listen for system-level changes (e.g., user's OS switches at sunset)
+    window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', () => {
+        // Only auto-switch if the user hasn't manually overridden it
+        if (!localStorage.getItem('theme')) {
+            setTheme(getPreferredTheme());
+        }
+    });
+
     const allItems = document.querySelectorAll('.album .video-item');
     const paginationContainers = document.querySelectorAll('.pagination-container');
     const seasonTabs = document.querySelectorAll('.season-tabs-container .nav-link');
