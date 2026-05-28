@@ -59,13 +59,13 @@ iframe.short-video {
 }
 
 .btn-apple {
-    background-color: white;
-    color: black;
+    background-color: #872ec4;
+    color: white;
 }
 
 .btn-apple:hover {
-    background-color: #e6e6e6;
-    color: black;
+    background-color: #6d23a1;
+    color: white;
 }
 
 .btn-pocketcasts {
