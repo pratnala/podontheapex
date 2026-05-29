@@ -112,3 +112,17 @@ iframe.short-video {
     background-repeat: no-repeat;
     color: white;
 }
+
+.pagination {
+    --bs-pagination-color: #E10600;
+
+    --bs-pagination-hover-color: #ffffff;
+    --bs-pagination-hover-bg: #E10600;
+    --bs-pagination-hover-border-color: #E10600;
+
+    --bs-pagination-active-color: #ffffff;
+    --bs-pagination-active-bg: #C8102E;
+    --bs-pagination-active-border-color: #C8102E;
+
+    --bs-pagination-border-color: rgba(100, 100, 100, 0.2);
+}
