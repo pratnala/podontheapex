@@ -4,7 +4,6 @@ Font extensions:
 
 * woff2 - Super Modern Browsers
 * woff  - Pretty Modern Browsers
-* ttf   - Safari, Android, iOS
 
 */
 
@@ -13,8 +12,7 @@ Font extensions:
     font-display: swap;
 
     src: url('../fonts/DubaiW23-Regular.woff2') format('woff2'),
-        url('../fonts/DubaiW23-Regular.woff') format('woff'),
-        url('../fonts/DubaiW23-Regular.ttf') format('truetype');
+        url('../fonts/DubaiW23-Regular.woff') format('woff');
 }
 
 @font-face {
@@ -23,8 +21,7 @@ Font extensions:
     font-display: swap;
 
     src: url('../fonts/DubaiW23-Light.woff2') format('woff2'),
-        url('../fonts/DubaiW23-Light.woff') format('woff'),
-        url('../fonts/DubaiW23-Light.ttf') format('truetype');
+        url('../fonts/DubaiW23-Light.woff') format('woff');
 }
 
 @font-face {
@@ -33,8 +30,7 @@ Font extensions:
     font-display: swap;
 
     src: url('../fonts/DubaiW23-Medium.woff2') format('woff2'),
-        url('../fonts/DubaiW23-Medium.woff') format('woff'),
-        url('../fonts/DubaiW23-Medium.ttf') format('truetype');
+        url('../fonts/DubaiW23-Medium.woff') format('woff');
 }
 
 @font-face {
@@ -43,8 +39,7 @@ Font extensions:
     font-display: swap;
 
     src: url('../fonts/DubaiW23-Bold.woff2') format('woff2'),
-        url('../fonts/DubaiW23-Bold.woff') format('woff'),
-        url('../fonts/DubaiW23-Bold.ttf') format('truetype');
+        url('../fonts/DubaiW23-Bold.woff') format('woff');
 }
 
 body {
