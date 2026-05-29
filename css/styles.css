@@ -149,3 +149,19 @@ iframe.short-video {
     color: var(--bs-body-color);
     background-color: rgba(225, 6, 0, 0.15);
 }
+
+.transition-glass {
+    background-color: transparent;
+    transition: background-color 0.3s ease, backdrop-filter 0.3s ease, padding 0.3s ease;
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+}
+
+.transition-glass.scrolled {
+    background-color: rgba(33, 37, 41, 0.85);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    padding-top: 0.8rem;
+    padding-bottom: 0.8rem;
+}

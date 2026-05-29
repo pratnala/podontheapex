@@ -43,6 +43,17 @@ document.addEventListener("DOMContentLoaded", () => {
         }
     });
 
+    const mainNav = document.getElementById('mainNav');
+    if (mainNav) {
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 50) {
+                mainNav.classList.add('scrolled');
+            } else {
+                mainNav.classList.remove('scrolled');
+            }
+        });
+    }
+
     const currentPath = window.location.pathname.split('/').pop() || '/';
     const navLinks = document.querySelectorAll('.navbar-nav .nav-link, .dropdown-item');
 
