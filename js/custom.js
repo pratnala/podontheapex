@@ -89,11 +89,29 @@ document.addEventListener("DOMContentLoaded", () => {
                 `;
                 videoGrid.insertAdjacentHTML('beforeend', videoCard);
             });
-            initializePagination();
+            const seasonTabContainers = document.querySelectorAll('.season-tabs-container');
+            const uniqueSeasons = [...new Set(pageVideos.map(v => v.season))].sort((a, b) => b - a);
+            if (uniqueSeasons.length > 0) {
+                seasonTabContainers.forEach(container => {
+                    container.innerHTML = '';
+                    uniqueSeasons.forEach(season => {
+                        const li = `
+                            <li class="nav-item">
+                                <a class="nav-link" href="#" data-target-season="${season}">Season ${season}</a>
+                            </li>
+                        `;
+                        container.insertAdjacentHTML('beforeend', li);
+                    });
+                });
+            }
+            const defaultSeason = uniqueSeasons.length > 0 ? uniqueSeasons[0] : new Date().getFullYear().toString();
+
+            // Pass the default season into the function
+            initializePagination(defaultSeason);
         });
     }
 
-    function initializePagination() {
+    function initializePagination(defaultSeason) {
         const allItems = document.querySelectorAll('.album .video-item');
         const paginationContainers = document.querySelectorAll('.pagination-container');
         const seasonTabs = document.querySelectorAll('.season-tabs-container .nav-link');
@@ -102,7 +120,7 @@ document.addEventListener("DOMContentLoaded", () => {
         const itemsPerPage = albumWrapper && albumWrapper.hasAttribute('data-items-per-page') ? parseInt(albumWrapper.getAttribute('data-items-per-page')) : 6;
 
         let currentPage = 1;
-        let currentSeason = '2026';
+        let currentSeason = defaultSeason;
         let filteredItems = [];
 
         function updateSeason(season) {
