@@ -105,6 +105,14 @@ iframe.short-video {
     transform: translateY(-5px);
 }
 
+.dropdown-menu {
+    --bs-dropdown-link-active-bg: #E10600;
+    --bs-dropdown-link-active-color: white;
+
+    --bs-dropdown-link-hover-bg: rgba(225, 6, 0, 0.2);
+    --bs-dropdown-link-hover-color: white;
+}
+
 .hero-jumbotron {
     background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.7)), url('../img/header.jpg');
     background-size: cover;
@@ -120,7 +128,7 @@ iframe.short-video {
     --bs-pagination-hover-bg: rgba(225, 6, 0, 0.15);
     --bs-pagination-hover-border-color: rgba(0, 0, 0, 0);
 
-    --bs-pagination-active-color: #ffffff;
+    --bs-pagination-active-color: white;
     --bs-pagination-active-bg: #C8102E;
     --bs-pagination-active-border-color: #C8102E;
 
@@ -129,7 +137,7 @@ iframe.short-video {
 
 .season-tabs-container.nav-pills {
     --bs-nav-pills-link-active-bg: #E10600;
-    --bs-nav-pills-link-active-color: #ffffff;
+    --bs-nav-pills-link-active-color: white;
 }
 
 .season-tabs-container .nav-link {
