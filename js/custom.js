@@ -43,6 +43,27 @@ document.addEventListener("DOMContentLoaded", () => {
         }
     });
 
+    const currentPath = window.location.pathname.split('/').pop() || '/';
+    const navLinks = document.querySelectorAll('.navbar-nav .nav-link, .dropdown-item');
+
+    navLinks.forEach(link => {
+        link.classList.remove('active');
+        const href = link.getAttribute('href');
+        if (href === currentPath || (currentPath === '/' && (href === 'index.html' || href === '/'))) {
+            link.classList.add('active');
+
+            if (link.classList.contains('dropdown-item')) {
+                const parentDropdown = link.closest('.dropdown');
+                if (parentDropdown) {
+                    const dropdownToggle = parentDropdown.querySelector('.dropdown-toggle');
+                    if (dropdownToggle) {
+                        dropdownToggle.classList.add('active');
+                    }
+                }
+            }
+        }
+    });
+
     const videoGrid = document.getElementById('videoGrid');
     if (videoGrid) {
         const targetCategory = videoGrid.getAttribute('data-category');
