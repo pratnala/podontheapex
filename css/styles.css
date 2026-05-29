@@ -116,13 +116,28 @@ iframe.short-video {
 .pagination {
     --bs-pagination-color: #E10600;
 
-    --bs-pagination-hover-color: #ffffff;
-    --bs-pagination-hover-bg: #E10600;
-    --bs-pagination-hover-border-color: #E10600;
+    --bs-pagination-hover-color: var(--bs-body-color);
+    --bs-pagination-hover-bg: rgba(225, 6, 0, 0.15);
+    --bs-pagination-hover-border-color: rgba(0, 0, 0, 0);
 
     --bs-pagination-active-color: #ffffff;
     --bs-pagination-active-bg: #C8102E;
     --bs-pagination-active-border-color: #C8102E;
 
     --bs-pagination-border-color: rgba(100, 100, 100, 0.2);
+}
+
+.season-tabs-container.nav-pills {
+    --bs-nav-pills-link-active-bg: #E10600;
+    --bs-nav-pills-link-active-color: #ffffff;
+}
+
+.season-tabs-container .nav-link {
+    color: var(--bs-secondary-color);
+    transition: color 0.2s ease-in-out, background-color 0.2s ease-in-out;
+}
+
+.season-tabs-container .nav-link:hover:not(.active) {
+    color: var(--bs-body-color);
+    background-color: rgba(225, 6, 0, 0.15);
 }
