@@ -10,6 +10,7 @@ Font extensions:
 
 @font-face {
     font-family: 'Dubai';
+    font-display: swap;
 
     src: url('../fonts/DubaiW23-Regular.woff2') format('woff2'),
         url('../fonts/DubaiW23-Regular.woff') format('woff'),
@@ -19,6 +20,7 @@ Font extensions:
 @font-face {
     font-family: 'Dubai';
     font-weight: 300;
+    font-display: swap;
 
     src: url('../fonts/DubaiW23-Light.woff2') format('woff2'),
         url('../fonts/DubaiW23-Light.woff') format('woff'),
@@ -28,6 +30,7 @@ Font extensions:
 @font-face {
     font-family: 'Dubai';
     font-weight: 500;
+    font-display: swap;
 
     src: url('../fonts/DubaiW23-Medium.woff2') format('woff2'),
         url('../fonts/DubaiW23-Medium.woff') format('woff'),
@@ -37,6 +40,7 @@ Font extensions:
 @font-face {
     font-family: 'Dubai';
     font-weight: bold;
+    font-display: swap;
 
     src: url('../fonts/DubaiW23-Bold.woff2') format('woff2'),
         url('../fonts/DubaiW23-Bold.woff') format('woff'),
