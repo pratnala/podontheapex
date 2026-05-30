@@ -47,7 +47,10 @@ document.addEventListener("DOMContentLoaded", () => {
     if (footerContainer) {
         fetch('footer.html')
             .then(response => response.text())
-            .then(html => { footerContainer.innerHTML = html; });
+            .then(html => {
+                footerContainer.innerHTML = html;
+                document.getElementById('current-year').textContent = new Date().getFullYear();
+            });
     }
 
     const navbarContainer = document.getElementById('global-navbar');
