@@ -165,3 +165,13 @@ iframe.short-video {
     padding-top: 0.8rem;
     padding-bottom: 0.8rem;
 }
+
+@media (max-width: 991.98px) {
+    .navbar-collapse {
+        background-color: #212529;
+        padding: 1rem;
+        margin-top: 0.75rem;
+        border-radius: 0.5rem;
+        box-shadow: 0 10px 25px rgba(0, 0, 0, 0.5);
+    }
+}
