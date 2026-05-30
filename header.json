@@ -1,0 +1,47 @@
+{
+    "/": {
+        "title": "Pod on the Apex",
+        "description": "Pratyush and Aniket bring the F1 circus to your screen!",
+        "logo": "img/logo.png"
+    },
+    "clips": {
+        "title": "Clips on the Apex",
+        "description": "Pratyush and Aniket bring the F1 circus to your screen!",
+        "logo": "img/clips-logo.png"
+    },
+    "collabs": {
+        "title": "Collabs on the Apex",
+        "description": "Pratyush and Aniket bring the F1 circus to your screen!",
+        "logo": "img/collabs-logo.png"
+    },
+    "history": {
+        "title": "History on the Apex",
+        "description": "Pratyush and Aniket bring the F1 circus to your screen!",
+        "logo": "img/history-logo.png"
+    },
+    "instant-reactions": {
+        "title": "Instant Reactions on the Apex",
+        "description": "Pratyush and Aniket bring the F1 circus to your screen!",
+        "logo": "img/instant-reactions-logo.png"
+    },
+    "learn": {
+        "title": "Learn on the Apex",
+        "description": "Pratyush and Aniket bring the F1 circus to your screen!",
+        "logo": "img/learn-logo.png"
+    },
+    "live": {
+        "title": "Live on the Apex",
+        "description": "Pratyush and Aniket bring the F1 circus to your screen!",
+        "logo": "img/live-logo.png"
+    },
+    "predictions": {
+        "title": "Predictions on the Apex",
+        "description": "Pratyush and Aniket bring the F1 circus to your screen!",
+        "logo": "img/predictions-logo.png"
+    },
+    "shorts": {
+        "title": "Shorts | Pod on the Apex",
+        "description": "Pratyush and Aniket bring the F1 circus to your screen!",
+        "logo": "img/logo.png"
+    }
+}

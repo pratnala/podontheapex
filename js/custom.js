@@ -53,6 +53,38 @@ document.addEventListener("DOMContentLoaded", () => {
             });
     }
 
+    const headerContainer = document.getElementById('global-header');
+    if (headerContainer) {
+        fetch('header.html')
+            .then(response => response.text())
+            .then(html => {
+                headerContainer.innerHTML = html;
+                return fetch('header.json');
+            })
+            .then(response => response.json())
+            .then(data => {
+                let pageKey = window.location.pathname.split('/').pop().replace('.html', '');
+                if (!pageKey || pageKey === 'index') {
+                    pageKey = '/';
+                }
+                const headerData = data[pageKey];
+                if (headerData) {
+                    const headerTitle = document.getElementById('header-title');
+                    const headerDescription = document.getElementById('header-description');
+                    const headerLogo = document.getElementById('header-logo');
+                    if (headerTitle) {
+                        headerTitle.textContent = headerData.title;
+                    }
+                    if (headerDescription) {
+                        headerDescription.textContent = headerData.description;
+                    }
+                    if (headerLogo) {
+                        headerLogo.setAttribute('src', headerData.logo);
+                    }
+                }
+            });
+    }
+
     const navbarContainer = document.getElementById('global-navbar');
     if (navbarContainer) {
         fetch('navbar.html')
