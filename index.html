@@ -39,46 +39,7 @@
     <body>
         <main>
             <header class="py-5 mb-4 hero-jumbotron text-center">
-                <nav id="mainNav" class="navbar navbar-expand-lg navbar-dark fixed-top transition-glass">
-                    <div class="container">
-                        <button class="navbar-toggler ms-auto" type="button" data-bs-toggle="collapse" data-bs-target="#mainNavbar" aria-controls="mainNavbar" aria-expanded="false" aria-label="Toggle navigation">
-                            <span class="navbar-toggler-icon"></span>
-                        </button>
-                        <div class="collapse navbar-collapse" id="mainNavbar">
-                            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-                                <li class="nav-item">
-                                    <a class="nav-link" href="/">Home</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" href="shorts.html">Shorts</a>
-                                </li>
-                                <li class="nav-item dropdown">
-                                    <a class="nav-link dropdown-toggle" href="#" id="playlistsDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                        Playlists
-                                    </a>
-                                    <ul class="dropdown-menu dropdown-menu-end dropdown-menu-dark shadow" aria-labelledby="playlistsDropdown">
-                                        <li><a class="dropdown-item" href="predictions.html">Predictions</a></li>
-                                        <li><a class="dropdown-item" href="learn.html">Learn</a></li>
-                                        <li><a class="dropdown-item" href="history.html">History</a></li>
-                                        <li><a class="dropdown-item" href="instant-reactions.html">Instant Reactions</a></li>
-                                        <li><a class="dropdown-item" href="clips.html">Clips</a></li>
-                                    </ul>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" href="collabs.html">Collabs</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" href="live.html">Live</a>
-                                </li>
-                                <li class="nav-item d-flex justify-content-center align-items-center ms-lg-3 mt-3 mt-lg-0">
-                                    <a class="nav-link" href="#" id="darkModeToggle" aria-label="Toggle Theme">
-                                        <i id="darkModeIcon"></i>
-                                    </a>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                </nav>
+                <div id="global-navbar"></div>
                 <div class="container py-5">
                     <h1 class="display-3 fw-bold text-white mt-4 d-flex justify-content-center align-items-center">
                         <img src="img/logo.png" alt="Logo" width="80" height="80" class="me-4 rounded-circle shadow">
@@ -117,61 +78,7 @@
                 <ul class="nav nav-pills justify-content-center mt-4 mb-3 season-tabs-container">
                 </ul>
             </div>
-            <footer class="bg-dark text-center text-white py-5 mt-5">
-                <div class="container">
-                    <h5 class="mb-4 fw-bold">Listen & Follow</h5>
-                    <div class="d-flex flex-column flex-lg-row justify-content-center align-items-center gap-4 fs-2">
-                        <div class="d-flex gap-4">
-                            <a href="https://music.youtube.com/playlist?list=PLT70Wn9q0VdbVtaQ-ZQioK-w6big5L9Cl" target="_blank" aria-label="YouTube">
-                                <i class="fak fa-youtube-music" style="color: #ff0033;"></i>
-                            </a>
-                            <a href="https://open.spotify.com/show/0jpcfqzb7Eymvde0PR1cI3" target="_blank" aria-label="Spotify">
-                                <i class="fab fa-spotify" style="color: #1db954;"></i>
-                            </a>
-                            <a href="https://podcasts.apple.com/us/podcast/pod-on-the-apex/id1795324786" target="_blank" aria-label="Apple Podcasts">
-                                <i class="fas fa-podcast" style="color: #872ec4;"></i>
-                            </a>
-                            <a href="https://pca.st/tc9nckz7" target="_blank" aria-label="Pocket Casts">
-                                <i class="fak fa-pocket-casts" style="color: #f43e37;"></i>
-                            </a>
-                        </div>
-                        <span class="text-secondary fs-4 d-none d-md-inline">|</span>
-                        <div class="d-flex gap-4">
-                            <a href="https://www.youtube.com/@PodOnTheApex" target="_blank" aria-label="YouTube">
-                                <i class="fab fa-youtube" style="color: #ff0033;"></i>
-                            </a>
-                            <a href="https://www.twitch.tv/podontheapex" target="_blank" aria-label="Twitch">
-                                <i class="fab fa-twitch" style="color: #9146ff;"></i>
-                            </a>
-                            <a href="https://www.instagram.com/podontheapex/" target="_blank" aria-label="Instagram">
-                                <i class="fab fa-instagram" style="color: #ff0069;"></i>
-                            </a>
-                            <a href="https://www.tiktok.com/@podontheapex" target="_blank" aria-label="TikTok">
-                                <i class="fab fa-tiktok" style="color: white;"></i>
-                            </a>
-                        </div>
-                        <span class="text-secondary fs-4 d-none d-md-inline">|</span>
-                        <div class="d-flex gap-4">
-                            <a href="https://x.com/podontheapex" target="_blank" aria-label="X (Twitter)">
-                                <i class="fab fa-x-twitter" style="color: white;"></i>
-                            </a>
-                            <a href="https://www.threads.com/@podontheapex" target="_blank" aria-label="Threads">
-                                <i class="fab fa-threads" style="color: white;"></i>
-                            </a>
-                            <a href="https://www.facebook.com/podontheapex" target="_blank" aria-label="Facebook">
-                                <i class="fab fa-facebook" style="color: #1877f2;"></i>
-                            </a>
-                            <a href="https://www.linkedin.com/company/podontheapex" target="_blank" aria-label="LinkedIn">
-                                <i class="fab fa-linkedin" style="color: #0a66c2;"></i>
-                            </a>
-                        </div>
-                    </div>
-                    <p class="mt-4 mb-0 text-secondary small">
-                        &copy; 2025 &mdash;
-                        <script type="text/javascript">document.write(new Date().getFullYear());</script> Pod on the Apex. All rights reserved.
-                    </p>
-                </div>
-            </footer>
+            <div id="global-footer"></div>
         </main>
     </body>
 </html>
