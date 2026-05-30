@@ -14,7 +14,6 @@ function setTheme(theme) {
     }
 }
 
-// 1. Check local storage, otherwise check system preferences
 function getPreferredTheme() {
     const storedTheme = localStorage.getItem('theme');
     if (storedTheme) {
@@ -26,17 +25,6 @@ function getPreferredTheme() {
 setTheme(getPreferredTheme());
 
 document.addEventListener("DOMContentLoaded", () => {
-    setTheme(htmlElement.getAttribute('data-bs-theme'));
-
-    const darkModeToggle = document.getElementById('darkModeToggle');
-    if (darkModeToggle) {
-        darkModeToggle.addEventListener('click', (e) => {
-            e.preventDefault();
-            const currentTheme = htmlElement.getAttribute('data-bs-theme');
-            setTheme(currentTheme === 'dark' ? 'light' : 'dark');
-        });
-    }
-
     window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', () => {
         if (!localStorage.getItem('theme')) {
             setTheme(getPreferredTheme());
@@ -91,6 +79,17 @@ document.addEventListener("DOMContentLoaded", () => {
             .then(response => response.text())
             .then(html => {
                 navbarContainer.innerHTML = html;
+
+                setTheme(htmlElement.getAttribute('data-bs-theme'));
+                const darkModeToggle = document.getElementById('darkModeToggle');
+                if (darkModeToggle) {
+                    darkModeToggle.addEventListener('click', (e) => {
+                        e.preventDefault();
+                        const currentTheme = htmlElement.getAttribute('data-bs-theme');
+                        setTheme(currentTheme === 'dark' ? 'light' : 'dark');
+                    });
+                }
+
                 const currentPath = window.location.pathname.split('/').pop() || '/';
                 const navLinks = document.querySelectorAll('.navbar-nav .nav-link, .dropdown-item');
 
