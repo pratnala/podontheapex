@@ -9,37 +9,37 @@ Font extensions:
 
 @font-face {
     font-family: 'Dubai';
-    font-display: swap;
 
+    font-display: swap;
     src: url('../fonts/DubaiW23-Regular.woff2') format('woff2'),
-        url('../fonts/DubaiW23-Regular.woff') format('woff');
+    url('../fonts/DubaiW23-Regular.woff') format('woff');
 }
 
 @font-face {
     font-family: 'Dubai';
     font-weight: 300;
-    font-display: swap;
 
+    font-display: swap;
     src: url('../fonts/DubaiW23-Light.woff2') format('woff2'),
-        url('../fonts/DubaiW23-Light.woff') format('woff');
+    url('../fonts/DubaiW23-Light.woff') format('woff');
 }
 
 @font-face {
     font-family: 'Dubai';
     font-weight: 500;
-    font-display: swap;
 
+    font-display: swap;
     src: url('../fonts/DubaiW23-Medium.woff2') format('woff2'),
-        url('../fonts/DubaiW23-Medium.woff') format('woff');
+    url('../fonts/DubaiW23-Medium.woff') format('woff');
 }
 
 @font-face {
     font-family: 'Dubai';
     font-weight: bold;
-    font-display: swap;
 
+    font-display: swap;
     src: url('../fonts/DubaiW23-Bold.woff2') format('woff2'),
-        url('../fonts/DubaiW23-Bold.woff') format('woff');
+    url('../fonts/DubaiW23-Bold.woff') format('woff');
 }
 
 body {
@@ -47,10 +47,12 @@ body {
 }
 
 iframe {
-    aspect-ratio: 16 / 9;
     width: 100%;
-    background-color: #1a1a1a;
+
     border-radius: 4px;
+    background-color: #1a1a1a;
+
+    aspect-ratio: 16 / 9;
 }
 
 iframe.short-video {
@@ -58,47 +60,47 @@ iframe.short-video {
 }
 
 .btn-apple {
+    color: #ffffff;
     background-color: #872ec4;
-    color: white;
 }
 
 .btn-apple:hover {
+    color: #ffffff;
     background-color: #6d23a1;
-    color: white;
 }
 
 .btn-pocketcasts {
-    background-color: #F43E37;
-    color: white;
+    color: #ffffff;
+    background-color: #f43e37;
 }
 
 .btn-pocketcasts:hover {
+    color: #ffffff;
     background-color: #d1322c;
-    color: white;
 }
 
 .btn-spotify {
+    color: #ffffff;
     background-color: #1db954;
-    color: white;
 }
 
 .btn-spotify:hover {
+    color: #ffffff;
     background-color: #189845;
-    color: white;
 }
 
 .btn-youtube {
+    color: #ffffff;
     background-color: #ff0033;
-    color: white;
 }
 
 .btn-youtube:hover {
+    color: #ffffff;
     background-color: #cc0000;
-    color: white;
 }
 
 .card {
-    transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+    transition: transform .2s ease-in-out, box-shadow .2s ease-in-out;
 }
 
 .card:hover {
@@ -106,72 +108,74 @@ iframe.short-video {
 }
 
 .dropdown-menu {
-    --bs-dropdown-link-active-bg: #E10600;
-    --bs-dropdown-link-active-color: white;
-
-    --bs-dropdown-link-hover-bg: rgba(225, 6, 0, 0.2);
-    --bs-dropdown-link-hover-color: white;
+    --bs-dropdown-link-active-bg: #e10600;
+    --bs-dropdown-link-active-color: #ffffff;
+    --bs-dropdown-link-hover-bg: rgba(225, 6, 0, .2);
+    --bs-dropdown-link-hover-color: #ffffff;
 }
 
 .hero-jumbotron {
-    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.7)), url('../img/header.jpg');
-    background-size: cover;
-    background-position: 50% 25%;
+    color: #ffffff;
+    background: linear-gradient(rgba(0, 0, 0, .6), rgba(0, 0, 0, .7)), url('../img/header.jpg');
     background-repeat: no-repeat;
-    color: white;
+    background-position: 50% 25%;
+    background-size: cover;
 }
 
 .pagination {
-    --bs-pagination-color: #E10600;
-
+    --bs-pagination-color: #e10600;
     --bs-pagination-hover-color: var(--bs-body-color);
-    --bs-pagination-hover-bg: rgba(225, 6, 0, 0.15);
+    --bs-pagination-hover-bg: rgba(225, 6, 0, .15);
     --bs-pagination-hover-border-color: rgba(0, 0, 0, 0);
-
-    --bs-pagination-active-color: white;
-    --bs-pagination-active-bg: #C8102E;
-    --bs-pagination-active-border-color: #C8102E;
-
-    --bs-pagination-border-color: rgba(100, 100, 100, 0.2);
+    --bs-pagination-active-color: #ffffff;
+    --bs-pagination-active-bg: #c8102e;
+    --bs-pagination-active-border-color: #c8102e;
+    --bs-pagination-border-color: rgba(100, 100, 100, .2);
 }
 
 .season-tabs-container.nav-pills {
-    --bs-nav-pills-link-active-bg: #E10600;
-    --bs-nav-pills-link-active-color: white;
+    --bs-nav-pills-link-active-bg: #e10600;
+    --bs-nav-pills-link-active-color: #ffffff;
 }
 
 .season-tabs-container .nav-link {
+    transition: color .2s ease-in-out, background-color .2s ease-in-out;
+
     color: var(--bs-secondary-color);
-    transition: color 0.2s ease-in-out, background-color 0.2s ease-in-out;
 }
 
 .season-tabs-container .nav-link:hover:not(.active) {
     color: var(--bs-body-color);
-    background-color: rgba(225, 6, 0, 0.15);
+    background-color: rgba(225, 6, 0, .15);
 }
 
 .transition-glass {
-    background-color: transparent;
-    transition: background-color 0.3s ease, backdrop-filter 0.3s ease, padding 0.3s ease;
     padding-top: 1.5rem;
     padding-bottom: 1.5rem;
+
+    transition: background-color .3s ease, backdrop-filter .3s ease, padding .3s ease;
+
+    background-color: transparent;
 }
 
 .transition-glass.scrolled {
-    background-color: rgba(33, 37, 41, 0.85);
-    backdrop-filter: blur(12px);
+    padding-top: .8rem;
+    padding-bottom: .8rem;
+
+    border-bottom: 1px solid rgba(255, 255, 255, .1);
+    background-color: rgba(33, 37, 41, .85);
+
+            backdrop-filter: blur(12px);
     -webkit-backdrop-filter: blur(12px);
-    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
-    padding-top: 0.8rem;
-    padding-bottom: 0.8rem;
 }
 
 @media (max-width: 991.98px) {
     .navbar-collapse {
-        background-color: #212529;
+        margin-top: .75rem;
         padding: 1rem;
-        margin-top: 0.75rem;
-        border-radius: 0.5rem;
-        box-shadow: 0 10px 25px rgba(0, 0, 0, 0.5);
+
+        border-radius: .5rem;
+        background-color: #212529;
+        box-shadow: 0 10px 25px rgba(0, 0, 0, .5);
     }
 }
