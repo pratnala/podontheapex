@@ -810,5 +810,17 @@
             <itunes:duration>2078</itunes:duration>
             <itunes:explicit>false</itunes:explicit>
         </item>
+        <item>
+            <itunes:episodeType>full</itunes:episodeType>
+            <itunes:season>2</itunes:season>
+            <itunes:episode>11</itunes:episode>
+            <title>F1 2026 Engine DISASTER: Superclipping Explained! And HOW to Fix It?</title>
+            <description><![CDATA[While the 2026 #F1 regulations look like a win, the engine regulations are an ABSOLUTE DISASTER!<br /><br />They have brought the most radical shift in power unit philosophy since the start of the turbo-hybrid era. But the new 50/50 power split and the removal of the iconic MGU-H have birthed a massive engineering nightmare that drivers are calling a "Frankenstein" driving style: Superclipping. 💀<br /><br />In this special episode of Learn on the Apex, we break down the exact straight-line timeline from hell. Why are drivers losing nearly half their horsepower halfway down a straightaway? Why are they being forced to downshift while going completely flat-out? And why has the massive need for energy harvesting actually led to MORE lift-and-coast, even on a qualifying lap?<br /><br />We dive deep into the technical realities under the engine cover, look at the emergency mid-season software patches introduced in Miami, and pull back the curtain on the massive political civil war currently fracturing the paddock over the proposed 2027 regulations. Finally, we discuss the ultimate fix for Formula 1's engine crisis as we look ahead to 2030 and beyond.<br /><br />If you want to understand the real science and politics behind the 2026 F1 grid, this is the deep dive you need.<br /><br />Let us know by tagging us on our socials if you think F1 should abandon the hybrid system entirely in 2030? - <a href="https://www.instagram.com/podontheapex/">Instagram</a>,<a href="https://www.tiktok.com/@podontheapex">TikTok</a>,<a href="https://x.com/podontheapex">X (Twitter)</a>,<a href="https://www.threads.com/@podontheapex">Threads</a>, and <a href="https://www.facebook.com/podontheapex">Facebook</a>.<br /><br />Don't forget to leave us a 5-star review and help more F1 fans find #PodOnTheApex!]]></description>
+            <enclosure url="https://dts.podtrac.com/redirect.mp3/media.githubusercontent.com/media/pratnala/podontheapex/refs/heads/main/episodes/2026-05-31.mp3" type="audio/mpeg" length="39467415"/>
+            <guid>00481B3B-14FB-4AF1-AF4D-856EDF2F29E3</guid>
+            <pubDate>Sun, 31 May 2026 16:30:00 +0530</pubDate>
+            <itunes:duration>986</itunes:duration>
+            <itunes:explicit>false</itunes:explicit>
+        </item>
     </channel>
 </rss>
