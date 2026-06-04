@@ -822,5 +822,17 @@
             <itunes:duration>986</itunes:duration>
             <itunes:explicit>false</itunes:explicit>
         </item>
+        <item>
+            <itunes:episodeType>full</itunes:episodeType>
+            <itunes:season>2</itunes:season>
+            <itunes:episode>12</itunes:episode>
+            <title>Will Charles Leclerc CELEBRATE a Homecoming Win? 2026 Monaco GP Predictions!</title>
+            <description><![CDATA[No more long spring breaks! The European leg of the 2026 season officially kicks off this weekend, and the races are coming thick and fast! It is time for Charles Leclerc's highly anticipated home race - the Monaco GP!<br /><br />In this episode, we lock in our predictions for pole position, the top 3 finishers, the biggest surprise, and the biggest bust of the weekend. Plus, we check in on our newest segment: Arvid Watch!<br /><br />Let us know by tagging us on our socials who you think is winning the Monaco GP and if Mercedes's streak will be broken! - <a href="https://www.instagram.com/podontheapex/">Instagram</a>, <a href="https://www.tiktok.com/@podontheapex">TikTok</a>, <a href="https://x.com/podontheapex">X (Twitter)</a>, <a href="https://www.threads.com/@podontheapex">Threads</a>, and <a href="https://www.facebook.com/podontheapex">Facebook</a>.<br /><br />Don't forget to leave us a 5-star review and help more F1 fans find #PodOnTheApex!]]></description>
+            <enclosure url="https://dts.podtrac.com/redirect.mp3/media.githubusercontent.com/media/pratnala/podontheapex/refs/heads/main/episodes/2026-06-03.mp3" type="audio/mpeg" length="47693048"/>
+            <guid>ED4C417E-0396-482F-B37A-CC86F8A924DC</guid>
+            <pubDate>Wed, 03 Jun 2026 22:30:00 +0530</pubDate>
+            <itunes:duration>1192</itunes:duration>
+            <itunes:explicit>false</itunes:explicit>
+        </item>
     </channel>
 </rss>
