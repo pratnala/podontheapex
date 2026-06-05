@@ -1,5 +1,17 @@
 const htmlElement = document.documentElement;
 
+if ('serviceWorker' in navigator) {
+    window.addEventListener('load', () => {
+        navigator.serviceWorker.register('/sw.min.js')
+            .then(registration => {
+                console.log('ServiceWorker registered successfully with scope: ', registration.scope);
+            })
+            .catch(error => {
+                console.log('ServiceWorker registration failed: ', error);
+            });
+    });
+}
+
 function setTheme(theme) {
     htmlElement.setAttribute('data-bs-theme', theme);
     localStorage.setItem('theme', theme);
@@ -164,8 +176,6 @@ document.addEventListener("DOMContentLoaded", () => {
                 });
             }
             const defaultSeason = uniqueSeasons.length > 0 ? uniqueSeasons[0] : new Date().getFullYear().toString();
-
-            // Pass the default season into the function
             initializePagination(defaultSeason);
         });
     }
@@ -216,7 +226,7 @@ document.addEventListener("DOMContentLoaded", () => {
                 const iframe = item.querySelector('iframe');
 
                 if (index >= start && index < end) {
-                    item.classList.remove('d-none'); // Show
+                    item.classList.remove('d-none');
                     if (iframe && iframe.getAttribute('data-src') && !iframe.getAttribute('src')) {
                         iframe.setAttribute('src', iframe.getAttribute('data-src'));
                     }
