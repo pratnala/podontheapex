@@ -834,5 +834,17 @@
             <itunes:duration>1192</itunes:duration>
             <itunes:explicit>false</itunes:explicit>
         </item>
+        <item>
+            <itunes:episodeType>full</itunes:episodeType>
+            <itunes:season>2</itunes:season>
+            <itunes:episode>13</itunes:episode>
+            <title>How Lewis Hamilton Won His First Race in RED! Plus Ferrari's MASTERCLASS!</title>
+            <description><![CDATA[At the 2026 Barcelona-Catalunya Grand Prix, Lewis Hamilton delivered a sensational first victory for Ferrari and the 106th of his illustrious career! What a day to remember for every F1 and Ferrari fan alike!<br /><br />On this episode, we dive deep into the Ferrari upgrades that powered Hamilton, the X-factor that he brings to the table, how the Ferrari pit wall delivered an F1 strategy masterclass, and if Ferrari can officially challenge for the title!<br /><br />Let us know by tagging us on our socials if you think Lewis Hamilton can win an unprecedented 8th title this season! - <a href="https://www.instagram.com/podontheapex/">Instagram</a>, <a href="https://www.tiktok.com/@podontheapex">TikTok</a>, <a href="https://x.com/podontheapex">X (Twitter)</a>, <a href="https://www.threads.com/@podontheapex">Threads</a>, and <a href="https://www.facebook.com/podontheapex">Facebook</a>.<br /><br />Don't forget to leave us a 5-star review and help more F1 fans find #PodOnTheApex!]]></description>
+            <enclosure url="https://dts.podtrac.com/redirect.mp3/media.githubusercontent.com/media/pratnala/podontheapex/refs/heads/main/episodes/2026-06-21.mp3" type="audio/mpeg" length="66675219"/>
+            <guid>C22CAA1A-54C7-4A6B-85DC-3A6FE4AAB674</guid>
+            <pubDate>Sun, 21 Jun 2026 22:15:00 +0530</pubDate>
+            <itunes:duration>1666</itunes:duration>
+            <itunes:explicit>false</itunes:explicit>
+        </item>
     </channel>
 </rss>
