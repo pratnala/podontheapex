@@ -846,5 +846,17 @@
             <itunes:duration>1666</itunes:duration>
             <itunes:explicit>false</itunes:explicit>
         </item>
+        <item>
+            <itunes:episodeType>full</itunes:episodeType>
+            <itunes:season>2</itunes:season>
+            <itunes:episode>14</itunes:episode>
+            <title>Will Lewis Hamilton WIN Back-to-Back? 2026 Austrian GP Predictions!</title>
+            <description><![CDATA[Or will George Russell take the top step for only the second time in 2026? Or will we see a resurgent Kimi Antonelli bounce back? Or will the defending world champion, Lando Norris, finally announce his arrival in the 2026 season?<br /><br />It is time for all this and more on the latest edition of Predictions on the Apex!<br /><br />Let us know by tagging us on our socials who you think will be on the top step in Austria! - <a href="https://www.instagram.com/podontheapex/">Instagram</a>, <a href="https://www.tiktok.com/@podontheapex">TikTok</a>, <a href="https://x.com/podontheapex">X (Twitter)</a>, <a href="https://www.threads.com/@podontheapex">Threads</a>, and <a href="https://www.facebook.com/podontheapex">Facebook</a>.<br /><br />Don't forget to leave us a 5-star review and help more F1 fans find #PodOnTheApex!]]></description>
+            <enclosure url="https://dts.podtrac.com/redirect.mp3/media.githubusercontent.com/media/pratnala/podontheapex/refs/heads/main/episodes/2026-06-24.mp3" type="audio/mpeg" length="51192339"/>
+            <guid>A557DDA5-5E65-4DE4-BA3D-A9DBB02408FA</guid>
+            <pubDate>Wed, 24 Jun 2026 21:30:00 +0530</pubDate>
+            <itunes:duration>1279</itunes:duration>
+            <itunes:explicit>false</itunes:explicit>
+        </item>
     </channel>
 </rss>
