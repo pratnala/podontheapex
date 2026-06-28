@@ -858,5 +858,17 @@
             <itunes:duration>1279</itunes:duration>
             <itunes:explicit>false</itunes:explicit>
         </item>
+        <item>
+            <itunes:episodeType>full</itunes:episodeType>
+            <itunes:season>2</itunes:season>
+            <itunes:episode>15</itunes:episode>
+            <title>Did Ferrari Just CHOKE The Championship Momentum in Austria?</title>
+            <description><![CDATA[After a mighty result in Barcelona, the 2026 Austrian Grand Prix brought Ferrari crashing down to earth! We wonder if Ferrari left their upgrades in Barcelona?<br /><br />Apart from Ferrari, we discuss if we are once again seeing a Mercedes resurgence and how a drinks company like Red Bull makes their own engines now and is fighting with the best!<br /><br />Let us know by tagging us on our socials if you are still keeping faith in Ferrari and if we are close to seeing a first win for Max Verstappen in 2026! - <a href="https://www.instagram.com/podontheapex/">Instagram</a>, <a href="https://www.tiktok.com/@podontheapex">TikTok</a>, <a href="https://x.com/podontheapex">X (Twitter)</a>, <a href="https://www.threads.com/@podontheapex">Threads</a>, and <a href="https://www.facebook.com/podontheapex">Facebook</a>.<br /><br />Don't forget to leave us a 5-star review and help more F1 fans find #PodOnTheApex!]]></description>
+            <enclosure url="https://dts.podtrac.com/redirect.mp3/media.githubusercontent.com/media/pratnala/podontheapex/refs/heads/main/episodes/2026-06-28.mp3" type="audio/mpeg" length="81559062"/>
+            <guid>C82B62A8-4C18-400C-BF15-57AECC85C464</guid>
+            <pubDate>Sun, 28 Jun 2026 22:15:00 +0530</pubDate>
+            <itunes:duration>2038</itunes:duration>
+            <itunes:explicit>false</itunes:explicit>
+        </item>
     </channel>
 </rss>
