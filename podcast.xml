@@ -870,5 +870,17 @@
             <itunes:duration>2038</itunes:duration>
             <itunes:explicit>false</itunes:explicit>
         </item>
+        <item>
+            <itunes:episodeType>full</itunes:episodeType>
+            <itunes:season>2</itunes:season>
+            <itunes:episode>16</itunes:episode>
+            <title>Can Max Verstappen STOP The Mercedes Hype Train?! 2026 British GP Predictions!</title>
+            <description><![CDATA[Can anyone stop the Mercedes hype train at Silverstone?! Coming off a massive victory in Austria, George Russell and championship leader Kimi Antonelli look absolutely unstoppable as they head into their home race! Can Max Verstappen continue his resurgence from Austria and play spoiler?<br /><br />With this being a sprint weekend, it is once again a double edition of Predictions on the Apex!<br /><br />Let us know by tagging us on our socials who will be the king of Silverstone this weekend! - <a href="https://www.instagram.com/podontheapex/">Instagram</a>, <a href="https://www.tiktok.com/@podontheapex">TikTok</a>, <a href="https://x.com/podontheapex">X (Twitter)</a>, <a href="https://www.threads.com/@podontheapex">Threads</a>, and <a href="https://www.facebook.com/podontheapex">Facebook</a>.<br /><br />Don't forget to leave us a 5-star review and help more F1 fans find #PodOnTheApex!]]></description>
+            <enclosure url="https://dts.podtrac.com/redirect.mp3/media.githubusercontent.com/media/pratnala/podontheapex/refs/heads/main/episodes/2026-07-02.mp3" type="audio/mpeg" length="68652066"/>
+            <guid>5832C929-8246-4CF3-879B-3F3F92EFA0DE</guid>
+            <pubDate>Thu, 02 Jul 2026 23:00:00 +0530</pubDate>
+            <itunes:duration>1715</itunes:duration>
+            <itunes:explicit>false</itunes:explicit>
+        </item>
     </channel>
 </rss>
