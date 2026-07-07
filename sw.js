@@ -1,17 +1,16 @@
-const CACHE_NAME = 'apex-cache-v1';
+const CACHE_NAME = 'apex-cache-v2';
 
 const urlsToCache = [
     // Core Routes
     '/',
-    '/index.html',
-    '/shorts.html',
-    '/predictions.html',
-    '/learn.html',
-    '/history.html',
-    '/instant-reactions.html',
-    '/clips.html',
-    '/collabs.html',
-    '/live.html',
+    '/shorts',
+    '/predictions',
+    '/learn',
+    '/history',
+    '/instant-reactions',
+    '/clips',
+    '/collabs',
+    '/live',
 
     // Injected Components & Data
     '/navbar.html',
@@ -61,6 +60,20 @@ self.addEventListener('fetch', event => {
 
             // Return the instant cached version if it exists, otherwise wait for the network
             return cachedResponse || fetchPromise;
+        })
+    );
+});
+
+self.addEventListener('activate', event => {
+    event.waitUntil(
+        caches.keys().then(cacheNames => {
+            return Promise.all(
+                cacheNames.map(cacheName => {
+                    if (cacheName !== CACHE_NAME) {
+                        return caches.delete(cacheName);
+                    }
+                })
+            );
         })
     );
 });
