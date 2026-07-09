@@ -882,5 +882,17 @@
             <itunes:duration>1715</itunes:duration>
             <itunes:explicit>false</itunes:explicit>
         </item>
+        <item>
+            <itunes:episodeType>full</itunes:episodeType>
+            <itunes:season>2</itunes:season>
+            <itunes:episode>17</itunes:episode>
+            <title>Charles Leclerc is the KING of Silverstone!</title>
+            <description><![CDATA[After a dip in form that led to critics questioning his abilities, Charles Leclerc silenced them in emphatic fashion with a first win at the 2026 British Grand Prix in Silverstone!<br /><br />Also on today's episode - Ferrari's teamwork, the safety car kerfuffle, Mercedes's and Red Bull's struggles, and the McLaren waiting game!<br /><br />Let us know by tagging us on our socials if you think we will see more drama in the 2026 season! - <a href="https://www.instagram.com/podontheapex/">Instagram</a>, <a href="https://www.tiktok.com/@podontheapex">TikTok</a>, <a href="https://x.com/podontheapex">X (Twitter)</a>, <a href="https://www.threads.com/@podontheapex">Threads</a>, and <a href="https://www.facebook.com/podontheapex">Facebook</a>.<br /><br />Don't forget to leave us a 5-star review and help more F1 fans find #PodOnTheApex!]]></description>
+            <enclosure url="https://dts.podtrac.com/redirect.mp3/episodes.podontheapex.com/2026-07-08.mp3" type="audio/mpeg" length="82688490"/>
+            <guid>767EBFED-16B9-481A-ACAB-8BEB767F0094</guid>
+            <pubDate>Wed, 08 Jul 2026 18:00:00 +0530</pubDate>
+            <itunes:duration>2066</itunes:duration>
+            <itunes:explicit>false</itunes:explicit>
+        </item>
     </channel>
 </rss>
