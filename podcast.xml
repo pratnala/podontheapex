@@ -894,5 +894,17 @@
             <itunes:duration>2066</itunes:duration>
             <itunes:explicit>false</itunes:explicit>
         </item>
+        <item>
+            <itunes:episodeType>full</itunes:episodeType>
+            <itunes:season>2</itunes:season>
+            <itunes:episode>18</itunes:episode>
+            <title>Will Mercedes BOUNCE BACK in Spa? 2026 Belgian GP Predictions!</title>
+            <description><![CDATA[Despite all the talk of Mercedes running away with the season, the last time we saw a Mercedes 1-2 in 2026 was way back in China in March! Will Kimi Antonelli lead the charge at the 2026 Belgian GP?<br /><br />Find out in our Spa edition of #PredictionsOnTheApex as we lock in our picks for pole position, the top three, the weekend's biggest bust and surprise, and where Arvid will finish!<br /><br />Watch our deep-dive explainer on SUPERCLIPPING in the episode titled "F1 2026 Engine DISASTER: Superclipping Explained! And HOW to Fix It?".<br /><br />Let us know by tagging us on our socials who will be on the top step of Spa this Sunday! - <a href="https://www.instagram.com/podontheapex/">Instagram</a>, <a href="https://www.tiktok.com/@podontheapex">TikTok</a>, <a href="https://x.com/podontheapex">X (Twitter)</a>, <a href="https://www.threads.com/@podontheapex">Threads</a>, and <a href="https://www.facebook.com/podontheapex">Facebook</a>.<br /><br />Don't forget to leave us a 5-star review and help more F1 fans find #PodOnTheApex!]]></description>
+            <enclosure url="https://dts.podtrac.com/redirect.mp3/episodes.podontheapex.com/2026-07-13.mp3" type="audio/mpeg" length="43301591"/>
+            <guid>0B7327D5-F466-4B09-B740-3D5F6A8601EA</guid>
+            <pubDate>Mon, 13 Jul 2026 21:00:00 +0530</pubDate>
+            <itunes:duration>1082</itunes:duration>
+            <itunes:explicit>false</itunes:explicit>
+        </item>
     </channel>
 </rss>
