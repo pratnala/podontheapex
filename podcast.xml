@@ -906,5 +906,17 @@
             <itunes:duration>1082</itunes:duration>
             <itunes:explicit>false</itunes:explicit>
         </item>
+        <item>
+            <itunes:episodeType>full</itunes:episodeType>
+            <itunes:season>2</itunes:season>
+            <itunes:episode>18</itunes:episode>
+            <title>Is the FIA RUINING Formula 1? 2026 Belgian GP Review!</title>
+            <description><![CDATA[A Lap 1 racing incident results in a 5 second time penalty while almost running your competitor off track warrants no further investigation. The inconsistency in FIA's stewarding reared its ugly head once again spoiling the Spa Spectacle for millions of F1 and Kimi Antonelli fans worldwide! And of course, the subpar TV direction continued for another weekend with countless midfield battles missed!<br /><br />Let us know by tagging us on our socials if the FIA will ever give us even half-decent stewarding and TV direction - <a href="https://www.instagram.com/podontheapex/">Instagram</a>, <a href="https://www.tiktok.com/@podontheapex">TikTok</a>, <a href="https://x.com/podontheapex">X (Twitter)</a>, <a href="https://www.threads.com/@podontheapex">Threads</a>, and <a href="https://www.facebook.com/podontheapex">Facebook</a>.<br /><br />Don't forget to leave us a 5-star review and help more F1 fans find #PodOnTheApex!]]></description>
+            <enclosure url="https://dts.podtrac.com/redirect.mp3/episodes.podontheapex.com/2026-07-20.mp3" type="audio/mpeg" length="86046572"/>
+            <guid>FD5A5F70-F5CC-4EF2-BD8C-44C47DFB8AC2</guid>
+            <pubDate>Mon, 20 Jul 2026 22:00:00 +0530</pubDate>
+            <itunes:duration>2150</itunes:duration>
+            <itunes:explicit>false</itunes:explicit>
+        </item>
     </channel>
 </rss>
