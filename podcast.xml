@@ -918,5 +918,17 @@
             <itunes:duration>2150</itunes:duration>
             <itunes:explicit>false</itunes:explicit>
         </item>
+        <item>
+            <itunes:episodeType>full</itunes:episodeType>
+            <itunes:season>2</itunes:season>
+            <itunes:episode>20</itunes:episode>
+            <title>Can ANYONE stop Ferrari in Hungary? 2026 Hungarian GP Predictions!</title>
+            <description><![CDATA[Hungaroring. It is supposedly Ferrari's strongest track this season. Will the scarlet team live up to its hype?<br /><br />Alongside our picks for pole position, top 3, bust, big surprise, and Arvid Watch, find out if we go all-in on a Ferrari 1-2 in the 2026 Hungarian GP edition of #PredictionsOnTheApex!<br /><br />Let us know by tagging us on our socials if Ferrari will fulfill its destiny in Budapest or if the dynamic Mercedes duo will play spoilsport! - <a href="https://www.instagram.com/podontheapex/">Instagram</a>, <a href="https://www.tiktok.com/@podontheapex">TikTok</a>, <a href="https://x.com/podontheapex">X (Twitter)</a>, <a href="https://www.threads.com/@podontheapex">Threads</a>, and <a href="https://www.facebook.com/podontheapex">Facebook</a>.<br /><br />Don't forget to leave us a 5-star review and help more F1 fans find #PodOnTheApex!]]></description>
+            <enclosure url="https://dts.podtrac.com/redirect.mp3/episodes.podontheapex.com/2026-07-23.mp3" type="audio/mpeg" length="72792810"/>
+            <guid>3AE2C373-AC82-40C8-BA50-B7C4A2FBA937</guid>
+            <pubDate>Mon, 23 Jul 2026 22:30:00 +0530</pubDate>
+            <itunes:duration>1819</itunes:duration>
+            <itunes:explicit>false</itunes:explicit>
+        </item>
     </channel>
 </rss>
