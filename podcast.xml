@@ -930,5 +930,17 @@
             <itunes:duration>1819</itunes:duration>
             <itunes:explicit>false</itunes:explicit>
         </item>
+        <item>
+            <itunes:episodeType>full</itunes:episodeType>
+            <itunes:season>2</itunes:season>
+            <itunes:episode>21</itunes:episode>
+            <title>Can Hamilton ERASE a 50-Point Gap?! 2026 F1 Summer Break Review</title>
+            <description><![CDATA[Kimi Antonelli and Mercedes have dominated the first half of the 2026 F1 World Championship! But Ferrari and McLaren have shown us that Mercedes can be beaten!<br /><br />So, we ask: can Lewis Hamilton erase the 50-point deficit and lead Ferrari to a historic title?! Or will Ferrari's repeated missteps cost them again like in 2017 and 2018? Find out more in our summer break special!<br /><br />Let us know by tagging us on our socials if you think Lewis Hamilton can catch Kimi Antonelli by December! - <a href="https://www.instagram.com/podontheapex/">Instagram</a>, <a href="https://www.tiktok.com/@podontheapex">TikTok</a>, <a href="https://x.com/podontheapex">X (Twitter)</a>, <a href="https://www.threads.com/@podontheapex">Threads</a>, and <a href="https://www.facebook.com/podontheapex">Facebook</a>.<br /><br />Don't forget to leave us a 5-star review and help more F1 fans find #PodOnTheApex!]]></description>
+            <enclosure url="https://dts.podtrac.com/redirect.mp3/episodes.podontheapex.com/2026-08-03.mp3" type="audio/mpeg" length="94335859"/>
+            <guid>8C4E5077-430A-41F5-8495-D91435639CD7</guid>
+            <pubDate>Mon, 03 Aug 2026 22:30:00 +0530</pubDate>
+            <itunes:duration>2358</itunes:duration>
+            <itunes:explicit>false</itunes:explicit>
+        </item>
     </channel>
 </rss>
