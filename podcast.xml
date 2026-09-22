@@ -942,5 +942,17 @@
             <itunes:duration>2358</itunes:duration>
             <itunes:explicit>false</itunes:explicit>
         </item>
+        <item>
+            <itunes:episodeType>full</itunes:episodeType>
+            <itunes:season>2</itunes:season>
+            <itunes:episode>22</itunes:episode>
+            <title>Can ANYONE Stop Kimi Antonelli? 2026 Azerbaijan GP Predictions!</title>
+            <description><![CDATA[Kimi Antonelli is on a GENERATIONAL run! Will anyone be able to catch up to him? Or is he destined to be the YOUNGEST ever #F1 World Champion?<br /><br />Find out in the Azerbaijan edition of #PredictionsOnTheApex if we are betting on the young Italian to win it all this weekend!<br /><br />Let us know by tagging us on our socials who you think is standing on the top step in Baku on Saturday! - <a href="https://www.instagram.com/podontheapex/">Instagram</a>, <a href="https://www.tiktok.com/@podontheapex">TikTok</a>, <a href="https://x.com/podontheapex">X (Twitter)</a>, <a href="https://www.threads.com/@podontheapex">Threads</a>, and <a href="https://www.facebook.com/podontheapex">Facebook</a>.<br /><br />Don't forget to leave us a 5-star review and help more F1 fans find #PodOnTheApex!]]></description>
+            <enclosure url="https://dts.podtrac.com/redirect.mp3/episodes.podontheapex.com/2026-09-22-01.mp3" type="audio/mpeg" length="74120951"/>
+            <guid>2036A208-3928-42FF-852A-097516A56B14</guid>
+            <pubDate>Tue, 22 Sep 2026 20:30:00 +0530</pubDate>
+            <itunes:duration>1852</itunes:duration>
+            <itunes:explicit>false</itunes:explicit>
+        </item>
     </channel>
 </rss>
