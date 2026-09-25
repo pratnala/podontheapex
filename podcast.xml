@@ -954,5 +954,17 @@
             <itunes:duration>1852</itunes:duration>
             <itunes:explicit>false</itunes:explicit>
         </item>
+        <item>
+            <itunes:episodeType>full</itunes:episodeType>
+            <itunes:season>2</itunes:season>
+            <itunes:episode>23</itunes:episode>
+            <title>Tifosi Dream Come True! Attending the Italian GP LIVE!</title>
+            <description><![CDATA[One of your very own hosts, Pratyush, attended the Italian GP live in Monza! Watch as he and Aniket discuss how the trackside experience was and if Pratyush would like to go to another live race!<br /><br />Let us know by tagging us on our socials how your experience attending a live F1 race was! - <a href="https://www.instagram.com/podontheapex/">Instagram</a>, <a href="https://www.tiktok.com/@podontheapex">TikTok</a>, <a href="https://x.com/podontheapex">X (Twitter)</a>, <a href="https://www.threads.com/@podontheapex">Threads</a>, and <a href="https://www.facebook.com/podontheapex">Facebook</a>.<br /><br />Don't forget to leave us a 5-star review and help more F1 fans find #PodOnTheApex!]]></description>
+            <enclosure url="https://dts.podtrac.com/redirect.mp3/episodes.podontheapex.com/2026-09-22-02.mp3" type="audio/mpeg" length="42629113"/>
+            <guid>5D8290F1-5E38-44F3-859C-F58F455139D5</guid>
+            <pubDate>Tue, 22 Sep 2026 21:00:00 +0530</pubDate>
+            <itunes:duration>1065</itunes:duration>
+            <itunes:explicit>false</itunes:explicit>
+        </item>
     </channel>
 </rss>
