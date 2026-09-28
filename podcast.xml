@@ -966,5 +966,17 @@
             <itunes:duration>1065</itunes:duration>
             <itunes:explicit>false</itunes:explicit>
         </item>
+        <item>
+            <itunes:episodeType>full</itunes:episodeType>
+            <itunes:season>2</itunes:season>
+            <itunes:episode>24</itunes:episode>
+            <title>Cycling to Every F1 Circuit! An Interview with Liam Bushrod aka Tourmula 1!</title>
+            <description><![CDATA[Liam Bushrod aka #Tourmula1 is cycling to every #F1 circuit from Albert Park to Interlagos! And while he is in Singapore, our host, Aniket, caught up with him - his motivations, his plan, his favorite driver, and how he does it all!<br /><br />Let us know by tagging us on our socials if you are cheering for Liam! - <a href="https://www.instagram.com/podontheapex/">Instagram</a>, <a href="https://www.tiktok.com/@podontheapex">TikTok</a>, <a href="https://x.com/podontheapex">X (Twitter)</a>, <a href="https://www.threads.com/@podontheapex">Threads</a>, and <a href="https://www.facebook.com/podontheapex">Facebook</a>.<br /><br />Follow Liam's journey on <a href="https://www.youtube.com/@LiamBushrod/">YouTube</a> and on <a href="https://www.instagram.com/liambushrod/">Instagram</a>!<br/><br/>Don't forget to leave us a 5-star review and help more F1 fans find #PodOnTheApex!]]></description>
+            <enclosure url="https://dts.podtrac.com/redirect.mp3/episodes.podontheapex.com/2026-09-27.mp3" type="audio/mpeg" length="14327201"/>
+            <guid>11E2F3B7-4C9F-4F55-A94B-6467BE779483</guid>
+            <pubDate>Sun, 27 Sep 2026 17:00:00 +0530</pubDate>
+            <itunes:duration>357</itunes:duration>
+            <itunes:explicit>false</itunes:explicit>
+        </item>
     </channel>
 </rss>
