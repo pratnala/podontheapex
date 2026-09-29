@@ -978,5 +978,17 @@
             <itunes:duration>357</itunes:duration>
             <itunes:explicit>false</itunes:explicit>
         </item>
+        <item>
+            <itunes:episodeType>full</itunes:episodeType>
+            <itunes:season>2</itunes:season>
+            <itunes:episode>25</itunes:episode>
+            <title>Can George Russell CATCH Kimi Antonelli? 2026 Azerbaijan GP Review!</title>
+            <description><![CDATA[Thanks to a Kimi Antonelli mistake in qualifying that saw him start 16th, George Russell stamped his authority in Baku with a dominant win that saw him lead every single lap of the 2026 #AzerbaijanGP! All this and more including the midfield battles and continuing disappointments from the Maranello boys in this latest episode!<br /><br />Let us know by tagging us on our socials if George Russell can mount a late comeback in the championship! - <a href="https://www.instagram.com/podontheapex/">Instagram</a>, <a href="https://www.tiktok.com/@podontheapex">TikTok</a>, <a href="https://x.com/podontheapex">X (Twitter)</a>, <a href="https://www.threads.com/@podontheapex">Threads</a>, and <a href="https://www.facebook.com/podontheapex">Facebook</a>.<br /><br /><a href="https://www.youtube.com/watch?v=yjfE8NdzVNw">Bottas crash analysis</a> from Need For Apex.<br/><br/>Don't forget to leave us a 5-star review and help more F1 fans find #PodOnTheApex!]]></description>
+            <enclosure url="https://dts.podtrac.com/redirect.mp3/episodes.podontheapex.com/2026-09-28.mp3" type="audio/mpeg" length="63091219"/>
+            <guid>B4714D4F-4DA9-4DB9-9C74-2222CC5A7D05</guid>
+            <pubDate>Mon, 28 Sep 2026 22:15:00 +0530</pubDate>
+            <itunes:duration>1576</itunes:duration>
+            <itunes:explicit>false</itunes:explicit>
+        </item>
     </channel>
 </rss>
