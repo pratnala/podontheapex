@@ -990,5 +990,17 @@
             <itunes:duration>1576</itunes:duration>
             <itunes:explicit>false</itunes:explicit>
         </item>
+        <item>
+            <itunes:episodeType>full</itunes:episodeType>
+            <itunes:season>2</itunes:season>
+            <itunes:episode>26</itunes:episode>
+            <title>Who Will Emerge VICTORIOUS in the Return of SEPANG? 2026 Bahrain GP Predictions!</title>
+            <description><![CDATA[After 17 long years, the Sepang International Circuit is back on the calendar to host a one-off race as the Bahrain Grand Prix in Malaysia!<br /><br />With rain certain to play a part this weekend, Pratyush and Aniket return for #PredictionsOnTheApex to lay down their predictions for pole position, top 3, bust, good surprise, and as always, the Arvid Watch!<br /><br />Let us know by tagging us on our socials who you think is winning the return of Sepang! - <a href="https://www.instagram.com/podontheapex/">Instagram</a>, <a href="https://www.tiktok.com/@podontheapex">TikTok</a>, <a href="https://x.com/podontheapex">X (Twitter)</a>, <a href="https://www.threads.com/@podontheapex">Threads</a>, and <a href="https://www.facebook.com/podontheapex">Facebook</a>.<br /><br />Don't forget to leave us a 5-star review and help more F1 fans find #PodOnTheApex!]]></description>
+            <enclosure url="https://dts.podtrac.com/redirect.mp3/episodes.podontheapex.com/2026-09-30.mp3" type="audio/mpeg" length="42786057"/>
+            <guid>4129E003-554A-491A-9E94-7F7F1674F752</guid>
+            <pubDate>Wed, 30 Sep 2026 19:45:00 +0530</pubDate>
+            <itunes:duration>1069</itunes:duration>
+            <itunes:explicit>false</itunes:explicit>
+        </item>
     </channel>
 </rss>
