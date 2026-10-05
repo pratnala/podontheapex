@@ -1002,5 +1002,17 @@
             <itunes:duration>1069</itunes:duration>
             <itunes:explicit>false</itunes:explicit>
         </item>
+        <item>
+            <itunes:episodeType>full</itunes:episodeType>
+            <itunes:season>2</itunes:season>
+            <itunes:episode>27</itunes:episode>
+            <title>Max Verstappen Finally Breaks His 2026 Duck! 2026 Bahrain GP (in Malaysia) Review!</title>
+            <description><![CDATA[Max Verstappen is the latest race winner of the 2026 #F1 season! In a race filled with software glitches and wet weather drama, Verstappen overcame falling behind to the Mercedes duo of George Russell and Kimi Antonelli to win the 2026 Bahrain GP in Malaysia in his typical dominant style. Elsewhere, George Russell suffered heartbreak after being forced to retire towards the end of the race snuffing out his championship hopes, while Lewis Hamilton suffered early shenanigans falling to the back of the grid after a Ferrari gamble gone wrong to recover in dramatic fashion and finish P3!<br /><br />All this and more in the latest episode of Pod on the Apex! Let us know by tagging us on our socials if you were more excited by Lewis Hamilton's legendary recovery drive or Max Verstappen's dominant win! - <a href="https://www.instagram.com/podontheapex/">Instagram</a>, <a href="https://www.tiktok.com/@podontheapex">TikTok</a>, <a href="https://x.com/podontheapex">X (Twitter)</a>, <a href="https://www.threads.com/@podontheapex">Threads</a>, and <a href="https://www.facebook.com/podontheapex">Facebook</a>.<br /><br />Don't forget to leave us a 5-star review and help more F1 fans find #PodOnTheApex!]]></description>
+            <enclosure url="https://dts.podtrac.com/redirect.mp3/episodes.podontheapex.com/2026-10-04.mp3" type="audio/mpeg" length="81568537"/>
+            <guid>2BE644AB-C7F5-47F4-9F3B-D51096AA80C7</guid>
+            <pubDate>Sun, 04 Oct 2026 23:30:00 +0530</pubDate>
+            <itunes:duration>2038</itunes:duration>
+            <itunes:explicit>false</itunes:explicit>
+        </item>
     </channel>
 </rss>
