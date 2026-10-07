@@ -1014,5 +1014,17 @@
             <itunes:duration>2038</itunes:duration>
             <itunes:explicit>false</itunes:explicit>
         </item>
+        <item>
+            <itunes:episodeType>full</itunes:episodeType>
+            <itunes:season>2</itunes:season>
+            <itunes:episode>28</itunes:episode>
+            <title>Will Max Verstappen FINALLY Win at Singapore? 2026 Singapore GP Predictions!</title>
+            <description><![CDATA[Singapore rounds up the first of the three triple headers ending the 2026 Formula 1 season and it looks to be another rain-affected weekend!<br /><br />It's a sprint weekend, which means a special double edition of #PredictionsOnTheApex! Join Pratyush and Aniket give their predictions for pole position, top 3, bust, big surprise, and of course, Arvid Watch for the sprint and the grand prix!<br /><br />Max Verstappen has never won at the Marina Bay Street Circuit. Will 2026 be kinder to him? Let us know by tagging us on our socials - <a href="https://www.instagram.com/podontheapex/">Instagram</a>, <a href="https://www.tiktok.com/@podontheapex">TikTok</a>, <a href="https://x.com/podontheapex">X (Twitter)</a>, <a href="https://www.threads.com/@podontheapex">Threads</a>, and <a href="https://www.facebook.com/podontheapex">Facebook</a>.<br /><br />Don't forget to leave us a 5-star review and help more F1 fans find #PodOnTheApex!]]></description>
+            <enclosure url="https://dts.podtrac.com/redirect.mp3/episodes.podontheapex.com/2026-10-07.mp3" type="audio/mpeg" length="76366329"/>
+            <guid>259E84EE-D74F-4A7D-A098-FE6B8896B8DB</guid>
+            <pubDate>Wed, 07 Oct 2026 22:30:00 +0530</pubDate>
+            <itunes:duration>1908</itunes:duration>
+            <itunes:explicit>false</itunes:explicit>
+        </item>
     </channel>
 </rss>
