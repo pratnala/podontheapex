@@ -1,24 +1,26 @@
 ---
+import Icon from './Icon.astro';
+
 const currentYear = new Date().getFullYear();
 
 const linkGroups = [
     [
-        { label: 'YouTube Music', href: 'https://music.youtube.com/playlist?list=PLT70Wn9q0VdbVtaQ-ZQioK-w6big5L9Cl', icon: 'fak fa-youtube-music', color: '#ff0033' },
-        { label: 'Spotify', href: 'https://open.spotify.com/show/0jpcfqzb7Eymvde0PR1cI3', icon: 'fab fa-spotify', color: '#1db954' },
-        { label: 'Apple Podcasts', href: 'https://podcasts.apple.com/us/podcast/pod-on-the-apex/id1795324786', icon: 'fas fa-podcast', color: '#872ec4' },
-        { label: 'Pocket Casts', href: 'https://pca.st/tc9nckz7', icon: 'fak fa-pocket-casts', color: '#f43e37' }
+        { label: 'YouTube Music', href: 'https://music.youtube.com/playlist?list=PLT70Wn9q0VdbVtaQ-ZQioK-w6big5L9Cl', icon: 'youtube-music', color: '#ff0033' },
+        { label: 'Spotify', href: 'https://open.spotify.com/show/0jpcfqzb7Eymvde0PR1cI3', icon: 'spotify', color: '#1db954' },
+        { label: 'Apple Podcasts', href: 'https://podcasts.apple.com/us/podcast/pod-on-the-apex/id1795324786', icon: 'podcast', color: '#872ec4' },
+        { label: 'Pocket Casts', href: 'https://pca.st/tc9nckz7', icon: 'pocket-casts', color: '#f43e37' }
     ],
     [
-        { label: 'YouTube', href: 'https://www.youtube.com/@PodOnTheApex', icon: 'fab fa-youtube', color: '#ff0033' },
-        { label: 'Twitch', href: 'https://www.twitch.tv/podontheapex', icon: 'fab fa-twitch', color: '#9146ff' },
-        { label: 'Instagram', href: 'https://www.instagram.com/podontheapex/', icon: 'fab fa-instagram', color: '#ff0069' },
-        { label: 'TikTok', href: 'https://www.tiktok.com/@podontheapex', icon: 'fab fa-tiktok', color: 'white' }
+        { label: 'YouTube', href: 'https://www.youtube.com/@PodOnTheApex', icon: 'youtube', color: '#ff0033' },
+        { label: 'Twitch', href: 'https://www.twitch.tv/podontheapex', icon: 'twitch', color: '#9146ff' },
+        { label: 'Instagram', href: 'https://www.instagram.com/podontheapex/', icon: 'instagram', color: '#ff0069' },
+        { label: 'TikTok', href: 'https://www.tiktok.com/@podontheapex', icon: 'tiktok', color: 'white' }
     ],
     [
-        { label: 'X (Twitter)', href: 'https://x.com/podontheapex', icon: 'fab fa-x-twitter', color: 'white' },
-        { label: 'Threads', href: 'https://www.threads.com/@podontheapex', icon: 'fab fa-threads', color: 'white' },
-        { label: 'Facebook', href: 'https://www.facebook.com/podontheapex', icon: 'fab fa-facebook', color: '#1877f2' },
-        { label: 'LinkedIn', href: 'https://www.linkedin.com/company/podontheapex', icon: 'fab fa-linkedin', color: '#0a66c2' }
+        { label: 'X (Twitter)', href: 'https://x.com/podontheapex', icon: 'x-twitter', color: 'white' },
+        { label: 'Threads', href: 'https://www.threads.com/@podontheapex', icon: 'threads', color: 'white' },
+        { label: 'Facebook', href: 'https://www.facebook.com/podontheapex', icon: 'facebook', color: '#1877f2' },
+        { label: 'LinkedIn', href: 'https://www.linkedin.com/company/podontheapex', icon: 'linkedin', color: '#0a66c2' }
     ]
 ];
 ---
@@ -32,7 +34,7 @@ const linkGroups = [
                     <div class="d-flex gap-4">
                         {group.map(link => (
                             <a href={link.href} target="_blank" rel="noopener" aria-label={link.label}>
-                                <i class={link.icon} style={`color: ${link.color};`}></i>
+                                <Icon name={link.icon} style={`color: ${link.color};`} />
                             </a>
                         ))}
                     </div>

@@ -1,0 +1,7 @@
+---
+import { icons } from '../data/icons.js';
+
+const { name, class: className, ...attributes } = Astro.props;
+const { viewBox, path } = icons[name];
+---
+<svg class:list={['icon', className]} viewBox={viewBox} aria-hidden="true" {...attributes}><path d={path}></path></svg>

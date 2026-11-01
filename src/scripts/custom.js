@@ -15,15 +15,6 @@ if ('serviceWorker' in navigator) {
 function setTheme(theme) {
     htmlElement.setAttribute('data-bs-theme', theme);
     localStorage.setItem('theme', theme);
-
-    const darkModeIcon = document.getElementById('darkModeIcon');
-    if (darkModeIcon) {
-        if (theme === 'dark') {
-            darkModeIcon.className = 'fas fa-sun text-warning';
-        } else {
-            darkModeIcon.className = 'fas fa-moon text-light';
-        }
-    }
 }
 
 function getPreferredTheme() {

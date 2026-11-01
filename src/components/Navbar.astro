@@ -1,4 +1,6 @@
 ---
+import Icon from './Icon.astro';
+
 const { slug } = Astro.props;
 
 const mainLinks = [
@@ -49,7 +51,8 @@ const inPlaylists = playlists.some(link => link.slug === slug);
                 ))}
                 <li class="nav-item d-flex justify-content-center align-items-center ms-lg-3 mt-3 mt-lg-0">
                     <button class="nav-link" id="darkModeToggle" type="button" aria-label="Toggle Theme">
-                        <i id="darkModeIcon"></i>
+                        <Icon name="sun" class="theme-icon-dark text-warning" />
+                        <Icon name="moon" class="theme-icon-light text-light" />
                     </button>
                 </li>
             </ul>

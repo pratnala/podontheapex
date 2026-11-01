@@ -144,6 +144,20 @@ iframe.short-video {
     overflow-wrap: anywhere;
 }
 
+.icon {
+    width: 1.25em;
+    height: 1em;
+
+    vertical-align: -.125em;
+
+    fill: currentColor;
+}
+
+[data-bs-theme='dark'] .theme-icon-light,
+[data-bs-theme='light'] .theme-icon-dark {
+    display: none;
+}
+
 .btn-apple {
     color: #ffffff;
     background-color: #872ec4;
