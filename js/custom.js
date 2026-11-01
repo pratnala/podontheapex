@@ -192,6 +192,13 @@ document.addEventListener("DOMContentLoaded", () => {
         let currentSeason = defaultSeason;
         let filteredItems = [];
 
+        function scrollToGrid() {
+            const grid = document.getElementById('videoGrid');
+            if (grid && grid.getBoundingClientRect().top < 0) {
+                grid.scrollIntoView();
+            }
+        }
+
         function updateSeason(season) {
             currentSeason = season;
             currentPage = 1;
@@ -260,6 +267,7 @@ document.addEventListener("DOMContentLoaded", () => {
                     e.preventDefault();
                     if (currentPage > 1) {
                         renderPage(currentPage - 1);
+                        scrollToGrid();
                     }
                 });
                 prevLi.appendChild(prevA);
@@ -275,6 +283,7 @@ document.addEventListener("DOMContentLoaded", () => {
                     a.addEventListener('click', (e) => {
                         e.preventDefault();
                         renderPage(i);
+                        scrollToGrid();
                     });
                     li.appendChild(a);
                     container.appendChild(li);
@@ -290,6 +299,7 @@ document.addEventListener("DOMContentLoaded", () => {
                     e.preventDefault();
                     if (currentPage < totalPages) {
                         renderPage(currentPage + 1);
+                        scrollToGrid();
                     }
                 });
                 nextLi.appendChild(nextA);
@@ -302,6 +312,7 @@ document.addEventListener("DOMContentLoaded", () => {
                 e.preventDefault();
                 const targetSeason = tab.getAttribute('data-target-season');
                 updateSeason(targetSeason);
+                scrollToGrid();
             });
         });
 

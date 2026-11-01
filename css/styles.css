@@ -169,6 +169,10 @@ iframe.short-video {
     -webkit-backdrop-filter: blur(12px);
 }
 
+#videoGrid {
+    scroll-margin-top: 6rem;
+}
+
 @media (max-width: 991.98px) {
     .navbar-collapse {
         margin-top: .75rem;
