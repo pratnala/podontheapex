@@ -1,0 +1,58 @@
+---
+const { slug } = Astro.props;
+
+const mainLinks = [
+    { label: 'Shorts', slug: 'shorts' }
+];
+const playlists = [
+    { label: 'Predictions', slug: 'predictions' },
+    { label: 'Learn', slug: 'learn' },
+    { label: 'History', slug: 'history' },
+    { label: 'Instant Reactions', slug: 'instant-reactions' },
+    { label: 'Clips', slug: 'clips' }
+];
+const endLinks = [
+    { label: 'Collabs', slug: 'collabs' },
+    { label: 'Live', slug: 'live' }
+];
+const inPlaylists = playlists.some(link => link.slug === slug);
+---
+<nav id="mainNav" class="navbar navbar-expand-lg navbar-dark fixed-top transition-glass" aria-label="Main">
+    <div class="container">
+        <button class="navbar-toggler ms-auto" type="button" data-bs-toggle="collapse" data-bs-target="#mainNavbar" aria-controls="mainNavbar" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="mainNavbar">
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                    <a class:list={['nav-link', { active: slug === undefined }]} href="/" aria-current={slug === undefined ? 'page' : undefined}>Home</a>
+                </li>
+                {mainLinks.map(link => (
+                    <li class="nav-item">
+                        <a class:list={['nav-link', { active: slug === link.slug }]} href={`/${link.slug}`} aria-current={slug === link.slug ? 'page' : undefined}>{link.label}</a>
+                    </li>
+                ))}
+                <li class="nav-item dropdown">
+                    <button class:list={['nav-link dropdown-toggle', { active: inPlaylists }]} id="playlistsDropdown" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Playlists
+                    </button>
+                    <ul class="dropdown-menu dropdown-menu-end dropdown-menu-dark shadow" aria-labelledby="playlistsDropdown">
+                        {playlists.map(link => (
+                            <li><a class:list={['dropdown-item', { active: slug === link.slug }]} href={`/${link.slug}`} aria-current={slug === link.slug ? 'page' : undefined}>{link.label}</a></li>
+                        ))}
+                    </ul>
+                </li>
+                {endLinks.map(link => (
+                    <li class="nav-item">
+                        <a class:list={['nav-link', { active: slug === link.slug }]} href={`/${link.slug}`} aria-current={slug === link.slug ? 'page' : undefined}>{link.label}</a>
+                    </li>
+                ))}
+                <li class="nav-item d-flex justify-content-center align-items-center ms-lg-3 mt-3 mt-lg-0">
+                    <button class="nav-link" id="darkModeToggle" type="button" aria-label="Toggle Theme">
+                        <i id="darkModeIcon"></i>
+                    </button>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>

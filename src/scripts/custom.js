@@ -43,103 +43,30 @@ document.addEventListener("DOMContentLoaded", () => {
         }
     });
 
-    const footerContainer = document.getElementById('global-footer');
-    if (footerContainer) {
-        fetch('footer.html')
-            .then(response => response.text())
-            .then(html => {
-                footerContainer.innerHTML = html;
-                document.getElementById('current-year').textContent = new Date().getFullYear();
-            });
+    const darkModeToggle = document.getElementById('darkModeToggle');
+    if (darkModeToggle) {
+        darkModeToggle.addEventListener('click', () => {
+            const currentTheme = htmlElement.getAttribute('data-bs-theme');
+            setTheme(currentTheme === 'dark' ? 'light' : 'dark');
+        });
     }
 
-    const headerContainer = document.getElementById('global-header');
-    if (headerContainer) {
-        fetch('header.html')
-            .then(response => response.text())
-            .then(html => {
-                headerContainer.innerHTML = html;
-                return fetch('header.json');
-            })
-            .then(response => response.json())
-            .then(data => {
-                let pageKey = window.location.pathname.split('/').pop().replace('.html', '');
-                if (!pageKey || pageKey === 'index') {
-                    pageKey = '/';
-                }
-                const headerData = data[pageKey];
-                if (headerData) {
-                    const headerTitle = document.getElementById('header-title');
-                    const headerDescription = document.getElementById('header-description');
-                    const headerLogo = document.getElementById('header-logo');
-                    if (headerTitle) {
-                        headerTitle.textContent = headerData.title;
-                    }
-                    if (headerDescription) {
-                        headerDescription.textContent = headerData.description;
-                    }
-                    if (headerLogo) {
-                        headerLogo.setAttribute('src', headerData.logo);
-                    }
-                }
-            });
-    }
-
-    const navbarContainer = document.getElementById('global-navbar');
-    if (navbarContainer) {
-        fetch('navbar.html')
-            .then(response => response.text())
-            .then(html => {
-                navbarContainer.innerHTML = html;
-
-                setTheme(htmlElement.getAttribute('data-bs-theme'));
-                const darkModeToggle = document.getElementById('darkModeToggle');
-                if (darkModeToggle) {
-                    darkModeToggle.addEventListener('click', (e) => {
-                        e.preventDefault();
-                        const currentTheme = htmlElement.getAttribute('data-bs-theme');
-                        setTheme(currentTheme === 'dark' ? 'light' : 'dark');
-                    });
-                }
-
-                const currentPath = window.location.pathname.split('/').pop() || '/';
-                const navLinks = document.querySelectorAll('.navbar-nav .nav-link, .dropdown-item');
-
-                navLinks.forEach(link => {
-                    link.classList.remove('active');
-                    const href = link.getAttribute('href');
-                    if (href === currentPath || (currentPath === '/' && (href === 'index.html' || href === '/'))) {
-                        link.classList.add('active');
-
-                        if (link.classList.contains('dropdown-item')) {
-                            const parentDropdown = link.closest('.dropdown');
-                            if (parentDropdown) {
-                                const dropdownToggle = parentDropdown.querySelector('.dropdown-toggle');
-                                if (dropdownToggle) {
-                                    dropdownToggle.classList.add('active');
-                                }
-                            }
-                        }
-                    }
-                });
-                const mainNav = document.getElementById('mainNav');
-                if (mainNav) {
-                    window.addEventListener('scroll', () => {
-                        if (window.scrollY > 50) {
-                            mainNav.classList.add('scrolled');
-                        } else {
-                            mainNav.classList.remove('scrolled');
-                        }
-                    });
-                }
-            });
+    const mainNav = document.getElementById('mainNav');
+    if (mainNav) {
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 50) {
+                mainNav.classList.add('scrolled');
+            } else {
+                mainNav.classList.remove('scrolled');
+            }
+        });
     }
 
     const videoGrid = document.getElementById('videoGrid');
     if (videoGrid) {
         const targetCategory = videoGrid.getAttribute('data-category');
 
-        fetch('videos.json').then(response => response.json()).then(allVideos => {
+        fetch('/videos.json').then(response => response.json()).then(allVideos => {
             allVideos.sort((a, b) => new Date(b.date) - new Date(a.date));
             videoGrid.innerHTML = '';
             const pageVideos = allVideos.filter(video => video.categories.includes(targetCategory));
@@ -168,7 +95,7 @@ document.addEventListener("DOMContentLoaded", () => {
                     uniqueSeasons.forEach(season => {
                         const li = `
                             <li class="nav-item">
-                                <a class="nav-link" href="#" data-target-season="${season}">Season ${season}</a>
+                                <button class="nav-link" type="button" data-target-season="${season}">Season ${season}</button>
                             </li>
                         `;
                         container.insertAdjacentHTML('beforeend', li);
@@ -216,8 +143,10 @@ document.addEventListener("DOMContentLoaded", () => {
             seasonTabs.forEach(tab => {
                 if (tab.getAttribute('data-target-season') === currentSeason) {
                     tab.classList.add('active');
+                    tab.setAttribute('aria-pressed', 'true');
                 } else {
                     tab.classList.remove('active');
+                    tab.setAttribute('aria-pressed', 'false');
                 }
             });
 
@@ -248,6 +177,15 @@ document.addEventListener("DOMContentLoaded", () => {
             renderPaginationControls();
         }
 
+        function createPageButton(label, onClick) {
+            const button = document.createElement('button');
+            button.className = 'page-link';
+            button.type = 'button';
+            button.textContent = label;
+            button.addEventListener('click', onClick);
+            return button;
+        }
+
         function renderPaginationControls() {
             const totalPages = Math.ceil(filteredItems.length / itemsPerPage);
             paginationContainers.forEach(container => {
@@ -259,57 +197,42 @@ document.addEventListener("DOMContentLoaded", () => {
 
                 const prevLi = document.createElement('li');
                 prevLi.className = `page-item ${currentPage === 1 ? 'd-none' : ''}`;
-                const prevA = document.createElement('a');
-                prevA.className = 'page-link';
-                prevA.href = '#';
-                prevA.textContent = 'Previous';
-                prevA.addEventListener('click', (e) => {
-                    e.preventDefault();
+                prevLi.appendChild(createPageButton('Previous', () => {
                     if (currentPage > 1) {
                         renderPage(currentPage - 1);
                         scrollToGrid();
                     }
-                });
-                prevLi.appendChild(prevA);
+                }));
                 container.appendChild(prevLi);
 
                 for (let i = 1; i <= totalPages; i++) {
                     const li = document.createElement('li');
                     li.className = `page-item ${i === currentPage ? 'active' : ''}`;
-                    const a = document.createElement('a');
-                    a.className = 'page-link';
-                    a.href = '#';
-                    a.textContent = i;
-                    a.addEventListener('click', (e) => {
-                        e.preventDefault();
+                    const button = createPageButton(i, () => {
                         renderPage(i);
                         scrollToGrid();
                     });
-                    li.appendChild(a);
+                    if (i === currentPage) {
+                        button.setAttribute('aria-current', 'page');
+                    }
+                    li.appendChild(button);
                     container.appendChild(li);
                 }
 
                 const nextLi = document.createElement('li');
                 nextLi.className = `page-item ${currentPage === totalPages ? 'd-none' : ''}`;
-                const nextA = document.createElement('a');
-                nextA.className = 'page-link';
-                nextA.href = '#';
-                nextA.textContent = 'Next';
-                nextA.addEventListener('click', (e) => {
-                    e.preventDefault();
+                nextLi.appendChild(createPageButton('Next', () => {
                     if (currentPage < totalPages) {
                         renderPage(currentPage + 1);
                         scrollToGrid();
                     }
-                });
-                nextLi.appendChild(nextA);
+                }));
                 container.appendChild(nextLi);
             });
         }
 
         seasonTabs.forEach(tab => {
-            tab.addEventListener('click', (e) => {
-                e.preventDefault();
+            tab.addEventListener('click', () => {
                 const targetSeason = tab.getAttribute('data-target-season');
                 updateSeason(targetSeason);
                 scrollToGrid();

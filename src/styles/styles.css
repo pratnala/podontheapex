@@ -11,8 +11,8 @@ Font extensions:
     font-family: 'Dubai';
 
     font-display: swap;
-    src: url('../fonts/DubaiW23-Regular.woff2') format('woff2'),
-    url('../fonts/DubaiW23-Regular.woff') format('woff');
+    src: url('/fonts/DubaiW23-Regular.woff2') format('woff2'),
+    url('/fonts/DubaiW23-Regular.woff') format('woff');
 }
 
 @font-face {
@@ -20,8 +20,8 @@ Font extensions:
     font-weight: 300;
 
     font-display: swap;
-    src: url('../fonts/DubaiW23-Light.woff2') format('woff2'),
-    url('../fonts/DubaiW23-Light.woff') format('woff');
+    src: url('/fonts/DubaiW23-Light.woff2') format('woff2'),
+    url('/fonts/DubaiW23-Light.woff') format('woff');
 }
 
 @font-face {
@@ -29,8 +29,8 @@ Font extensions:
     font-weight: 500;
 
     font-display: swap;
-    src: url('../fonts/DubaiW23-Medium.woff2') format('woff2'),
-    url('../fonts/DubaiW23-Medium.woff') format('woff');
+    src: url('/fonts/DubaiW23-Medium.woff2') format('woff2'),
+    url('/fonts/DubaiW23-Medium.woff') format('woff');
 }
 
 @font-face {
@@ -38,8 +38,8 @@ Font extensions:
     font-weight: bold;
 
     font-display: swap;
-    src: url('../fonts/DubaiW23-Bold.woff2') format('woff2'),
-    url('../fonts/DubaiW23-Bold.woff') format('woff');
+    src: url('/fonts/DubaiW23-Bold.woff2') format('woff2'),
+    url('/fonts/DubaiW23-Bold.woff') format('woff');
 }
 
 body {
@@ -116,7 +116,7 @@ iframe.short-video {
 
 .hero-jumbotron {
     color: #ffffff;
-    background: linear-gradient(rgba(0, 0, 0, .6), rgba(0, 0, 0, .7)), url('../img/header.jpg');
+    background: linear-gradient(rgba(0, 0, 0, .6), rgba(0, 0, 0, .7)), url('/img/header-hero.webp');
     background-repeat: no-repeat;
     background-position: 50% 25%;
     background-size: cover;
@@ -181,5 +181,9 @@ iframe.short-video {
         border-radius: .5rem;
         background-color: #212529;
         box-shadow: 0 10px 25px rgba(0, 0, 0, .5);
+    }
+
+    .navbar-collapse .dropdown-toggle {
+        width: 100%;
     }
 }

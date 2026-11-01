@@ -1,0 +1,61 @@
+---
+import '../styles/styles.css';
+import Footer from '../components/Footer.astro';
+import Hero from '../components/Hero.astro';
+import Navbar from '../components/Navbar.astro';
+
+const { title, description, logo, slug, heroPadding = 'py-4' } = Astro.props;
+const pageUrl = new URL(slug ?? '/', Astro.site);
+const imageUrl = new URL('/img/header.jpg', Astro.site);
+---
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="author" content="Pratyush Nalam, Aniket Mohan">
+        <meta name="description" content={description}>
+        <meta property="og:type" content="website">
+        <meta property="og:url" content={pageUrl}>
+        <meta property="og:title" content={title}>
+        <meta property="og:description" content={description}>
+        <meta property="og:image" content={imageUrl}>
+        <meta property="twitter:card" content="summary_large_image">
+        <meta property="twitter:url" content={pageUrl}>
+        <meta property="twitter:title" content={title}>
+        <meta property="twitter:description" content={description}>
+        <meta property="twitter:image" content={imageUrl}>
+        <link rel="alternate" type="application/rss+xml" title="Pod on the Apex Podcast Feed" href="/podcast.xml">
+        <link rel="preconnect" href="https://www.youtube.com">
+        <link rel="preconnect" href="https://i.ytimg.com">
+        <link rel="icon" type="image/png" href="/img/favicon-32.png" sizes="32x32">
+        <link rel="apple-touch-icon" href="/img/apple-touch-icon.png">
+        <link rel="manifest" href="/manifest.json">
+        <meta name="theme-color" content="#e10600">
+        <!-- Set the theme before first paint -->
+        <script is:inline>
+            document.documentElement.setAttribute('data-bs-theme', localStorage.getItem('theme') || (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light'));
+        </script>
+        <!-- Bootstrap v5.3.8 -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+        <!-- Font Awesome Kit -->
+        <script is:inline src="https://kit.fontawesome.com/438bcc3513.js" crossorigin="anonymous" defer></script>
+        <!-- Bootstrap v5.3.8 -->
+        <script is:inline src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous" defer></script>
+        <!-- Fathom Analytics -->
+        <script is:inline src="https://cdn.usefathom.com/script.js" data-site="XDKRJELP" defer></script>
+        <title>{title}</title>
+    </head>
+    <body>
+        <a class="visually-hidden-focusable" href="#main">Skip to content</a>
+        <header class:list={[heroPadding, 'mb-4 hero-jumbotron text-center']}>
+            <Navbar slug={slug} />
+            <Hero title={title} description={description} logo={logo} />
+        </header>
+        <main id="main">
+            <slot />
+        </main>
+        <Footer />
+        <script src="../scripts/custom.js"></script>
+    </body>
+</html>

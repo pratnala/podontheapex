@@ -1,0 +1,25 @@
+---
+import Layout from '../layouts/Layout.astro';
+import { pages } from '../data/pages.js';
+
+export function getStaticPaths() {
+    return pages.map(page => ({ params: { slug: page.slug }, props: page }));
+}
+
+const { title, description, logo, slug, category, itemsPerPage, heroPadding, seasonTabs } = Astro.props;
+---
+<Layout title={title} description={description} logo={logo} slug={slug} heroPadding={heroPadding}>
+    <div class="album" data-items-per-page={itemsPerPage}>
+        {seasonTabs && <ul class="nav nav-pills justify-content-center mt-4 mb-3 season-tabs-container"></ul>}
+        <nav aria-label="Video pagination top" class="mt-5 mb-5">
+            <ul class="pagination justify-content-center pagination-container"></ul>
+        </nav>
+        <div class="container">
+            <div class="row g-4" id="videoGrid" data-category={category}></div>
+        </div>
+        <nav aria-label="Video pagination bottom" class="mt-5 mb-5">
+            <ul class="pagination justify-content-center pagination-container"></ul>
+        </nav>
+        {seasonTabs && <ul class="nav nav-pills justify-content-center mt-4 mb-3 season-tabs-container"></ul>}
+    </div>
+</Layout>

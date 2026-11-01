@@ -1,4 +1,4 @@
-const CACHE_NAME = 'apex-cache-v3';
+const CACHE_NAME = 'apex-cache-v4';
 
 const urlsToCache = [
     // Core Routes
@@ -12,16 +12,8 @@ const urlsToCache = [
     '/collabs',
     '/live',
 
-    // Injected Components & Data
-    '/navbar.html',
-    '/footer.html',
-    '/header.html',
-    '/header.json',
-    '/videos.json',
-
-    // Styles & Logic
-    '/css/styles.min.css',
-    '/js/custom.min.js'
+    // Data
+    '/videos.json'
 ];
 
 function fetchAndCache(request) {
