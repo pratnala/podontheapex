@@ -1,4 +1,5 @@
 ---
+import EpisodeLink from '../../components/EpisodeLink.astro';
 import Layout from '../../layouts/Layout.astro';
 import { episodes } from '../../data/videos.js';
 import logo from '../../assets/logos/logo.png';
@@ -64,9 +65,17 @@ const structuredData = {
         <iframe src={`https://www.youtube.com/embed/${episode.id}`} title={episode.title} frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
         <h2 class="h4 mt-4">Show Notes</h2>
         <div class="show-notes" set:html={episode.showNotes}></div>
-        <nav class="d-flex justify-content-between gap-3 mt-5" aria-label="More episodes">
-            {older ? <a class="episode-link" href={`/episodes/${older.slug}`}><span class="d-block small text-secondary">Older</span>{older.title}</a> : <span></span>}
-            {newer && <a class="episode-link text-end" href={`/episodes/${newer.slug}`}><span class="d-block small text-secondary">Newer</span>{newer.title}</a>}
+        <nav class="row g-3 mt-5" aria-label="More episodes">
+            {older && (
+                <div class="col-md-6">
+                    <EpisodeLink episode={older} label="Older" />
+                </div>
+            )}
+            {newer && (
+                <div class:list={['col-md-6', { 'ms-auto': !older }]}>
+                    <EpisodeLink episode={newer} label="Newer" />
+                </div>
+            )}
         </nav>
     </article>
 </Layout>

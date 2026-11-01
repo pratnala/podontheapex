@@ -1,0 +1,10 @@
+---
+const { episode, label } = Astro.props;
+---
+<a class="episode-link" href={`/episodes/${episode.slug}`}>
+    <img src={`https://i.ytimg.com/vi/${episode.id}/maxresdefault.jpg`} alt="" width="1280" height="720" loading="lazy" decoding="async">
+    <span>
+        <span class="d-block small text-secondary">{label}</span>
+        <span class="episode-link-title">{episode.title}</span>
+    </span>
+</a>
