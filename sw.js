@@ -1,4 +1,4 @@
-const CACHE_NAME = 'apex-cache-v2';
+const CACHE_NAME = 'apex-cache-v3';
 
 const urlsToCache = [
     // Core Routes
@@ -21,22 +21,45 @@ const urlsToCache = [
 
     // Styles & Logic
     '/css/styles.min.css',
-    '/js/custom.min.js',
-
-    // Brand Assets
-    '/img/logo.png',
-    '/img/face-logo.png',
-    '/img/header.jpg',
-    '/img/predictions-logo.png',
-    '/img/learn-logo.png',
-    '/img/history-logo.png',
-    '/img/instant-reactions-logo.png',
-    '/img/clips-logo.png',
-    '/img/collabs-logo.png',
-    '/img/live-logo.png'
+    '/js/custom.min.js'
 ];
 
+function fetchAndCache(request) {
+    return fetch(request).then(networkResponse => {
+        if (networkResponse.status === 200) {
+            // Clone before returning, the page may consume the body first
+            const responseCopy = networkResponse.clone();
+            caches.open(CACHE_NAME).then(cache => cache.put(request, responseCopy));
+        }
+        return networkResponse;
+    });
+}
+
+function isFreshContent(request) {
+    const url = new URL(request.url);
+    return request.mode === 'navigate'
+        || (url.origin === self.location.origin && (url.pathname.endsWith('.html') || url.pathname.endsWith('.json')));
+}
+
+function networkFirst(request) {
+    return fetchAndCache(request).catch(() => {
+        return caches.match(request)
+            .then(cachedResponse => cachedResponse || (request.mode === 'navigate' ? caches.match('/') : undefined))
+            .then(fallbackResponse => fallbackResponse || Response.error());
+    });
+}
+
+function cacheFirst(request) {
+    return caches.match(request).then(cachedResponse => {
+        const fetchPromise = fetchAndCache(request).catch(() => Response.error());
+
+        // Return the instant cached version if it exists, otherwise wait for the network
+        return cachedResponse || fetchPromise;
+    });
+}
+
 self.addEventListener('install', event => {
+    self.skipWaiting();
     event.waitUntil(
         caches.open(CACHE_NAME)
             .then(cache => cache.addAll(urlsToCache))
@@ -44,24 +67,11 @@ self.addEventListener('install', event => {
 });
 
 self.addEventListener('fetch', event => {
-    event.respondWith(
-        caches.match(event.request).then(cachedResponse => {
-            const fetchPromise = fetch(event.request).then(networkResponse => {
-                caches.open(CACHE_NAME).then(cache => {
-                    // Only cache valid GET requests
-                    if (event.request.method === 'GET' && networkResponse.status === 200) {
-                        cache.put(event.request, networkResponse.clone());
-                    }
-                });
-                return networkResponse;
-            }).catch(() => {
-                console.log("Network fetch failed, serving from cache if available.");
-            });
+    if (event.request.method !== 'GET') {
+        return;
+    }
 
-            // Return the instant cached version if it exists, otherwise wait for the network
-            return cachedResponse || fetchPromise;
-        })
-    );
+    event.respondWith(isFreshContent(event.request) ? networkFirst(event.request) : cacheFirst(event.request));
 });
 
 self.addEventListener('activate', event => {
@@ -74,6 +84,6 @@ self.addEventListener('activate', event => {
                     }
                 })
             );
-        })
+        }).then(() => self.clients.claim())
     );
 });
