@@ -1,5 +1,6 @@
 ---
 import EpisodeLink from '../../components/EpisodeLink.astro';
+import PlayButton from '../../components/PlayButton.astro';
 import Layout from '../../layouts/Layout.astro';
 import { episodes } from '../../data/videos.js';
 import logo from '../../assets/logos/logo.png';
@@ -62,7 +63,10 @@ const structuredData = {
 >
     <script slot="head" is:inline type="application/ld+json" set:html={JSON.stringify(structuredData).replaceAll('<', '\\u003c')}></script>
     <article class="container episode">
-        <iframe src={`https://www.youtube.com/embed/${episode.id}`} title={episode.title} frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        <a class="video-thumb" href={youTubeUrl} data-video-id={episode.id} data-video-title={episode.title} aria-label={`Play ${episode.title}`}>
+            <img src={thumbnail} alt="" width="1280" height="720" fetchpriority="high" decoding="async">
+            <PlayButton />
+        </a>
         <h2 class="h4 mt-4">Show Notes</h2>
         <div class="show-notes" set:html={episode.showNotes}></div>
         <nav class="row g-3 mt-5" aria-label="More episodes">

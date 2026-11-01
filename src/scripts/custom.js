@@ -53,6 +53,26 @@ document.addEventListener("DOMContentLoaded", () => {
         });
     }
 
+    function playVideo(link) {
+        const iframe = document.createElement('iframe');
+        iframe.src = `https://www.youtube.com/embed/${link.getAttribute('data-video-id')}?autoplay=1`;
+        iframe.title = link.getAttribute('data-video-title');
+        iframe.className = link.classList.contains('short-video') ? 'short-video' : '';
+        iframe.allow = 'accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share';
+        iframe.referrerPolicy = 'strict-origin-when-cross-origin';
+        iframe.allowFullscreen = true;
+        iframe.videoLink = link;
+        link.replaceWith(iframe);
+    }
+
+    document.addEventListener('click', e => {
+        const link = e.target.closest('[data-video-id]');
+        if (link) {
+            e.preventDefault();
+            playVideo(link);
+        }
+    });
+
     const videoGrid = document.getElementById('videoGrid');
     if (videoGrid) {
         const albumWrapper = document.querySelector('.album');
@@ -71,18 +91,6 @@ document.addEventListener("DOMContentLoaded", () => {
             if (videoGrid.getBoundingClientRect().top < 0) {
                 videoGrid.scrollIntoView();
             }
-        }
-
-        function playVideo(link) {
-            const iframe = document.createElement('iframe');
-            iframe.src = `https://www.youtube.com/embed/${link.getAttribute('data-video-id')}?autoplay=1`;
-            iframe.title = link.getAttribute('data-video-title');
-            iframe.className = link.classList.contains('short-video') ? 'short-video' : '';
-            iframe.allow = 'accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share';
-            iframe.referrerPolicy = 'strict-origin-when-cross-origin';
-            iframe.allowFullscreen = true;
-            iframe.videoLink = link;
-            link.replaceWith(iframe);
         }
 
         function stopVideo(item) {
@@ -183,14 +191,6 @@ document.addEventListener("DOMContentLoaded", () => {
                 container.appendChild(nextLi);
             });
         }
-
-        videoGrid.addEventListener('click', e => {
-            const link = e.target.closest('[data-video-id]');
-            if (link) {
-                e.preventDefault();
-                playVideo(link);
-            }
-        });
 
         seasonTabs.forEach(tab => {
             tab.addEventListener('click', () => goTo(tab.getAttribute('data-target-season'), 1));
