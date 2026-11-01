@@ -1,25 +1,34 @@
 ---
+import SeasonTabs from '../components/SeasonTabs.astro';
+import VideoCard from '../components/VideoCard.astro';
 import Layout from '../layouts/Layout.astro';
 import { pages } from '../data/pages.js';
+import { videos } from '../data/videos.js';
 
 export function getStaticPaths() {
     return pages.map(page => ({ params: { slug: page.slug }, props: page }));
 }
 
-const { title, description, logo, slug, category, itemsPerPage, heroPadding, seasonTabs } = Astro.props;
+const { title, description, metaDescription, logo, slug, category, itemsPerPage, isShort, heroPadding, seasonTabs } = Astro.props;
+
+const pageVideos = videos.filter(video => video.categories.includes(category));
+const seasons = seasonTabs ? [...new Set(pageVideos.map(video => video.season))].sort((a, b) => b - a) : [];
+const firstPage = pageVideos.filter(video => !seasonTabs || video.season === seasons[0]).slice(0, itemsPerPage);
 ---
-<Layout title={title} description={description} logo={logo} slug={slug} heroPadding={heroPadding}>
+<Layout title={title} description={metaDescription} logo={logo} slug={slug} heroPadding={heroPadding} heroText={description}>
     <div class="album" data-items-per-page={itemsPerPage}>
-        {seasonTabs && <ul class="nav nav-pills justify-content-center mt-4 mb-3 season-tabs-container"></ul>}
+        {seasonTabs && <SeasonTabs seasons={seasons} />}
         <nav aria-label="Video pagination top" class="mt-5 mb-5">
             <ul class="pagination justify-content-center pagination-container"></ul>
         </nav>
         <div class="container">
-            <div class="row g-4" id="videoGrid" data-category={category}></div>
+            <div class="row g-4" id="videoGrid">
+                {pageVideos.map(video => <VideoCard video={video} isShort={isShort} hidden={!firstPage.includes(video)} />)}
+            </div>
         </div>
         <nav aria-label="Video pagination bottom" class="mt-5 mb-5">
             <ul class="pagination justify-content-center pagination-container"></ul>
         </nav>
-        {seasonTabs && <ul class="nav nav-pills justify-content-center mt-4 mb-3 season-tabs-container"></ul>}
+        {seasonTabs && <SeasonTabs seasons={seasons} />}
     </div>
 </Layout>

@@ -1,0 +1,72 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import { episodes } from '../../data/videos.js';
+import logo from '../../assets/logos/logo.png';
+import predictionsLogo from '../../assets/logos/predictions-logo.png';
+
+export function getStaticPaths() {
+    return episodes.map((episode, index) => ({
+        params: { slug: episode.slug },
+        props: { episode, newer: episodes[index - 1], older: episodes[index + 1] }
+    }));
+}
+
+const { episode, newer, older } = Astro.props;
+const pageUrl = new URL(`/episodes/${episode.slug}`, Astro.site);
+const thumbnail = `https://i.ytimg.com/vi/${episode.id}/maxresdefault.jpg`;
+const youTubeUrl = `https://www.youtube.com/watch?v=${episode.id}`;
+
+const structuredData = {
+    '@context': 'https://schema.org',
+    '@type': 'PodcastEpisode',
+    url: pageUrl,
+    name: episode.title,
+    description: episode.summary,
+    datePublished: episode.date,
+    episodeNumber: Number(episode.episodeNumber),
+    timeRequired: `PT${episode.duration}S`,
+    partOfSeason: {
+        '@type': 'PodcastSeason',
+        seasonNumber: Number(episode.seasonNumber)
+    },
+    partOfSeries: {
+        '@type': 'PodcastSeries',
+        name: 'Pod on the Apex',
+        url: Astro.site
+    },
+    associatedMedia: {
+        '@type': 'MediaObject',
+        contentUrl: episode.audioUrl
+    },
+    video: {
+        '@type': 'VideoObject',
+        name: episode.title,
+        description: episode.summary,
+        thumbnailUrl: thumbnail,
+        uploadDate: episode.date,
+        embedUrl: `https://www.youtube.com/embed/${episode.id}`,
+        url: youTubeUrl
+    }
+};
+---
+<Layout
+    title={`${episode.title} | Pod on the Apex`}
+    description={episode.summary}
+    logo={logo}
+    slug={`episodes/${episode.slug}`}
+    image={thumbnail}
+    heroTitle={episode.title}
+    heroTitleClass="display-6"
+    heroText={`Season ${episode.seasonNumber}, Episode ${episode.episodeNumber} · ${episode.dateLabel}`}
+>
+    <script slot="head" is:inline type="application/ld+json" set:html={JSON.stringify(structuredData).replaceAll('<', '\\u003c')}></script>
+    <article class="container episode">
+        <iframe src={`https://www.youtube.com/embed/${episode.id}`} title={episode.title} frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        <h2 class="h4 mt-4">Show Notes</h2>
+        <div class="show-notes" set:html={episode.showNotes}></div>
+        <nav class="d-flex justify-content-between gap-3 mt-5" aria-label="More episodes">
+            {older ? <a class="episode-link" href={`/episodes/${older.slug}`}><span class="d-block small text-secondary">Older</span>{older.title}</a> : <span></span>}
+            {newer && <a class="episode-link text-end" href={`/episodes/${newer.slug}`}><span class="d-block small text-secondary">Newer</span>{newer.title}</a>}
+        </nav>
+    </article>
+</Layout>

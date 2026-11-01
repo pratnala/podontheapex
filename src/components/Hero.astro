@@ -1,11 +1,11 @@
 ---
 import { Image } from 'astro:assets';
 
-const { title, description, logo } = Astro.props;
+const { title, titleClass = 'display-3', description, logo } = Astro.props;
 ---
 <div class="container py-5">
-    <h1 class="display-3 fw-bold text-white mt-4 d-flex justify-content-center align-items-center">
-        <Image src={logo} alt="" width={80} height={80} densities={[1, 2]} class="me-4 rounded-circle shadow" loading="eager" />
+    <h1 class:list={[titleClass, 'fw-bold text-white mt-4 d-flex justify-content-center align-items-center']}>
+        <Image src={logo} alt="" width={80} height={80} densities={[1, 2]} class="me-4 rounded-circle shadow flex-shrink-0" loading="eager" />
         <span>{title}</span>
     </h1>
     <p class="lead mb-4 fs-4">{description}</p>

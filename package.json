@@ -10,6 +10,7 @@
   "dependencies": {
     "astro": "^7.4.4",
     "esbuild": "^0.28.2",
+    "fast-xml-parser": "^5.11.2",
     "sharp": "^0.35.5"
   }
 }

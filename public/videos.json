@@ -7,7 +7,9 @@
         "categories": [
             "podcast",
             "prediction"
-        ]
+        ],
+        "slug": "2026-singapore-gp-predictions",
+        "guid": "259E84EE-D74F-4A7D-A098-FE6B8896B8DB"
     },
     {
         "id": "sEsFSppEwJw",
@@ -16,7 +18,9 @@
         "date": "2026-10-05",
         "categories": [
             "podcast"
-        ]
+        ],
+        "slug": "2026-bahrain-gp-review",
+        "guid": "2BE644AB-C7F5-47F4-9F3B-D51096AA80C7"
     },
     {
         "id": "dUspp_iZF88",
@@ -26,7 +30,9 @@
         "categories": [
             "podcast",
             "prediction"
-        ]
+        ],
+        "slug": "2026-bahrain-gp-predictions",
+        "guid": "4129E003-554A-491A-9E94-7F7F1674F752"
     },
     {
         "id": "5fLIHdqVnGI",
@@ -35,7 +41,9 @@
         "date": "2026-09-30",
         "categories": [
             "podcast"
-        ]
+        ],
+        "slug": "2026-azerbaijan-gp-review",
+        "guid": "B4714D4F-4DA9-4DB9-9C74-2222CC5A7D05"
     },
     {
         "id": "xgzeoYomuKg",
@@ -44,7 +52,9 @@
         "date": "2026-09-28",
         "categories": [
             "podcast"
-        ]
+        ],
+        "slug": "cycling-to-every-f1-circuit",
+        "guid": "11E2F3B7-4C9F-4F55-A94B-6467BE779483"
     },
     {
         "id": "dPc8Cwukk_k",
@@ -53,7 +63,9 @@
         "date": "2026-09-25",
         "categories": [
             "podcast"
-        ]
+        ],
+        "slug": "attending-the-2026-italian-gp-live",
+        "guid": "5D8290F1-5E38-44F3-859C-F58F455139D5"
     },
     {
         "id": "waKr4jxRoxM",
@@ -63,7 +75,9 @@
         "categories": [
             "podcast",
             "prediction"
-        ]
+        ],
+        "slug": "2026-azerbaijan-gp-predictions",
+        "guid": "2036A208-3928-42FF-852A-097516A56B14"
     },
     {
         "id": "tHWB91ELa0s",
@@ -72,7 +86,9 @@
         "date": "2026-08-04",
         "categories": [
             "podcast"
-        ]
+        ],
+        "slug": "2026-summer-break-review",
+        "guid": "8C4E5077-430A-41F5-8495-D91435639CD7"
     },
     {
         "id": "WG7ANvT6GRc",
@@ -82,7 +98,9 @@
         "categories": [
             "podcast",
             "prediction"
-        ]
+        ],
+        "slug": "2026-hungarian-gp-predictions",
+        "guid": "3AE2C373-AC82-40C8-BA50-B7C4A2FBA937"
     },
     {
         "id": "zkF2FsMQhdc",
@@ -91,7 +109,9 @@
         "date": "2026-07-21",
         "categories": [
             "podcast"
-        ]
+        ],
+        "slug": "2026-belgian-gp-review",
+        "guid": "FD5A5F70-F5CC-4EF2-BD8C-44C47DFB8AC2"
     },
     {
         "id": "odZa4gBsumg",
@@ -101,7 +121,9 @@
         "categories": [
             "podcast",
             "prediction"
-        ]
+        ],
+        "slug": "2026-belgian-gp-predictions",
+        "guid": "0B7327D5-F466-4B09-B740-3D5F6A8601EA"
     },
     {
         "id": "X-QpI3AwQrE",
@@ -110,7 +132,9 @@
         "date": "2026-07-09",
         "categories": [
             "podcast"
-        ]
+        ],
+        "slug": "2026-british-gp-review",
+        "guid": "767EBFED-16B9-481A-ACAB-8BEB767F0094"
     },
     {
         "id": "zGDGtVDU4Q4",
@@ -120,7 +144,9 @@
         "categories": [
             "podcast",
             "prediction"
-        ]
+        ],
+        "slug": "2026-british-gp-predictions",
+        "guid": "5832C929-8246-4CF3-879B-3F3F92EFA0DE"
     },
     {
         "id": "7T0Kjcr-OPo",
@@ -129,7 +155,9 @@
         "date": "2026-06-29",
         "categories": [
             "podcast"
-        ]
+        ],
+        "slug": "2026-austrian-gp-review",
+        "guid": "C82B62A8-4C18-400C-BF15-57AECC85C464"
     },
     {
         "id": "aqWPveGU8y4",
@@ -139,7 +167,9 @@
         "categories": [
             "podcast",
             "prediction"
-        ]
+        ],
+        "slug": "2026-austrian-gp-predictions",
+        "guid": "A557DDA5-5E65-4DE4-BA3D-A9DBB02408FA"
     },
     {
         "id": "VH55gQWg8_Q",
@@ -148,7 +178,9 @@
         "date": "2026-06-23",
         "categories": [
             "podcast"
-        ]
+        ],
+        "slug": "2026-barcelona-catalunya-gp-review",
+        "guid": "C22CAA1A-54C7-4A6B-85DC-3A6FE4AAB674"
     },
     {
         "id": "RxtDjB3to8Q",
@@ -158,7 +190,9 @@
         "categories": [
             "podcast",
             "prediction"
-        ]
+        ],
+        "slug": "2026-monaco-gp-predictions",
+        "guid": "ED4C417E-0396-482F-B37A-CC86F8A924DC"
     },
     {
         "id": "B3dl_ikbr7Y",
@@ -168,7 +202,9 @@
         "categories": [
             "podcast",
             "learn"
-        ]
+        ],
+        "slug": "superclipping-explained",
+        "guid": "00481B3B-14FB-4AF1-AF4D-856EDF2F29E3"
     },
     {
         "id": "ManpbUcjvMY",
@@ -177,7 +213,9 @@
         "date": "2026-05-25",
         "categories": [
             "podcast"
-        ]
+        ],
+        "slug": "2026-canadian-gp-review",
+        "guid": "F156085F-E2C1-40E2-9C8C-54A921E18F53"
     },
     {
         "id": "cUXKGtFynTM",
@@ -187,7 +225,9 @@
         "categories": [
             "podcast",
             "prediction"
-        ]
+        ],
+        "slug": "2026-canadian-gp-predictions",
+        "guid": "9FABB2B1-CD29-4423-A1F4-FA65508747EE"
     },
     {
         "id": "1WPYIX31mP4",
@@ -196,7 +236,9 @@
         "date": "2026-05-06",
         "categories": [
             "podcast"
-        ]
+        ],
+        "slug": "2026-miami-gp-review",
+        "guid": "D6E6D540-6BF4-4731-81EE-AED4F1CBD5CB"
     },
     {
         "id": "bg6Ou_ARu5w",
@@ -205,7 +247,9 @@
         "date": "2026-03-20",
         "categories": [
             "podcast"
-        ]
+        ],
+        "slug": "2026-chinese-gp-review",
+        "guid": "6B4E865E-8466-43C5-A012-48979508A733"
     },
     {
         "id": "rMPTExvmTX4",
@@ -215,7 +259,9 @@
         "categories": [
             "podcast",
             "prediction"
-        ]
+        ],
+        "slug": "2026-chinese-gp-predictions",
+        "guid": "007FA27D-4FF9-4CFB-84B6-48B8D037C5AB"
     },
     {
         "id": "RKhRQNLIA2Y",
@@ -224,7 +270,9 @@
         "date": "2026-03-11",
         "categories": [
             "podcast"
-        ]
+        ],
+        "slug": "2026-australian-gp-review",
+        "guid": "A70DBE45-F089-4183-A530-720BA3210C2A"
     },
     {
         "id": "E_whksBJ6vY",
@@ -234,7 +282,9 @@
         "categories": [
             "podcast",
             "prediction"
-        ]
+        ],
+        "slug": "2026-australian-gp-predictions",
+        "guid": "79203AD1-F43A-4BA1-AFC3-6E84E85C70E0"
     },
     {
         "id": "pGhfLEGWONo",
@@ -243,7 +293,9 @@
         "date": "2026-03-01",
         "categories": [
             "podcast"
-        ]
+        ],
+        "slug": "2026-pecking-order",
+        "guid": "6F3D98AC-8E50-41BF-B9C1-BCC8E23F5F88"
     },
     {
         "id": "jawRCQ-nQjs",
@@ -253,7 +305,9 @@
         "categories": [
             "podcast",
             "prediction"
-        ]
+        ],
+        "slug": "2026-season-predictions",
+        "guid": "1C0C8BB3-5A6C-48DB-8394-B469D18296A9"
     },
     {
         "id": "-5iqlzfIbvc",
@@ -263,7 +317,9 @@
         "categories": [
             "podcast",
             "learn"
-        ]
+        ],
+        "slug": "whats-new-in-2026",
+        "guid": "80B74213-5715-4C45-A62A-09899291B923"
     },
     {
         "id": "TR5nxpz0K-c",
@@ -273,7 +329,9 @@
         "categories": [
             "podcast",
             "collab"
-        ]
+        ],
+        "slug": "2025-post-mortem",
+        "guid": "EA7EBED9-87DB-44E9-872B-7673E27931BC"
     },
     {
         "id": "FE2unaDwqRg",
@@ -282,7 +340,9 @@
         "date": "2025-12-28",
         "categories": [
             "podcast"
-        ]
+        ],
+        "slug": "2025-season-review",
+        "guid": "B176EAB4-2C99-462D-8A21-41484B9206A5"
     },
     {
         "id": "6l-e47l9RXU",
@@ -291,7 +351,9 @@
         "date": "2025-12-08",
         "categories": [
             "podcast"
-        ]
+        ],
+        "slug": "2025-abu-dhabi-gp-review",
+        "guid": "0DDF97FF-DFC1-4384-8521-293DDE2304F6"
     },
     {
         "id": "_H_AaQ4zLVM",
@@ -300,7 +362,9 @@
         "date": "2025-12-06",
         "categories": [
             "podcast"
-        ]
+        ],
+        "slug": "2025-abu-dhabi-gp-preview",
+        "guid": "37D1B9F9-9888-4ADA-8FCC-E07AD28B9A32"
     },
     {
         "id": "INMrlHa5Xb0",
@@ -309,7 +373,9 @@
         "date": "2025-12-03",
         "categories": [
             "podcast"
-        ]
+        ],
+        "slug": "2025-qatar-gp-review",
+        "guid": "09C01A44-049B-45BF-92D1-45DC7B16A9E0"
     },
     {
         "id": "Kh1gvCidiFg",
@@ -318,7 +384,9 @@
         "date": "2025-11-28",
         "categories": [
             "podcast"
-        ]
+        ],
+        "slug": "2025-qatar-gp-preview",
+        "guid": "93CCFF08-E2CF-4391-8EFC-BEDCFDEECB1A"
     },
     {
         "id": "uMpMa8ubujg",
@@ -327,7 +395,9 @@
         "date": "2025-11-23",
         "categories": [
             "podcast"
-        ]
+        ],
+        "slug": "2025-las-vegas-gp-review",
+        "guid": "A0369F6B-F615-4E5E-8AA6-C6627BC098C7"
     },
     {
         "id": "HtbAJsSe_1M",
@@ -336,7 +406,9 @@
         "date": "2025-11-19",
         "categories": [
             "podcast"
-        ]
+        ],
+        "slug": "2025-las-vegas-gp-preview",
+        "guid": "7D8461CE-7710-457D-8D3B-E5F00D76B9AD"
     },
     {
         "id": "rHcT5kRj-pE",
@@ -345,7 +417,9 @@
         "date": "2025-11-11",
         "categories": [
             "podcast"
-        ]
+        ],
+        "slug": "2025-sao-paulo-gp-review",
+        "guid": "7C875258-CD72-406B-9EB4-A931EF89870B"
     },
     {
         "id": "WZjABhZiznM",
@@ -354,7 +428,9 @@
         "date": "2025-11-07",
         "categories": [
             "podcast"
-        ]
+        ],
+        "slug": "2025-sao-paulo-gp-preview",
+        "guid": "A909C155-965E-4AD2-A5B9-112E06381628"
     },
     {
         "id": "ktYA_4vJcXQ",
@@ -363,7 +439,9 @@
         "date": "2025-10-29",
         "categories": [
             "podcast"
-        ]
+        ],
+        "slug": "2025-mexico-city-gp-review",
+        "guid": "10E132D6-FAB6-4B92-B2EE-27258EA497F5"
     },
     {
         "id": "OJVZmaYFFcM",
@@ -372,7 +450,9 @@
         "date": "2025-10-24",
         "categories": [
             "podcast"
-        ]
+        ],
+        "slug": "2025-mexico-city-gp-preview",
+        "guid": "FCFC1161-2ECA-407B-8D1B-A04B89A91F29"
     },
     {
         "id": "hiowrDmJ9ls",
@@ -381,7 +461,9 @@
         "date": "2025-10-22",
         "categories": [
             "podcast"
-        ]
+        ],
+        "slug": "2025-united-states-gp-review",
+        "guid": "D4202DBF-7DC5-41A3-BFCC-64A664276D19"
     },
     {
         "id": "S48qfxicI_o",
@@ -390,7 +472,9 @@
         "date": "2025-10-17",
         "categories": [
             "podcast"
-        ]
+        ],
+        "slug": "2025-united-states-gp-preview",
+        "guid": "A710FD46-FCE5-4124-8AC3-BF132527FE46"
     },
     {
         "id": "EXS-nNr1XyI",
@@ -399,7 +483,9 @@
         "date": "2025-10-05",
         "categories": [
             "podcast"
-        ]
+        ],
+        "slug": "2025-singapore-gp-review",
+        "guid": "B57462F3-51A0-4714-94C5-39C8D66DE33E"
     },
     {
         "id": "HSaRKxPu8Nc",
@@ -408,7 +494,9 @@
         "date": "2025-10-01",
         "categories": [
             "podcast"
-        ]
+        ],
+        "slug": "2025-singapore-gp-preview",
+        "guid": "0BDCCCDB-5627-4A04-8B74-681BF31014B0"
     },
     {
         "id": "PxUw_9Qxp4M",
@@ -417,7 +505,9 @@
         "date": "2025-09-25",
         "categories": [
             "podcast"
-        ]
+        ],
+        "slug": "2025-azerbaijan-gp-review",
+        "guid": "9D548885-990A-47FF-97FE-89A428613917"
     },
     {
         "id": "OAD162i6OXg",
@@ -426,7 +516,9 @@
         "date": "2025-09-11",
         "categories": [
             "podcast"
-        ]
+        ],
+        "slug": "2025-italian-gp-review",
+        "guid": "1CBDE946-5E92-4809-8E5D-78536BBB15EE"
     },
     {
         "id": "-hZV-bKYQi0",
@@ -435,7 +527,9 @@
         "date": "2025-09-04",
         "categories": [
             "podcast"
-        ]
+        ],
+        "slug": "2025-dutch-gp-review",
+        "guid": "9066918D-8BCE-4208-8980-8B08B977BE57"
     },
     {
         "id": "T73Eero5RzU",
@@ -445,7 +539,9 @@
         "categories": [
             "podcast",
             "prediction"
-        ]
+        ],
+        "slug": "2025-dutch-gp-preview",
+        "guid": "B4717247-5FFF-409B-8B69-6C79CC319167"
     },
     {
         "id": "N63XtP5gigM",
@@ -454,7 +550,9 @@
         "date": "2025-08-27",
         "categories": [
             "podcast"
-        ]
+        ],
+        "slug": "cadillac-is-ready",
+        "guid": "1CA5E58B-F652-4CB8-8D79-96D1C7E570F1"
     },
     {
         "id": "QdSz_JP5cXI",
@@ -463,7 +561,9 @@
         "date": "2025-08-22",
         "categories": [
             "podcast"
-        ]
+        ],
+        "slug": "are-we-unfair-on-lando-norris",
+        "guid": "C41A72F7-0A14-4B0C-8EAE-CE1FD249CBC1"
     },
     {
         "id": "RHGgRbNBcqQ",
@@ -472,7 +572,9 @@
         "date": "2025-08-05",
         "categories": [
             "podcast"
-        ]
+        ],
+        "slug": "2025-hungarian-gp-review",
+        "guid": "02C41BB7-6077-47D6-974B-544BB16F9F2B"
     },
     {
         "id": "O-i1lY6fBCs",
@@ -481,7 +583,9 @@
         "date": "2025-07-29",
         "categories": [
             "podcast"
-        ]
+        ],
+        "slug": "2025-belgian-gp-review",
+        "guid": "3F3D455D-5787-4080-B67B-8857F38D3A4C"
     },
     {
         "id": "KhS0pOMRPKg",
@@ -490,7 +594,9 @@
         "date": "2025-07-26",
         "categories": [
             "podcast"
-        ]
+        ],
+        "slug": "2025-belgian-gp-preview",
+        "guid": "2E3AE891-DDCF-4306-865A-C37A0EE15E9A"
     },
     {
         "id": "jEtMOm42cKA",
@@ -499,7 +605,9 @@
         "date": "2025-07-19",
         "categories": [
             "podcast"
-        ]
+        ],
+        "slug": "reviewing-the-f1-movie",
+        "guid": "6CD4939C-D355-45BB-996E-CB5EC30F1E13"
     },
     {
         "id": "vC13ioTDGwU",
@@ -508,7 +616,9 @@
         "date": "2025-07-10",
         "categories": [
             "podcast"
-        ]
+        ],
+        "slug": "christian-horner-fired",
+        "guid": "7E4B5066-D9E1-4755-981A-638556491B94"
     },
     {
         "id": "zWTRIIy4RBw",
@@ -517,7 +627,9 @@
         "date": "2025-07-09",
         "categories": [
             "podcast"
-        ]
+        ],
+        "slug": "2025-british-gp-review",
+        "guid": "57F71543-33C9-4DF5-8532-FF3C4C39AF70"
     },
     {
         "id": "9nu6aufBH0Y",
@@ -526,7 +638,9 @@
         "date": "2025-07-05",
         "categories": [
             "podcast"
-        ]
+        ],
+        "slug": "2025-british-gp-preview",
+        "guid": "43393FFB-4F3B-4040-9C72-B654DFCA8AAC"
     },
     {
         "id": "MT-8gCifgyo",
@@ -535,7 +649,9 @@
         "date": "2025-07-03",
         "categories": [
             "podcast"
-        ]
+        ],
+        "slug": "2025-austrian-gp-review",
+        "guid": "7EC527AF-46F5-423D-8816-FC339DF6C0F7"
     },
     {
         "id": "QDQn__4b_r8",
@@ -544,7 +660,9 @@
         "date": "2025-05-26",
         "categories": [
             "podcast"
-        ]
+        ],
+        "slug": "2025-monaco-gp-review",
+        "guid": "7A448B08-E493-45F0-AFF3-3A575E6D081D"
     },
     {
         "id": "F2FxL9QqcbA",
@@ -553,7 +671,9 @@
         "date": "2025-05-24",
         "categories": [
             "podcast"
-        ]
+        ],
+        "slug": "2025-monaco-gp-preview",
+        "guid": "6CA7042D-4ED5-48B6-A351-38648229212B"
     },
     {
         "id": "Zls5eKjfblE",
@@ -562,7 +682,9 @@
         "date": "2025-05-22",
         "categories": [
             "podcast"
-        ]
+        ],
+        "slug": "2025-emilia-romagna-gp-review",
+        "guid": "E2AF6CA3-12CA-4804-8BFA-4C05ABD9A792"
     },
     {
         "id": "tg_wWC3G1uw",
@@ -571,7 +693,9 @@
         "date": "2025-05-17",
         "categories": [
             "podcast"
-        ]
+        ],
+        "slug": "2025-emilia-romagna-gp-preview",
+        "guid": "B2357E20-2C86-4D14-B305-E8586ABE760F"
     },
     {
         "id": "H3egA63cgD8",
@@ -580,7 +704,9 @@
         "date": "2025-05-07",
         "categories": [
             "podcast"
-        ]
+        ],
+        "slug": "2025-miami-gp-review",
+        "guid": "B586A304-4EA0-4FB2-9810-2B598F20705E"
     },
     {
         "id": "pZETiDFN4Rw",
@@ -589,7 +715,9 @@
         "date": "2025-05-02",
         "categories": [
             "podcast"
-        ]
+        ],
+        "slug": "2025-miami-gp-preview",
+        "guid": "D5E1581E-EF52-4A6A-A80A-674685C86D26"
     },
     {
         "id": "IiZSoxN_Kmw",
@@ -598,7 +726,9 @@
         "date": "2025-04-25",
         "categories": [
             "podcast"
-        ]
+        ],
+        "slug": "2025-saudi-arabian-gp-review",
+        "guid": "54AE7E71-F43C-4BF4-8709-0CC118CA3DFB"
     },
     {
         "id": "gqe7WSQh64U",
@@ -607,7 +737,9 @@
         "date": "2025-04-16",
         "categories": [
             "podcast"
-        ]
+        ],
+        "slug": "2025-bahrain-gp-review",
+        "guid": "D1943AD3-E309-4FBF-AC6F-C0E8E714079C"
     },
     {
         "id": "IfPMtQNJciA",
@@ -616,7 +748,9 @@
         "date": "2025-04-10",
         "categories": [
             "podcast"
-        ]
+        ],
+        "slug": "2025-japanese-gp-review",
+        "guid": "6113A700-A36E-4710-A8ED-3800AE6EA167"
     },
     {
         "id": "HIzSlVTCg5s",
@@ -625,7 +759,9 @@
         "date": "2025-04-04",
         "categories": [
             "podcast"
-        ]
+        ],
+        "slug": "2025-japanese-gp-preview",
+        "guid": "ECF3B912-BD86-4DD7-974F-3E7E3DF3E12B"
     },
     {
         "id": "OY6OStqtLBA",
@@ -634,7 +770,9 @@
         "date": "2025-03-29",
         "categories": [
             "podcast"
-        ]
+        ],
+        "slug": "2025-chinese-gp-review",
+        "guid": "9E94F358-E5A3-4CD5-8146-93C98C2ACC47"
     },
     {
         "id": "Bd9_XfSI6bE",
@@ -643,7 +781,9 @@
         "date": "2025-03-21",
         "categories": [
             "podcast"
-        ]
+        ],
+        "slug": "2025-australian-gp-review",
+        "guid": "B3C976DC-0857-469A-B456-FCA5FFF987CE"
     },
     {
         "id": "CM5oETV_3XM",
@@ -652,7 +792,9 @@
         "date": "2025-03-15",
         "categories": [
             "podcast"
-        ]
+        ],
+        "slug": "2025-australian-gp-preview",
+        "guid": "4CDEF1D3-1511-4F81-81D8-60E8837B8345"
     },
     {
         "id": "Il0x4L_Qe6c",
@@ -661,7 +803,9 @@
         "date": "2025-03-10",
         "categories": [
             "podcast"
-        ]
+        ],
+        "slug": "2025-testing-retrospective",
+        "guid": "9666210F-0654-49BE-9B20-7BC169F22778"
     },
     {
         "id": "rbgdg4ibvZg",
@@ -671,7 +815,9 @@
         "categories": [
             "podcast",
             "prediction"
-        ]
+        ],
+        "slug": "2025-season-predictions-part-2",
+        "guid": "DE842B4D-487D-4EF3-8DAC-5D0225D8F1F7"
     },
     {
         "id": "15oo6gUuaC4",
@@ -681,7 +827,9 @@
         "categories": [
             "podcast",
             "prediction"
-        ]
+        ],
+        "slug": "2025-season-predictions-part-1",
+        "guid": "F132D97B-57A8-468D-B8FC-337357980A6A"
     },
     {
         "id": "4vNYKMXWN6c",
@@ -690,7 +838,9 @@
         "date": "2025-02-25",
         "categories": [
             "podcast"
-        ]
+        ],
+        "slug": "ranking-the-2025-f1-liveries",
+        "guid": "5B918816-CF44-4002-9303-E27D27DF4EC0"
     },
     {
         "id": "lEgKGPOvIWg",
@@ -699,7 +849,9 @@
         "date": "2025-02-13",
         "categories": [
             "podcast"
-        ]
+        ],
+        "slug": "welcome-to-pod-on-the-apex",
+        "guid": "88A7D53C-BD0A-44A9-AC65-C1F853F2780D"
     },
     {
         "id": "Gub-oQ4TQ8M",

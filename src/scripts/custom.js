@@ -64,117 +64,93 @@ document.addEventListener("DOMContentLoaded", () => {
 
     const videoGrid = document.getElementById('videoGrid');
     if (videoGrid) {
-        const targetCategory = videoGrid.getAttribute('data-category');
-
-        fetch('/videos.json').then(response => response.json()).then(allVideos => {
-            allVideos.sort((a, b) => new Date(b.date) - new Date(a.date));
-            videoGrid.innerHTML = '';
-            const pageVideos = allVideos.filter(video => video.categories.includes(targetCategory));
-            pageVideos.forEach(video => {
-                const shortCategories = ['history', 'instant-reaction', 'short'];
-                const isShort = shortCategories.includes(targetCategory);
-                const colClasses = isShort ? 'col-6 col-md-4 col-lg-3' : 'col-12 col-md-6 col-lg-4';
-                const iFrameClass = isShort ? 'short-video' : '';
-                const videoCard = `
-                    <div class="${colClasses} video-item" data-season="${video.season}">
-                        <div class="card border-0 shadow-none text-center">
-                            <iframe loading="lazy" class="${iFrameClass}" data-src="https://www.youtube.com/embed/${video.id}" title="${video.title}" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-                            <div class="card-body">
-                                <p class="card-text">${video.title}</p>
-                            </div>
-                        </div>
-                    </div>
-                `;
-                videoGrid.insertAdjacentHTML('beforeend', videoCard);
-            });
-            const seasonTabContainers = document.querySelectorAll('.season-tabs-container');
-            const uniqueSeasons = [...new Set(pageVideos.map(v => v.season))].sort((a, b) => b - a);
-            if (uniqueSeasons.length > 0) {
-                seasonTabContainers.forEach(container => {
-                    container.innerHTML = '';
-                    uniqueSeasons.forEach(season => {
-                        const li = `
-                            <li class="nav-item">
-                                <button class="nav-link" type="button" data-target-season="${season}">Season ${season}</button>
-                            </li>
-                        `;
-                        container.insertAdjacentHTML('beforeend', li);
-                    });
-                });
-            }
-            const defaultSeason = uniqueSeasons.length > 0 ? uniqueSeasons[0] : new Date().getFullYear().toString();
-            initializePagination(defaultSeason);
-        });
-    }
-
-    function initializePagination(defaultSeason) {
-        const allItems = document.querySelectorAll('.album .video-item');
+        const albumWrapper = document.querySelector('.album');
+        const itemsPerPage = parseInt(albumWrapper.getAttribute('data-items-per-page'));
+        const allItems = Array.from(videoGrid.querySelectorAll('.video-item'));
         const paginationContainers = document.querySelectorAll('.pagination-container');
         const seasonTabs = document.querySelectorAll('.season-tabs-container .nav-link');
-
-        const albumWrapper = document.querySelector('.album');
-        const itemsPerPage = albumWrapper && albumWrapper.hasAttribute('data-items-per-page') ? parseInt(albumWrapper.getAttribute('data-items-per-page')) : 6;
+        const seasons = [...new Set(Array.from(seasonTabs).map(tab => tab.getAttribute('data-target-season')))];
+        const defaultSeason = seasons[0];
 
         let currentPage = 1;
         let currentSeason = defaultSeason;
-        let filteredItems = [];
+        let filteredItems = allItems;
 
         function scrollToGrid() {
-            const grid = document.getElementById('videoGrid');
-            if (grid && grid.getBoundingClientRect().top < 0) {
-                grid.scrollIntoView();
+            if (videoGrid.getBoundingClientRect().top < 0) {
+                videoGrid.scrollIntoView();
             }
         }
 
-        function updateSeason(season) {
-            currentSeason = season;
-            currentPage = 1;
-
-            allItems.forEach(item => {
-                item.classList.add('d-none');
-                const iframe = item.querySelector('iframe');
-                if (iframe && iframe.hasAttribute('src')) {
-                    iframe.removeAttribute('src');
-                }
-            });
-
-            filteredItems = Array.from(allItems).filter(item => item.getAttribute('data-season') === currentSeason);
-
-            seasonTabs.forEach(tab => {
-                if (tab.getAttribute('data-target-season') === currentSeason) {
-                    tab.classList.add('active');
-                    tab.setAttribute('aria-pressed', 'true');
-                } else {
-                    tab.classList.remove('active');
-                    tab.setAttribute('aria-pressed', 'false');
-                }
-            });
-
-            renderPage(1);
+        function playVideo(link) {
+            const iframe = document.createElement('iframe');
+            iframe.src = `https://www.youtube.com/embed/${link.getAttribute('data-video-id')}?autoplay=1`;
+            iframe.title = link.getAttribute('data-video-title');
+            iframe.className = link.classList.contains('short-video') ? 'short-video' : '';
+            iframe.allow = 'accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share';
+            iframe.referrerPolicy = 'strict-origin-when-cross-origin';
+            iframe.allowFullscreen = true;
+            iframe.videoLink = link;
+            link.replaceWith(iframe);
         }
 
-        function renderPage(page) {
-            currentPage = page;
-            const start = (page - 1) * itemsPerPage;
-            const end = start + itemsPerPage;
+        function stopVideo(item) {
+            const iframe = item.querySelector('iframe');
+            if (iframe) {
+                iframe.replaceWith(iframe.videoLink);
+            }
+        }
 
-            filteredItems.forEach((item, index) => {
-                const iframe = item.querySelector('iframe');
+        function getStateFromUrl() {
+            const params = new URLSearchParams(window.location.search);
+            const season = params.get('season');
+            return {
+                season: seasons.includes(season) ? season : defaultSeason,
+                page: parseInt(params.get('page')) || 1
+            };
+        }
 
-                if (index >= start && index < end) {
-                    item.classList.remove('d-none');
-                    if (iframe && iframe.getAttribute('data-src') && !iframe.getAttribute('src')) {
-                        iframe.setAttribute('src', iframe.getAttribute('data-src'));
-                    }
-                } else {
-                    item.classList.add('d-none');
-                    if (iframe && iframe.hasAttribute('src')) {
-                        iframe.removeAttribute('src');
-                    }
+        function updateUrl() {
+            const params = new URLSearchParams();
+            if (currentSeason !== defaultSeason) {
+                params.set('season', currentSeason);
+            }
+            if (currentPage > 1) {
+                params.set('page', currentPage);
+            }
+            const query = params.toString();
+            window.history.pushState(null, '', query ? `?${query}` : window.location.pathname);
+        }
+
+        function render(season, page) {
+            currentSeason = season;
+            filteredItems = season ? allItems.filter(item => item.getAttribute('data-season') === season) : allItems;
+            const totalPages = Math.max(Math.ceil(filteredItems.length / itemsPerPage), 1);
+            currentPage = Math.min(Math.max(page, 1), totalPages);
+
+            const start = (currentPage - 1) * itemsPerPage;
+            const visibleItems = filteredItems.slice(start, start + itemsPerPage);
+            allItems.forEach(item => {
+                const visible = visibleItems.includes(item);
+                item.classList.toggle('d-none', !visible);
+                if (!visible) {
+                    stopVideo(item);
                 }
             });
 
-            renderPaginationControls();
+            seasonTabs.forEach(tab => {
+                const active = tab.getAttribute('data-target-season') === currentSeason;
+                tab.classList.toggle('active', active);
+                tab.setAttribute('aria-pressed', active ? 'true' : 'false');
+            });
+
+            renderPaginationControls(totalPages);
+        }
+
+        function goTo(season, page) {
+            render(season, page);
+            updateUrl();
+            scrollToGrid();
         }
 
         function createPageButton(label, onClick) {
@@ -186,8 +162,7 @@ document.addEventListener("DOMContentLoaded", () => {
             return button;
         }
 
-        function renderPaginationControls() {
-            const totalPages = Math.ceil(filteredItems.length / itemsPerPage);
+        function renderPaginationControls(totalPages) {
             paginationContainers.forEach(container => {
                 container.innerHTML = '';
 
@@ -197,21 +172,13 @@ document.addEventListener("DOMContentLoaded", () => {
 
                 const prevLi = document.createElement('li');
                 prevLi.className = `page-item ${currentPage === 1 ? 'd-none' : ''}`;
-                prevLi.appendChild(createPageButton('Previous', () => {
-                    if (currentPage > 1) {
-                        renderPage(currentPage - 1);
-                        scrollToGrid();
-                    }
-                }));
+                prevLi.appendChild(createPageButton('Previous', () => goTo(currentSeason, currentPage - 1)));
                 container.appendChild(prevLi);
 
                 for (let i = 1; i <= totalPages; i++) {
                     const li = document.createElement('li');
                     li.className = `page-item ${i === currentPage ? 'active' : ''}`;
-                    const button = createPageButton(i, () => {
-                        renderPage(i);
-                        scrollToGrid();
-                    });
+                    const button = createPageButton(i, () => goTo(currentSeason, i));
                     if (i === currentPage) {
                         button.setAttribute('aria-current', 'page');
                     }
@@ -221,31 +188,29 @@ document.addEventListener("DOMContentLoaded", () => {
 
                 const nextLi = document.createElement('li');
                 nextLi.className = `page-item ${currentPage === totalPages ? 'd-none' : ''}`;
-                nextLi.appendChild(createPageButton('Next', () => {
-                    if (currentPage < totalPages) {
-                        renderPage(currentPage + 1);
-                        scrollToGrid();
-                    }
-                }));
+                nextLi.appendChild(createPageButton('Next', () => goTo(currentSeason, currentPage + 1)));
                 container.appendChild(nextLi);
             });
         }
 
-        seasonTabs.forEach(tab => {
-            tab.addEventListener('click', () => {
-                const targetSeason = tab.getAttribute('data-target-season');
-                updateSeason(targetSeason);
-                scrollToGrid();
-            });
+        videoGrid.addEventListener('click', e => {
+            const link = e.target.closest('[data-video-id]');
+            if (link) {
+                e.preventDefault();
+                playVideo(link);
+            }
         });
 
-        if (allItems.length > 0) {
-            if (seasonTabs.length > 0) {
-                updateSeason(currentSeason);
-            } else {
-                filteredItems = Array.from(allItems);
-                renderPage(1);
-            }
-        }
+        seasonTabs.forEach(tab => {
+            tab.addEventListener('click', () => goTo(tab.getAttribute('data-target-season'), 1));
+        });
+
+        window.addEventListener('popstate', () => {
+            const { season, page } = getStateFromUrl();
+            render(season, page);
+        });
+
+        const { season, page } = getStateFromUrl();
+        render(season, page);
     }
 });

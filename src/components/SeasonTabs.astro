@@ -1,0 +1,10 @@
+---
+const { seasons } = Astro.props;
+---
+<ul class="nav nav-pills justify-content-center mt-4 mb-3 season-tabs-container">
+    {seasons.map(season => (
+        <li class="nav-item">
+            <button class:list={['nav-link', { active: season === seasons[0] }]} type="button" data-target-season={season} aria-pressed={season === seasons[0] ? 'true' : 'false'}>Season {season}</button>
+        </li>
+    ))}
+</ul>
