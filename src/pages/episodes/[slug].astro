@@ -45,7 +45,8 @@ const structuredData = {
         name: episode.title,
         description: episode.summary,
         thumbnailUrl: thumbnail,
-        uploadDate: episode.date,
+        // Google wants a time zone here; only the day is known, so use midnight in India
+        uploadDate: `${episode.date}T00:00:00+05:30`,
         embedUrl: `https://www.youtube.com/embed/${episode.id}`,
         url: youTubeUrl
     }
