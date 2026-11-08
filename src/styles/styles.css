@@ -165,6 +165,14 @@ iframe.short-video {
     fill: currentColor;
 }
 
+/* Icons drawn with lines as well as a fill, such as the theme toggle's sun and its rays */
+.icon-stroke {
+    stroke: currentColor;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    stroke-width: 2;
+}
+
 [data-bs-theme='dark'] .theme-icon-light,
 [data-bs-theme='light'] .theme-icon-dark {
     display: none;
