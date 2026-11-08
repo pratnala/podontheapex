@@ -70,7 +70,43 @@ document.addEventListener("DOMContentLoaded", () => {
         link.replaceWith(iframe);
     }
 
+    const shareStatus = document.getElementById('shareStatus');
+    let shareStatusTimer;
+
+    function showShareStatus(message) {
+        shareStatus.textContent = message;
+        shareStatus.classList.add('show');
+        clearTimeout(shareStatusTimer);
+        shareStatusTimer = setTimeout(() => shareStatus.classList.remove('show'), 2000);
+    }
+
+    // The share sheet where there is one, such as on phones and in the installed app, otherwise copy the link
+    async function sharePage() {
+        const url = window.location.href;
+        if (navigator.share) {
+            try {
+                await navigator.share({ title: document.title, url });
+                return;
+            } catch (error) {
+                if (error.name === 'AbortError') {
+                    return;
+                }
+            }
+        }
+        try {
+            await navigator.clipboard.writeText(url);
+            showShareStatus('Link Copied');
+        } catch {
+            showShareStatus("Couldn't Copy the Link");
+        }
+    }
+
     document.addEventListener('click', e => {
+        if (e.target.closest('[data-share]')) {
+            sharePage();
+            return;
+        }
+
         // A button that plays a player elsewhere on the page; once that player is playing, it opens YouTube
         const trigger = e.target.closest('[data-play]');
         const target = trigger && document.getElementById(trigger.getAttribute('data-play'));

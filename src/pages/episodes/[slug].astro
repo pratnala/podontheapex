@@ -1,5 +1,6 @@
 ---
 import EpisodeLink from '../../components/EpisodeLink.astro';
+import Icon from '../../components/Icon.astro';
 import PlayButton from '../../components/PlayButton.astro';
 import Layout from '../../layouts/Layout.astro';
 import { episodes } from '../../data/videos.js';
@@ -68,6 +69,9 @@ const structuredData = {
             <img src={thumbnail} alt="" width="1280" height="720" fetchpriority="high" decoding="async">
             <PlayButton />
         </a>
+        <button class="btn btn-outline-secondary mt-3" type="button" data-share>
+            <Icon name="share" class="me-2" />Share
+        </button>
         <h2 class="h4 mt-4">Show Notes</h2>
         <div class="show-notes" set:html={episode.showNotes}></div>
         <nav class="row g-3 mt-5" aria-label="More episodes">

@@ -22,7 +22,11 @@ const inPlaylists = playlists.some(link => link.slug === slug);
 <nav id="mainNav" class="navbar navbar-expand-lg navbar-dark fixed-top transition-glass" aria-label="Main">
     <div class="container">
         <a class="navbar-brand" href="/">Pod on the Apex</a>
-        <button class="navbar-toggler ms-auto" type="button" data-bs-toggle="collapse" data-bs-target="#mainNavbar" aria-controls="mainNavbar" aria-expanded="false" aria-label="Toggle navigation">
+        <!-- Outside the collapsed menu so it's one tap away on phones, and last in the bar on desktop -->
+        <button class="nav-link navbar-share order-lg-last ms-auto ms-lg-2" type="button" data-share aria-label="Share This Page" title="Share This Page">
+            <Icon name="share" />
+        </button>
+        <button class="navbar-toggler ms-3" type="button" data-bs-toggle="collapse" data-bs-target="#mainNavbar" aria-controls="mainNavbar" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="mainNavbar">

@@ -292,6 +292,29 @@ iframe.short-video {
     scroll-margin-top: 6rem;
 }
 
+.share-status {
+    position: fixed;
+    z-index: 1090;
+    bottom: 1.5rem;
+    left: 50%;
+
+    padding: .5rem 1rem;
+
+    transition: opacity .2s ease-in-out;
+    transform: translateX(-50%);
+    pointer-events: none;
+
+    opacity: 0;
+    color: #fff;
+    border-radius: .5rem;
+    background-color: rgba(33, 37, 41, .95);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, .3);
+}
+
+.share-status.show {
+    opacity: 1;
+}
+
 @media (max-width: 991.98px) {
     .navbar-collapse {
         margin-top: .75rem;
