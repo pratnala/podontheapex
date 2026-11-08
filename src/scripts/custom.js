@@ -12,8 +12,13 @@ if ('serviceWorker' in navigator) {
     });
 }
 
-function setTheme(theme) {
+function applyTheme(theme) {
     htmlElement.setAttribute('data-bs-theme', theme);
+}
+
+// Only a press of the toggle is saved, so the site keeps following the system theme until then
+function setTheme(theme) {
+    applyTheme(theme);
     localStorage.setItem('theme', theme);
 }
 
@@ -25,12 +30,12 @@ function getPreferredTheme() {
     return window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
 }
 
-setTheme(getPreferredTheme());
+applyTheme(getPreferredTheme());
 
 document.addEventListener("DOMContentLoaded", () => {
     window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', () => {
         if (!localStorage.getItem('theme')) {
-            setTheme(getPreferredTheme());
+            applyTheme(getPreferredTheme());
         }
     });
 
