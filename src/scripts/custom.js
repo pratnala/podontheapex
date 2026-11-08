@@ -71,6 +71,15 @@ document.addEventListener("DOMContentLoaded", () => {
     }
 
     document.addEventListener('click', e => {
+        // A button that plays a player elsewhere on the page; once that player is playing, it opens YouTube
+        const trigger = e.target.closest('[data-play]');
+        const target = trigger && document.getElementById(trigger.getAttribute('data-play'));
+        if (target) {
+            e.preventDefault();
+            playVideo(target);
+            return;
+        }
+
         const link = e.target.closest('[data-video-id]');
         if (link) {
             e.preventDefault();

@@ -1,4 +1,5 @@
 ---
+import LatestEpisode from '../components/LatestEpisode.astro';
 import SeasonTabs from '../components/SeasonTabs.astro';
 import VideoCard from '../components/VideoCard.astro';
 import Layout from '../layouts/Layout.astro';
@@ -16,6 +17,7 @@ const seasons = seasonTabs ? [...new Set(pageVideos.map(video => video.season))]
 const firstPage = pageVideos.filter(video => !seasonTabs || video.season === seasons[0]).slice(0, itemsPerPage);
 ---
 <Layout title={title} description={metaDescription} logo={logo} slug={slug} heroPadding={heroPadding} heroText={description}>
+    {!slug && <LatestEpisode />}
     <div class="album" data-items-per-page={itemsPerPage}>
         {seasonTabs && <SeasonTabs seasons={seasons} />}
         <nav aria-label="Video pagination top" class="mt-5 mb-5">

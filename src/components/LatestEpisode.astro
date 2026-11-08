@@ -1,0 +1,26 @@
+---
+import PlayButton from './PlayButton.astro';
+import { episodes } from '../data/videos.js';
+
+const episode = episodes[0];
+const thumbnail = `https://i.ytimg.com/vi/${episode.id}/maxresdefault.jpg`;
+const youTubeUrl = `https://www.youtube.com/watch?v=${episode.id}`;
+---
+<section class="container latest-episode mt-5" aria-labelledby="latestEpisodeTitle">
+    <div class="row g-4 align-items-center latest-episode-panel">
+        <div class="col-lg-7">
+            <a class="video-thumb" id="latestEpisodePlayer" href={youTubeUrl} data-video-id={episode.id} data-video-title={episode.title} aria-label={`Play ${episode.title}`}>
+                <img src={thumbnail} alt="" width="1280" height="720" fetchpriority="high" decoding="async">
+                <PlayButton />
+                <span class="latest-episode-badge" aria-hidden="true">Latest Episode</span>
+            </a>
+        </div>
+        <div class="col-lg-5">
+            <p class="small text-body-secondary mb-2">Season {episode.seasonNumber}, Episode {episode.episodeNumber} · {episode.dateLabel}</p>
+            <h2 class="h4" id="latestEpisodeTitle">{episode.title}</h2>
+            <p>{episode.summary}</p>
+            <a class="btn btn-danger me-2" href={youTubeUrl} data-play="latestEpisodePlayer">Watch Now</a>
+            <a class="btn btn-outline-secondary" href={`/episodes/${episode.slug}`}>Show Notes</a>
+        </div>
+    </div>
+</section>

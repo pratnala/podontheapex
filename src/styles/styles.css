@@ -84,6 +84,31 @@ iframe.short-video {
     max-width: 56rem;
 }
 
+.latest-episode-panel {
+    /* The row's gutters already pad the top and sides by 1.5rem, so match that at the bottom */
+    margin: 0;
+    padding: 0 .75rem 1.5rem;
+
+    border-radius: .5rem;
+    background-color: var(--bs-tertiary-bg);
+}
+
+.latest-episode-badge {
+    position: absolute;
+    top: .75rem;
+    left: .75rem;
+
+    padding: .25rem .625rem;
+
+    pointer-events: none;
+
+    color: #fff;
+    border-radius: 4px;
+    background-color: #e10600;
+
+    font-size: .8125rem;
+}
+
 .episode-link {
     display: flex;
     align-items: center;
