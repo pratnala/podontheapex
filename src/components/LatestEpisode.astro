@@ -16,7 +16,7 @@ const youTubeUrl = `https://www.youtube.com/watch?v=${episode.id}`;
             </a>
         </div>
         <div class="col-lg-5">
-            <p class="small text-body-secondary mb-2">Season {episode.seasonNumber}, Episode {episode.episodeNumber} · {episode.dateLabel}</p>
+            <p class="small text-body-secondary mb-2">{episode.seasonLabel}, Episode {episode.episodeNumber} · {episode.dateLabel}</p>
             <h2 class="h4" id="latestEpisodeTitle">{episode.title}</h2>
             <p>{episode.summary}</p>
             <a class="btn btn-danger me-2" href={youTubeUrl} data-play="latestEpisodePlayer">Watch Now</a>

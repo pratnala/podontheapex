@@ -60,7 +60,7 @@ const structuredData = {
     image={thumbnail}
     heroTitle={episode.title}
     heroTitleClass="display-6"
-    heroText={`Season ${episode.seasonNumber}, Episode ${episode.episodeNumber} · ${episode.dateLabel}`}
+    heroText={`${episode.seasonLabel}, Episode ${episode.episodeNumber} · ${episode.dateLabel}`}
 >
     <script slot="head" is:inline type="application/ld+json" set:html={JSON.stringify(structuredData).replaceAll('<', '\\u003c')}></script>
     <article class="container episode">

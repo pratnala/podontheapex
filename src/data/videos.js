@@ -34,6 +34,11 @@ function formatDate(date) {
     return new Date(`${date}T00:00:00Z`).toLocaleDateString('en-GB', { timeZone: 'UTC', dateStyle: 'long' });
 }
 
+// F1 seasons follow the calendar year, so the label is just the year
+export function seasonLabel(season) {
+    return `Season ${season}`;
+}
+
 function checkVideos() {
     const errors = [];
     const warnings = [];
@@ -97,6 +102,7 @@ export const episodes = videos
         return {
             ...video,
             dateLabel: formatDate(video.date),
+            seasonLabel: seasonLabel(video.season),
             seasonNumber: item['itunes:season'],
             episodeNumber: item['itunes:episode'],
             duration: item['itunes:duration'],
