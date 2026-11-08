@@ -66,6 +66,8 @@ An episode needs an entry in both files. The slug and GUID link them together.
 
 Only entries with `podcast` in `categories` need `slug` and `guid`. Add `prediction` as well for predictions episodes.
 
+The newest podcast entry appears in the latest episode section at the top of the homepage, so nothing else needs changing there.
+
 ### Slugs
 
 Slugs become permanent URLs, so don't change one after it's published.
@@ -126,7 +128,7 @@ Warnings don't stop the site from deploying, so check the log after adding an ep
 
 Thumbnails aren't checked. They load from YouTube using each video's ID, and YouTube doesn't guarantee a `maxresdefault` image for every upload, so look at the card after adding a video.
 
-## How it's organised
+## How it's organized
 
 ```
 public/                  Served as is
@@ -135,7 +137,7 @@ public/                  Served as is
   fonts/, img/           Fonts, icons and images
 src/
   assets/logos/          Page logos, resized at build time
-  components/            Hero, navbar, footer, cards and icons
+  components/            Hero, navbar, footer, cards, latest episode and icons
   data/
     icons.js             SVG icons
     pages.js             Settings for each list page
@@ -170,22 +172,27 @@ Cloudflare Workers Builds deploys from this repository, using `npm run build` an
 
 | Branch | What happens |
 |---|---|
-| `beta` | Builds a Cloudflare preview for testing |
 | `main` | Deploys to the live site |
+| Any other branch | Builds a Cloudflare preview for testing |
 
-Do all development on `beta`, check it on the preview, then fast-forward `main` to it. A fast-forward only works if `main` has no commits of its own.
+Small changes go straight to `main`. For a bigger change, push it to a separate branch first, check the preview, then fast-forward `main` to it. A fast-forward only works if `main` has no commits the branch lacks.
 
 ```bash
 git switch main
-git merge --ff-only beta
+git merge --ff-only your-branch
 git push origin main
 ```
 
+If a deploy goes wrong, roll back to the previous version from the Worker's Deployments page in Cloudflare.
+
 ## Commit messages
 
-Episode and video commits follow this pattern:
+Episode, video and dependency commits follow this pattern:
 
 ```text
 Add 2026-10-07 episode to website and podcast RSS
 Add 2026-10-27 short to website
+Upgrade node dependencies
 ```
+
+Other commits use a short summary in the imperative, such as `Feature the latest episode on the homepage`.
